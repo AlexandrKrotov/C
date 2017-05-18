@@ -1,6 +1,19 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   axis_rotation.c                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: akrotov <marvin@42.fr>                     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2017/05/18 20:35:52 by akrotov           #+#    #+#             */
+/*   Updated: 2017/05/18 20:37:16 by akrotov          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "FdF.h"
 
-void ft_ox(t_all *all, t_point_lst *lst0, t_point_lst *lst1, t_line_cord *ret)
+void	ft_ox(t_all *all, t_point_lst *lst0,
+t_point_lst *lst1, t_line_cord *ret)
 {
 	int tmp;
 
@@ -12,7 +25,7 @@ void ft_ox(t_all *all, t_point_lst *lst0, t_point_lst *lst1, t_line_cord *ret)
 	ret->z1 = -tmp * all->calc->sin_x + (*lst1).point.z * all->calc->cos_x;
 }
 
-void ft_oy(t_all *all, t_line_cord *ret)
+void	ft_oy(t_all *all, t_line_cord *ret)
 {
 	int tmp;
 
@@ -24,7 +37,7 @@ void ft_oy(t_all *all, t_line_cord *ret)
 	ret->z1 = -tmp * all->calc->sin_y + ret->z1 * all->calc->cos_y;
 }
 
-void ft_oz(t_all *all, t_line_cord *ret)
+void	ft_oz(t_all *all, t_line_cord *ret)
 {
 	int tmp;
 

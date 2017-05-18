@@ -1,6 +1,18 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_hook.c                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: akrotov <marvin@42.fr>                     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2017/05/18 20:33:07 by akrotov           #+#    #+#             */
+/*   Updated: 2017/05/18 20:35:21 by akrotov          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "FdF.h"
 
-void ft_key_axis(int keycode, t_all *all)
+void	ft_key_axis(int keycode, t_all *all)
 {
 	if (keycode == 12)
 		all->trans.angle_z -= 1.0;
@@ -16,7 +28,7 @@ void ft_key_axis(int keycode, t_all *all)
 		all->trans.angle_y += 1.0;
 }
 
-void ft_shift(int keycode, t_all *all)
+void	ft_shift(int keycode, t_all *all)
 {
 	if (keycode == 124)
 		all->trans.shift.x_shift += 10;
@@ -26,16 +38,22 @@ void ft_shift(int keycode, t_all *all)
 		all->trans.shift.y_shift += 10;
 	if (keycode == 126)
 		all->trans.shift.y_shift -= 10;
+	if (keycode == 6)
+		all->trans.deep_z += 5;
+	if (keycode == 7)
+		all->trans.deep_z -= 5;
 }
-void ft_key_color(int keycode, t_all *all)
+
+void	ft_key_color(int keycode, t_all *all)
 {
-	if(all->trans.r_color > -128)
-		all->trans.r_color--;
+	if (keycode == 83)
+		if (all->trans.r_color > -128)
+			all->trans.r_color--;
 	if (keycode == 84)
-		if(all->trans.g_color > -128)
+		if (all->trans.g_color > -128)
 			all->trans.g_color--;
 	if (keycode == 85)
-		if(all->trans.b_color > -128)
+		if (all->trans.b_color > -128)
 			all->trans.b_color--;
 	if (keycode == 86)
 		if (all->trans.r_color < 127)
@@ -48,7 +66,7 @@ void ft_key_color(int keycode, t_all *all)
 			all->trans.b_color++;
 }
 
-void ft_key_clear_and_scale(int keycode,t_all *all)
+void	ft_key_clear_and_scale(int keycode, t_all *all)
 {
 	if (keycode == 24)
 	{
@@ -76,7 +94,7 @@ void ft_key_clear_and_scale(int keycode,t_all *all)
 	}
 }
 
-int	ft_key_hook(int keycode, t_all *all)
+int		ft_key_hook(int keycode, t_all *all)
 {
 	printf("%d\n", keycode);
 	if (keycode == 53)
@@ -85,21 +103,21 @@ int	ft_key_hook(int keycode, t_all *all)
 	ft_key_axis(keycode, all);
 	ft_key_color(keycode, all);
 	ft_key_clear_and_scale(keycode, all);
-	if(keycode == 15)
-	{
-		if (all->animation == 0)
-			all->animation = 1;
+	if (keycode == 15)
+		if (all->anim.animation == 0)
+			all->anim.animation = 1;
 		else
-			all->animation = 0;
-	}
-	create_img(all);
+			all->anim.animation = 0;
+	if (keycode == 35)
+		if (all->anim.sprite == 0)
+			all->anim.sprite = 1;
+		else
+			all->anim.sprite = 0;
+	if (keycode == 5)
+		if (all->anim.gradient == 0)
+			all->anim.gradient = 1;
+		else
+			all->anim.gradient = 0;
+	all->anim.all = 1;
 	return (0);
 }
-
-
-
-
-
-
-
-

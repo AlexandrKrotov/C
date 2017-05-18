@@ -1,12 +1,22 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_error.c                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: akrotov <marvin@42.fr>                     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2017/05/18 20:37:47 by akrotov           #+#    #+#             */
+/*   Updated: 2017/05/18 20:39:47 by akrotov          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "FdF.h"
 
 void	ft_error(int error)
 {
-	if(error == 1)
-		write(1,"Invalid map name! Use: \"filename.fdf\".\n", 39);
-	if(error == 2)
+	if (error == 1)
+		write(1, "Invalid map name! Use: \"filename.fdf\".\n", 39);
+	if (error == 2)
 		write(1, "Invalid map!\n", 12);
 	exit(error);
-
 }
-
