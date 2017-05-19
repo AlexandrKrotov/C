@@ -6,11 +6,11 @@
 /*   By: akrotov <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/05/18 20:33:07 by akrotov           #+#    #+#             */
-/*   Updated: 2017/05/18 20:35:21 by akrotov          ###   ########.fr       */
+/*   Updated: 2017/05/18 22:07:42 by akrotov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "FdF.h"
+#include "fdf.h"
 
 void	ft_key_axis(int keycode, t_all *all)
 {
@@ -96,28 +96,13 @@ void	ft_key_clear_and_scale(int keycode, t_all *all)
 
 int		ft_key_hook(int keycode, t_all *all)
 {
-	printf("%d\n", keycode);
 	if (keycode == 53)
 		exit(0);
 	ft_shift(keycode, all);
 	ft_key_axis(keycode, all);
 	ft_key_color(keycode, all);
 	ft_key_clear_and_scale(keycode, all);
-	if (keycode == 15)
-		if (all->anim.animation == 0)
-			all->anim.animation = 1;
-		else
-			all->anim.animation = 0;
-	if (keycode == 35)
-		if (all->anim.sprite == 0)
-			all->anim.sprite = 1;
-		else
-			all->anim.sprite = 0;
-	if (keycode == 5)
-		if (all->anim.gradient == 0)
-			all->anim.gradient = 1;
-		else
-			all->anim.gradient = 0;
+	switcher(keycode, all);
 	all->anim.all = 1;
 	return (0);
 }

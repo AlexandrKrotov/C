@@ -6,11 +6,11 @@
 /*   By: akrotov <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/05/18 20:27:38 by akrotov           #+#    #+#             */
-/*   Updated: 2017/05/18 20:27:40 by akrotov          ###   ########.fr       */
+/*   Updated: 2017/05/18 21:37:58 by akrotov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "FdF.h"
+#include "fdf.h"
 
 void	ft_calc_all(t_all *all)
 {

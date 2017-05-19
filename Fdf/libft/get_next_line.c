@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "libft.h"
 
 t_fd_and_rest	*ft_search_fd(int fd, t_fd_and_rest **gnl)
 {

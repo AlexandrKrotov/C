@@ -6,7 +6,7 @@
 #    By: akrotov <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/12/13 17:43:03 by akrotov           #+#    #+#              #
-#    Updated: 2017/03/14 15:01:12 by akrotov          ###   ########.fr        #
+#    Updated: 2017/05/19 17:12:04 by akrotov          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,7 +27,7 @@ ft_strncat.c ft_strncmp.c ft_strncpy.c ft_strnequ.c  ft_strnew.c ft_strnstr.c \
 ft_strrchr.c ft_strsplit.c ft_strstr.c ft_strsub.c ft_strtrim.c ft_tolower.c \
 ft_toupper.c ft_word_count.c ft_itoa.c ft_lstnew.c \
 ft_lstdelone.c ft_lstdel.c ft_lstadd.c ft_lstsize.c ft_lstsort.c ft_lstiter.c ft_lstmap.c \
-ft_readonedig.c ft_revstr.c ft_readonechar.c
+ft_readonedig.c ft_revstr.c ft_readonechar.c get_next_line.c
 
 OBJ = $(SOURCE:.c=.o)
 

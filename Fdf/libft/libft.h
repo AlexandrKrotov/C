@@ -6,7 +6,7 @@
 /*   By: akrotov <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/08 20:46:51 by akrotov           #+#    #+#             */
-/*   Updated: 2016/12/08 20:46:54 by akrotov          ###   ########.fr       */
+/*   Updated: 2017/05/19 17:37:38 by akrotov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,8 @@
 # include <string.h>
 # include <stdlib.h>
 # include <unistd.h>
-# include "get_next_line.h"
+
+# define BUFF_SIZE 1000
 
 typedef	struct		s_list
 {
@@ -24,6 +25,19 @@ typedef	struct		s_list
 	size_t			content_size;
 	struct s_list	*next;
 }					t_list;
+
+typedef struct		s_fat
+{
+	int				fd;
+	char			temp[BUFF_SIZE + 1];
+	struct s_fat	*next;
+}					t_fd_and_rest;
+
+typedef struct		s_ret
+{
+	int				ret_r;
+	size_t			ret_c;
+}					t_ret;
 
 void				*ft_memset(void *vptr, int val, size_t n);
 void				ft_bzero(void *str, size_t n);
@@ -88,4 +102,5 @@ size_t				ft_word_count(const char *str, char c);
 int					ft_readonechar();
 int					ft_readonedig();
 void				ft_revstr(char *str);
+int					get_next_line(int fd, char **str);
 #endif

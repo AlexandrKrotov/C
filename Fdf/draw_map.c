@@ -6,11 +6,11 @@
 /*   By: akrotov <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/05/18 20:03:56 by akrotov           #+#    #+#             */
-/*   Updated: 2017/05/18 20:08:35 by akrotov          ###   ########.fr       */
+/*   Updated: 2017/05/19 16:16:56 by akrotov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "FdF.h"
+#include "fdf.h"
 
 t_line_cord		*ft_create_cord(t_all *all, t_point_lst lst0, t_point_lst lst1)
 {
@@ -58,12 +58,10 @@ void			*thread_drow(void *all)
 	t_point_lst	*ptr;
 	t_point_lst	*prev;
 	t_all		*thr_all;
-	int			i;
 
 	thr_all = all;
 	ptr = go_to_y(thr_all, thr_all->map);
-	i = 0;
-	while (i++ < thr_all->num_op)
+	while (thr_all->num_op-- > 0)
 	{
 		if (ptr != NULL)
 			prev = ptr;

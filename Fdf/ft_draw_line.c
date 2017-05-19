@@ -6,11 +6,11 @@
 /*   By: akrotov <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/05/18 20:08:52 by akrotov           #+#    #+#             */
-/*   Updated: 2017/05/18 20:12:09 by akrotov          ###   ########.fr       */
+/*   Updated: 2017/05/18 21:58:41 by akrotov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "FdF.h"
+#include "fdf.h"
 
 void		put_pixel_img(t_all *all, int x, int y, t_rgb *color)
 {

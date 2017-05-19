@@ -6,15 +6,17 @@
 /*   By: akrotov <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/05/18 20:29:19 by akrotov           #+#    #+#             */
-/*   Updated: 2017/05/18 20:31:16 by akrotov          ###   ########.fr       */
+/*   Updated: 2017/05/18 22:04:47 by akrotov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "FdF.h"
+#include "fdf.h"
 
 int		set_color(t_point_lst *ret, int color)
 {
-	if (color != 0)
+	if (ret->point.z == -666)
+		color = 0x000000;
+	else if (color != 0)
 		return (color);
 	else if (ret->point.z < 0)
 		color = 0x4286f4;
@@ -64,7 +66,7 @@ int		ft_strtol(char *split)
 	return (color);
 }
 
-t_rgb	*ft_gradient(t_all *all, t_line_cord *cord)
+void	ft_gradient(t_all *all, t_line_cord *cord)
 {
 	int	dlm;
 

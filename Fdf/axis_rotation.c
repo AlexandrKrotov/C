@@ -6,11 +6,11 @@
 /*   By: akrotov <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/05/18 20:35:52 by akrotov           #+#    #+#             */
-/*   Updated: 2017/05/18 20:37:16 by akrotov          ###   ########.fr       */
+/*   Updated: 2017/05/18 21:47:53 by akrotov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "FdF.h"
+#include "fdf.h"
 
 void	ft_ox(t_all *all, t_point_lst *lst0,
 t_point_lst *lst1, t_line_cord *ret)

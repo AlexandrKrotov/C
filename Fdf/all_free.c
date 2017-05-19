@@ -6,11 +6,11 @@
 /*   By: akrotov <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/05/18 20:28:55 by akrotov           #+#    #+#             */
-/*   Updated: 2017/05/18 20:28:57 by akrotov          ###   ########.fr       */
+/*   Updated: 2017/05/18 21:38:52 by akrotov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "FdF.h"
+#include "fdf.h"
 
 void		free_split(char **split)
 {

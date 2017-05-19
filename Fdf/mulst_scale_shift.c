@@ -6,11 +6,11 @@
 /*   By: akrotov <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/05/18 20:44:16 by akrotov           #+#    #+#             */
-/*   Updated: 2017/05/18 20:44:56 by akrotov          ###   ########.fr       */
+/*   Updated: 2017/05/18 21:58:54 by akrotov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "FdF.h"
+#include "fdf.h"
 
 void	ft_mult_and_scale(const t_all *all, t_point_lst *lst0,
 t_point_lst *lst1, t_line_cord *ret)

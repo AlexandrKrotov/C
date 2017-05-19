@@ -6,11 +6,11 @@
 /*   By: akrotov <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/05/18 20:12:59 by akrotov           #+#    #+#             */
-/*   Updated: 2017/05/18 20:26:59 by akrotov          ###   ########.fr       */
+/*   Updated: 2017/05/19 16:16:13 by akrotov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "FdF.h"
+#include "fdf.h"
 
 void		write_lst(t_all *all)
 {
@@ -102,4 +102,29 @@ void		put_sprite(t_all *all)
 		all->sprite = mlx_xpm_file_to_image(all->mlx->mlx, "xpm/d.xpm", &w, &h);
 	else
 		all->sprite = mlx_xpm_file_to_image(all->mlx->mlx, "xpm/u.xpm", &w, &h);
+}
+
+void		switcher(int keycode, t_all *all)
+{
+	if (keycode == 15)
+	{
+		if (all->anim.animation == 0)
+			all->anim.animation = 1;
+		else
+			all->anim.animation = 0;
+	}
+	if (keycode == 35)
+	{
+		if (all->anim.sprite == 0)
+			all->anim.sprite = 1;
+		else
+			all->anim.sprite = 0;
+	}
+	if (keycode == 5)
+	{
+		if (all->anim.gradient == 0)
+			all->anim.gradient = 1;
+		else
+			all->anim.gradient = 0;
+	}
 }

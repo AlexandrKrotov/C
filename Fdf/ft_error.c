@@ -6,11 +6,11 @@
 /*   By: akrotov <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/05/18 20:37:47 by akrotov           #+#    #+#             */
-/*   Updated: 2017/05/18 20:39:47 by akrotov          ###   ########.fr       */
+/*   Updated: 2017/05/18 21:58:00 by akrotov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "FdF.h"
+#include "fdf.h"
 
 void	ft_error(int error)
 {

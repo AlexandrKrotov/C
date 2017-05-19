@@ -6,11 +6,11 @@
 /*   By: akrotov <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/05/18 20:31:46 by akrotov           #+#    #+#             */
-/*   Updated: 2017/05/18 20:32:50 by akrotov          ###   ########.fr       */
+/*   Updated: 2017/05/19 13:41:30 by akrotov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "FdF.h"
+#include "fdf.h"
 
 int		ft_mouse_cord(int x, int y, t_all *all)
 {
@@ -36,10 +36,13 @@ int		ft_mouse_cord(int x, int y, t_all *all)
 			all->anim.up = 0;
 		all->anim.all = 1;
 	}
+	return (0);
 }
 
 int		ft_mouse_hook(int button, int x, int y, t_all *all)
 {
+	(void)x;
+	(void)y;
 	if (button == 4)
 		if (all->trans.scale != 0)
 		{

@@ -6,11 +6,11 @@
 /*   By: akrotov <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/05/18 20:40:04 by akrotov           #+#    #+#             */
-/*   Updated: 2017/05/18 20:43:18 by akrotov          ###   ########.fr       */
+/*   Updated: 2017/05/19 17:38:26 by akrotov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "FdF.h"
+#include "fdf.h"
 
 t_point_lst		*create_node(t_all *all, char *split)
 {
@@ -21,8 +21,9 @@ t_point_lst		*create_node(t_all *all, char *split)
 	ret->point.x = all->step.x;
 	ret->point.y = all->step.y;
 	if (!ft_isdigit((*split)) && *split != '-')
-		return (NULL);
-	ret->point.z = ft_atoi(split);
+		ret->point.z = -666;
+	else
+		ret->point.z = ft_atoi(split);
 	if (ret->point.z > all->max_depth)
 		all->max_depth = ret->point.z;
 	if (ret->point.z < all->min_depth)
@@ -70,15 +71,14 @@ t_point_lst		*link_line(t_point_lst *line1, t_point_lst *line2)
 	return (ret);
 }
 
-void			ft_gnl(t_all *all, int fd, char **str, char **split,
-					   t_point_lst *ptr, t_point_lst *prev)
+void			ft_gnl(t_all *all, t_point_lst *ptr, t_point_lst *prev)
 {
-	while (get_next_line(fd, str) > 0)
+	while (get_next_line(all->pars.fd, &(all->pars.str)) > 0)
 	{
 		all->step.y++;
-		split = ft_strsplit((*str), ' ');
-		ptr->next_y = create_line(all, split);
-		free_split(split);
+		all->pars.split = ft_strsplit((all->pars.str), ' ');
+		ptr->next_y = create_line(all, all->pars.split);
+		free_split(all->pars.split);
 		ptr = ptr->next_y;
 		prev = link_line(prev, ptr);
 	}
@@ -86,24 +86,23 @@ void			ft_gnl(t_all *all, int fd, char **str, char **split,
 
 void			ft_parser(char **av, t_all *all)
 {
-	int			fd;
-	char		*str;
-	char		**split;
 	t_point_lst	*ptr;
 	t_point_lst	*prev;
 
-	fd = open(av[1], O_RDONLY);
-	if (fd < 0)
+	if (ft_strstr(av[1], "fdf") == NULL)
 		ft_error(1);
-	get_next_line(fd, &str);
-	split = ft_strsplit(str, ' ');
-	all->map = create_line(all, split);
+	all->pars.fd = open(av[1], O_RDONLY);
+	if (all->pars.fd < 0)
+		ft_error(1);
+	get_next_line(all->pars.fd, &all->pars.str);
+	all->pars.split = ft_strsplit(all->pars.str, ' ');
+	all->map = create_line(all, all->pars.split);
 	if (all->map == NULL)
 		ft_error(2);
-	free_split(split);
+	free_split(all->pars.split);
 	ptr = all->map;
 	prev = ptr;
-	ft_gnl(all, fd, &str, split, ptr, prev);
+	ft_gnl(all, ptr, prev);
 	all->height = all->step.y;
 	if (all->height == 0 && all->width >= 1)
 		all->height = 1;

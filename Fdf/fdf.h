@@ -6,7 +6,7 @@
 /*   By: akrotov <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/05/18 20:59:36 by akrotov           #+#    #+#             */
-/*   Updated: 2017/05/18 21:08:01 by akrotov          ###   ########.fr       */
+/*   Updated: 2017/05/19 13:49:37 by akrotov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -130,6 +130,12 @@ typedef struct			s_anim{
 	int					sprite;
 }						t_anim;
 
+typedef struct			s_pars{
+	int					fd;
+	char				*str;
+	char				**split;
+}						t_pars;
+
 typedef struct			s_all {
 	t_mlx				*mlx;
 	t_point_lst			*map;
@@ -139,6 +145,7 @@ typedef struct			s_all {
 	t_calc				*calc;
 	t_point				xy;
 	t_rgbm				grad;
+	t_pars				pars;
 	double				width;
 	double				height;
 	double				d_width;
@@ -183,7 +190,7 @@ int						ft_mouse_cord(int x, int y, t_all *all);
 int						set_color(t_point_lst *ret, int color);
 t_rgb					*get_rgb(t_point_lst *ret, int color);
 int						ft_strtol(char *split);
-t_rgb					*ft_gradient(t_all *all, t_line_cord *cord);
+void					ft_gradient(t_all *all, t_line_cord *cord);
 
 /*
 ** TRANSFORMATION
@@ -223,5 +230,6 @@ void					write_lst(t_all *all);
 int						ft_draw_line_pp(t_all *all, t_line_cord *cord);
 void					ft_name_map(t_all *all, char **av);
 void					put_sprite(t_all *all);
+void					switcher(int keycode, t_all *all);
 
 #endif
