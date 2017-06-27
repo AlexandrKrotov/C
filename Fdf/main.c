@@ -6,7 +6,7 @@
 /*   By: akrotov <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/05/18 19:32:22 by akrotov           #+#    #+#             */
-/*   Updated: 2017/05/19 17:38:43 by akrotov          ###   ########.fr       */
+/*   Updated: 2017/05/19 20:21:25 by akrotov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,8 +62,8 @@ int		create_img(t_all *all)
 int		main(int ac, char **av)
 {
 	t_all all;
-
-	(void)ac;
+	if (ac != 2)
+		ft_error(3);
 	init_all(&all);
 	ft_parser(av, &all);
 	ft_name_map(&all, av);

@@ -18,5 +18,7 @@ void	ft_error(int error)
 		write(1, "Invalid map name! Use: \"filename.fdf\".\n", 39);
 	if (error == 2)
 		write(1, "Invalid map!\n", 12);
+	if (error == 3)
+		write(1, "Not work without argument! Use: \"filename.fdf\" \n", 47);
 	exit(error);
 }

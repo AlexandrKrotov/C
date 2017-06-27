@@ -14,14 +14,21 @@
 #define D_WIDTH 1600
 #define D_HEIGHT 1200
 #define STD_COLOR 0x0bff00
-#define THREAD_NUM 9
+#define THREAD_NUM 12
 
 typedef struct 		s_rgb{
-	unsigned char	red;
-	unsigned char	green;
-	unsigned char	blue;
+	unsigned char	r;
+	unsigned char	g;
+	unsigned char	b;
 	unsigned char	opacity;
 }					t_rgb;
+
+typedef struct 		s_rgbm{
+	char	red;
+	char	green;
+	char	blue;
+	char	opacity;
+}					t_rgbm;
 
 typedef struct s_line_cord{
 	int			x0;
@@ -36,7 +43,9 @@ typedef struct s_line_cord{
 	int 		sy;
 	int 		err_1;
 	int 		err_2;
-	t_rgb		*color;
+	int			iter;
+	t_rgb		*color0;
+	t_rgb		*color1;
 }				t_line_cord;
 
 typedef struct		s_point{
@@ -78,7 +87,7 @@ typedef struct	s_trans{
 	double 		angle_z;
 	double 		angle_y;
 	double 		angle_x;
-	double 		depth;
+	int 		deep_z;
 	char		r_color;
 	char		g_color;
 	char		b_color;
@@ -93,17 +102,38 @@ typedef struct s_calc{
 	double 		sin_z;
 	double 		shift_w;
 	double 		shift_h;
-
 	double 		shift_x;
 	double		shift_y;
 }				t_calc;
+
+typedef struct	s_anim{
+	int			all;
+	int			right;
+	int			left;
+	int			down;
+	int			up;
+	int			animation;
+	int 		gradient;
+	int 		on_of;
+	int			sprite;
+}				t_anim;
+
+typedef struct s_pars{
+	int 		fd;
+	char 		*str;
+	char		**split;
+}				t_pars;
 
 typedef struct	s_all {
 	t_mlx		*mlx;
 	t_point_lst *map;
 	t_trans		trans;
 	t_xy 		step;
+	t_anim		anim;
 	t_calc		*calc;
+	t_point		xy;
+	t_rgbm		grad;
+	t_pars      pars;
 	double 		width;
 	double 		height;
 	double		d_width;
@@ -114,16 +144,15 @@ typedef struct	s_all {
 	double 		half_h;
 	int			max_depth;
 	int 		min_depth;
-	int			animation;
 	double		num_op;
 	int 		thr_iter;
 	char 		*map_name;
-
+	void		*sprite;
 }				t_all;
 
 void				ft_parser(char **av, t_all *all);
 int					ft_draw_map(t_all *all);
-int					ft_draw_line(t_all *all, t_line_cord *cord);
+void				ft_draw_line(t_all *all, t_line_cord *cord);
 void				put_pixel_img(t_all *all, int x, int y, t_rgb *color);
 int					ft_key_hook(int keycode, t_all *all);
 int					ft_mouse_hook(int button,int x,int y,t_all *all);
@@ -138,6 +167,7 @@ int					ft_mouse_cord( int x,int y, t_all *all);
 int					set_color(t_point_lst *ret, int color);
 t_rgb				*get_rgb(t_point_lst *ret, int color);
 int 				ft_strtol(char *split);
+t_rgb				*ft_gradient(t_all *all, t_line_cord *cord);
 
 
 /*
@@ -147,6 +177,7 @@ int 				ft_strtol(char *split);
 void				ft_mult_and_scale(const t_all *all, t_point_lst *lst0, t_point_lst *lst1,
 					   t_line_cord *ret);
 void				move_centr_scale(const t_all *all, t_line_cord *ret);
+void				mouse_shift(t_all *all);
 /*
  * Axis rotation
  */
@@ -161,6 +192,8 @@ void				ft_error(int error);
  */
 void				write_lst(t_all *all);
 int					ft_draw_line_pp(t_all *all, t_line_cord *cord);
-void	ft_name_map(t_all *all, char **av);
+void				ft_name_map(t_all *all, char **av);
+void				put_sprite(t_all *all);
+void				switcher(int keycode, t_all *all);
 
 #endif //FDF_FDF_H

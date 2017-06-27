@@ -23,10 +23,10 @@
 # include <pthread.h>
 
 # define D_NAME		"FDF"
-# define D_WIDTH	1600
-# define D_HEIGHT	1200
+# define D_WIDTH	1200
+# define D_HEIGHT	900
 # define STD_COLOR	0x0bff00
-# define THREAD_NUM	4
+# define THREAD_NUM	10
 
 typedef struct			s_rgb{
 	unsigned char		r;
@@ -187,6 +187,7 @@ int						ft_mouse_cord(int x, int y, t_all *all);
 /*
 ** COLOR
 */
+
 int						set_color(t_point_lst *ret, int color);
 t_rgb					*get_rgb(t_point_lst *ret, int color);
 int						ft_strtol(char *split);

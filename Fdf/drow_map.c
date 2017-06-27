@@ -1,31 +1,32 @@
 #include "FdF.h"
 
-t_line_cord *ft_create_cord(t_all *all, t_point_lst lst0, t_point_lst lst1)
+t_line_cord		*ft_create_cord(t_all *all, t_point_lst lst0, t_point_lst lst1)
 {
-	t_line_cord *ret;
+	t_line_cord	*ret;
 
 	ret = malloc(sizeof(t_line_cord));
-	*ret = (t_line_cord){0};
+	*ret = (t_line_cord){0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, NULL, NULL};
 	ft_mult_and_scale(all, &lst0, &lst1, ret);
 	ft_ox(all, &lst0, &lst1, ret);
 	ft_oy(all, ret);
 	ft_oz(all, ret);
 	move_centr_scale(all, ret);
-	ret->color = lst1.point.color;
+	ret->color0 = lst0.point.color;
+	ret->color1 = lst1.point.color;
 	return (ret);
 }
 
 
-void creat_and_draw(t_all *all, t_point_lst lst0, t_point_lst lst1)
+void			creat_and_draw(t_all *all, t_point_lst lst0, t_point_lst lst1)
 {
-	t_line_cord *cord;
+	t_line_cord	*cord;
 
 	cord = ft_create_cord(all, lst0, lst1);
 	ft_draw_line(all, cord);
 	free(cord);
 }
 
-t_point_lst *go_to_y(t_all *all, t_point_lst *map)
+t_point_lst	*go_to_y(t_all *all, t_point_lst *map)
 {
 	t_point_lst *ret;
 	int i;
@@ -41,23 +42,20 @@ t_point_lst *go_to_y(t_all *all, t_point_lst *map)
 	return (ret);
 }
 
-void	*thread_drow(void *all)
+void		*thread_drow(void *all)
 {
 	t_point_lst *ptr;
 	t_point_lst *prev;
 	t_all 		*thr_all;
-	int 		i;
 
 	thr_all = all;
 	ptr = go_to_y(thr_all, thr_all->map);
-	i = 0;
-	while (i < thr_all->num_op)
+	while (thr_all->num_op-- > 0)
 	{
 		if (ptr != NULL)
 			prev = ptr;
 		while (ptr)
 		{
-
 			if (ptr->next_x != NULL)
 				creat_and_draw(all, *ptr, *ptr->next_x);
 			if (ptr->next_y != NULL)
@@ -68,14 +66,13 @@ void	*thread_drow(void *all)
 		}
 		if(prev->next_y != NULL)
 			ptr = prev->next_y;
-		i++;
 	}
 	pthread_exit(NULL);
 }
 
-int ft_draw_map(t_all *all)
+int			ft_draw_map(t_all *all)
 {
-	pthread_t 	thread[THREAD_NUM];
+	pthread_t	thread[THREAD_NUM];
 	int 		i;
 	t_all		*thr[THREAD_NUM];
 
