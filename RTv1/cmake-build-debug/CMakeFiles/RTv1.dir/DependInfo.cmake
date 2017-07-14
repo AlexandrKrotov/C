@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/nfs/2016/a/akrotov/akrotov/RTv1/SRC/ft_exit.c" "/nfs/2016/a/akrotov/akrotov/RTv1/cmake-build-debug/CMakeFiles/RTv1.dir/SRC/ft_exit.c.o"
   "/nfs/2016/a/akrotov/akrotov/RTv1/SRC/ft_init_all.c" "/nfs/2016/a/akrotov/akrotov/RTv1/cmake-build-debug/CMakeFiles/RTv1.dir/SRC/ft_init_all.c.o"
   "/nfs/2016/a/akrotov/akrotov/RTv1/SRC/ft_key_hook.c" "/nfs/2016/a/akrotov/akrotov/RTv1/cmake-build-debug/CMakeFiles/RTv1.dir/SRC/ft_key_hook.c.o"
-  "/nfs/2016/a/akrotov/akrotov/RTv1/SRC/ft_math.c.c" "/nfs/2016/a/akrotov/akrotov/RTv1/cmake-build-debug/CMakeFiles/RTv1.dir/SRC/ft_math.c.c.o"
+  "/nfs/2016/a/akrotov/akrotov/RTv1/SRC/ft_math.c" "/nfs/2016/a/akrotov/akrotov/RTv1/cmake-build-debug/CMakeFiles/RTv1.dir/SRC/ft_math.c.o"
   "/nfs/2016/a/akrotov/akrotov/RTv1/SRC/ft_mous_hook.c" "/nfs/2016/a/akrotov/akrotov/RTv1/cmake-build-debug/CMakeFiles/RTv1.dir/SRC/ft_mous_hook.c.o"
   "/nfs/2016/a/akrotov/akrotov/RTv1/SRC/ft_render.c" "/nfs/2016/a/akrotov/akrotov/RTv1/cmake-build-debug/CMakeFiles/RTv1.dir/SRC/ft_render.c.o"
   "/nfs/2016/a/akrotov/akrotov/RTv1/SRC/ft_sphere.c" "/nfs/2016/a/akrotov/akrotov/RTv1/cmake-build-debug/CMakeFiles/RTv1.dir/SRC/ft_sphere.c.o"

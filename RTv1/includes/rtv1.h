@@ -30,12 +30,6 @@ typedef	struct		s_vertex{
 	double			z;
 }					t_vertex;
 
-typedef struct		s_vector{
-	t_vertex		origin;
-	t_vertex		direct;
-	//double	 	magnitude;
-}					t_vector;
-
 typedef struct		s_rgb{
 	unsigned char	r;
 	unsigned char	g;
@@ -43,10 +37,25 @@ typedef struct		s_rgb{
 	unsigned char	opacity;
 }					t_rgb;
 
+typedef struct		s_ray{
+	t_vertex		origin;
+	t_vertex		direct;
+	//double	 	magnitude;
+}					t_ray;
+
+typedef	struct		s_rt{
+	double			t;
+	double			brightness;
+	t_vertex		norm;
+	t_vertex		inter;
+	t_rgb			rgb;
+}					t_rt;
+
 typedef struct		s_objs{
 	void			*obj;
 	struct	s_objs	*next;
 }					t_objs;
+
 
 typedef struct		s_sphere{
 	double			radius;
@@ -54,15 +63,26 @@ typedef struct		s_sphere{
 	t_rgb			color;
 }					t_sphere;
 
-typedef struct 		s_plain{
-	t_vector		norma;
+typedef struct		s_plane{
+	t_vertex		point;
+	t_vertex		norm;
 	t_rgb			color;
-}					t_plain;
+}					t_plane;
 
-typedef struct 		s_dsp{
-	int 			dsp_h;
-	int 			dsp_w;
+typedef struct		s_dsp{
+	int				dsp_h;
+	int				half_h;
+	int				dsp_w;
+	int				half_w;
+	int				rend_ws;
+	int				rend_hs;
+	int				rend_we;
+	int				rend_he;
 }					t_dsp;
+
+typedef struct		s_trans{
+	double 			zoom;
+}					t_trans;
 
 typedef struct		s_mlx{
 	void			*mlx;
@@ -79,6 +99,10 @@ typedef struct		s_all{
 	t_mlx			*mlx;
 	t_dsp			dsp;
 	t_objs			*scene;
+	t_vertex 		light;
+	t_vertex		cam;
+	t_rt			rt;
+	t_trans			trans;
 }					t_all;
 
 void				init_all(t_all *all);
@@ -91,12 +115,15 @@ int					ft_key_hook(int keycode, t_all *all);
 int					ft_mouse_hook(int key, int x, int y, t_all *all);
 int 				ft_mouse_cord(int x, int y, t_all *all);
 
-void				ft_sub_vector(t_vertex a, t_vertex b, t_vertex *res);
-void				ft_mult_vector2(t_vector *a, t_vector *b, t_vector *res);
-void				ft_mult_vector3(t_vertex a, t_vertex b, t_vertex *res);
-double				ft_sum_scalar(t_vertex a, t_vertex b);
+t_vertex			ft_sub_vector(t_vertex a, t_vertex b);
+t_vertex			ft_sum_vector(t_vertex a, t_vertex b);
+double				ft_dot_product(t_vertex a, t_vertex b);
+double				ft_get_magnitude(t_vertex a);
+t_vertex			ft_normalized_vector(t_vertex a, double b);
+t_vertex			ft_mult_vec_double(t_vertex a, double b);
 
-int					ft_sphere_intersect(t_all *all, t_vector *ray, double *t);
+
+int					ft_sphere_intersect(t_all *all, t_ray *ray, t_objs *ptr);
 
 int					ft_exit(void);
 

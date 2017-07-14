@@ -17,10 +17,10 @@ CMakeFiles/RTv1.dir/SRC/ft_key_hook.c.o
  ../includes/libft.h
  ../includes/rtv1.h
  /nfs/2016/a/akrotov/akrotov/RTv1/SRC/ft_key_hook.c
-CMakeFiles/RTv1.dir/SRC/ft_math.c.c.o
+CMakeFiles/RTv1.dir/SRC/ft_math.c.o
  ../includes/libft.h
  ../includes/rtv1.h
- /nfs/2016/a/akrotov/akrotov/RTv1/SRC/ft_math.c.c
+ /nfs/2016/a/akrotov/akrotov/RTv1/SRC/ft_math.c
 CMakeFiles/RTv1.dir/SRC/ft_mous_hook.c.o
  ../includes/libft.h
  ../includes/rtv1.h

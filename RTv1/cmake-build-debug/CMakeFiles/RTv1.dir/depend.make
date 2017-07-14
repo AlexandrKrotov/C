@@ -17,9 +17,9 @@ CMakeFiles/RTv1.dir/SRC/ft_key_hook.c.o: ../includes/libft.h
 CMakeFiles/RTv1.dir/SRC/ft_key_hook.c.o: ../includes/rtv1.h
 CMakeFiles/RTv1.dir/SRC/ft_key_hook.c.o: ../SRC/ft_key_hook.c
 
-CMakeFiles/RTv1.dir/SRC/ft_math.c.c.o: ../includes/libft.h
-CMakeFiles/RTv1.dir/SRC/ft_math.c.c.o: ../includes/rtv1.h
-CMakeFiles/RTv1.dir/SRC/ft_math.c.c.o: ../SRC/ft_math.c.c
+CMakeFiles/RTv1.dir/SRC/ft_math.c.o: ../includes/libft.h
+CMakeFiles/RTv1.dir/SRC/ft_math.c.o: ../includes/rtv1.h
+CMakeFiles/RTv1.dir/SRC/ft_math.c.o: ../SRC/ft_math.c
 
 CMakeFiles/RTv1.dir/SRC/ft_mous_hook.c.o: ../includes/libft.h
 CMakeFiles/RTv1.dir/SRC/ft_mous_hook.c.o: ../includes/rtv1.h

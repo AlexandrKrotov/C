@@ -231,32 +231,32 @@ SRC/ft_key_hook.c.s:
 	$(MAKE) -f CMakeFiles/RTv1.dir/build.make CMakeFiles/RTv1.dir/SRC/ft_key_hook.c.s
 .PHONY : SRC/ft_key_hook.c.s
 
-SRC/ft_math.c.o: SRC/ft_math.c.c.o
+SRC/ft_math.o: SRC/ft_math.c.o
 
-.PHONY : SRC/ft_math.c.o
+.PHONY : SRC/ft_math.o
 
 # target to build an object file
-SRC/ft_math.c.c.o:
-	$(MAKE) -f CMakeFiles/RTv1.dir/build.make CMakeFiles/RTv1.dir/SRC/ft_math.c.c.o
-.PHONY : SRC/ft_math.c.c.o
+SRC/ft_math.c.o:
+	$(MAKE) -f CMakeFiles/RTv1.dir/build.make CMakeFiles/RTv1.dir/SRC/ft_math.c.o
+.PHONY : SRC/ft_math.c.o
 
-SRC/ft_math.c.i: SRC/ft_math.c.c.i
+SRC/ft_math.i: SRC/ft_math.c.i
 
-.PHONY : SRC/ft_math.c.i
+.PHONY : SRC/ft_math.i
 
 # target to preprocess a source file
-SRC/ft_math.c.c.i:
-	$(MAKE) -f CMakeFiles/RTv1.dir/build.make CMakeFiles/RTv1.dir/SRC/ft_math.c.c.i
-.PHONY : SRC/ft_math.c.c.i
+SRC/ft_math.c.i:
+	$(MAKE) -f CMakeFiles/RTv1.dir/build.make CMakeFiles/RTv1.dir/SRC/ft_math.c.i
+.PHONY : SRC/ft_math.c.i
 
-SRC/ft_math.c.s: SRC/ft_math.c.c.s
+SRC/ft_math.s: SRC/ft_math.c.s
 
-.PHONY : SRC/ft_math.c.s
+.PHONY : SRC/ft_math.s
 
 # target to generate assembly for a file
-SRC/ft_math.c.c.s:
-	$(MAKE) -f CMakeFiles/RTv1.dir/build.make CMakeFiles/RTv1.dir/SRC/ft_math.c.c.s
-.PHONY : SRC/ft_math.c.c.s
+SRC/ft_math.c.s:
+	$(MAKE) -f CMakeFiles/RTv1.dir/build.make CMakeFiles/RTv1.dir/SRC/ft_math.c.s
+.PHONY : SRC/ft_math.c.s
 
 SRC/ft_mous_hook.o: SRC/ft_mous_hook.c.o
 
@@ -414,9 +414,9 @@ help:
 	@echo "... SRC/ft_key_hook.o"
 	@echo "... SRC/ft_key_hook.i"
 	@echo "... SRC/ft_key_hook.s"
-	@echo "... SRC/ft_math.c.o"
-	@echo "... SRC/ft_math.c.i"
-	@echo "... SRC/ft_math.c.s"
+	@echo "... SRC/ft_math.o"
+	@echo "... SRC/ft_math.i"
+	@echo "... SRC/ft_math.s"
 	@echo "... SRC/ft_mous_hook.o"
 	@echo "... SRC/ft_mous_hook.i"
 	@echo "... SRC/ft_mous_hook.s"

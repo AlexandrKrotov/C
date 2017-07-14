@@ -1,34 +1,52 @@
 #include "rtv1.h"
 
-void	ft_sum_vector(t_vertex *a, t_vertex *b, t_vertex *res)
+t_vertex	ft_sum_vector(t_vertex a, t_vertex b)
 {
-	res->x = a->x + b->x;
-	res->y = a->y + b->y;
-	res->z = a->z + b->z;
+	t_vertex	ret;
+
+	ret.x = a.x + b.x;
+	ret.y = a.y + b.y;
+	ret.z = a.z + b.z;
+	return(ret);
 }
 
-void	ft_sub_vector(t_vertex a, t_vertex b, t_vertex *res)
+t_vertex	ft_sub_vector(t_vertex a, t_vertex b)
 {
-	res->x = b.x - a.x;
-	res->y = b.y - a.y;
-	res->z = b.z - a.z;
+	t_vertex	ret;
+
+	ret.x = a.x - b.x;
+	ret.y = a.y - b.y;
+	ret.z = a.z - b.z;
+	return(ret);
 }
 
-void	ft_mult_vector(t_vector *a, t_vector *b, t_vector *res)
+t_vertex	ft_normalized_vector(t_vertex a, double b)
 {
-	res->origin.x = (a->origin.y * b->origin.z) - (a->origin.z * b->origin.y);
-	res->origin.y = (a->origin.z * b->origin.x) - (a->origin.x * b->origin.z);
-	res->origin.z = (a->origin.x * b->origin.y) - (a->origin.y * b->origin.x);
-}
+	t_vertex	ret;
 
-void	ft_mult_vector3(t_vertex a, t_vertex b, t_vertex *res)
+	ret.x = a.x / b;
+	ret.y = a.y / b;
+	ret.z = a.z / b;
+	return(ret);
+}
+t_vertex	ft_mult_vec_double(t_vertex a, double b)
 {
-	res->x = (a.y * b.z) - (a.z * b.y);
-	res->y = (a.z * b.x) - (a.x * b.z);
-	res->z = (a.x * b.y) - (a.y * b.x);
-}
+	t_vertex	ret;
 
-double	ft_sum_scalar(t_vertex a, t_vertex b)
+	ret.x = a.x * b;
+	ret.y = a.y * b;
+	ret.z = a.z * b;
+	return(ret);
+}
+double		ft_dot_product(t_vertex a, t_vertex b)
 {
 	return ((a.x * b.x) + (a.y * b.y) + (a.z * b.z));
+}
+
+double		ft_get_magnitude(t_vertex a)
+{
+	double	ret;
+
+	ret = fabs(sqrt(pow(a.x, 2) + pow(a.y, 2) + pow(a.z, 2)));
+	return (ret);
 }

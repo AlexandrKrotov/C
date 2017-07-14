@@ -225,28 +225,28 @@ CMakeFiles/RTv1.dir/SRC/ft_vector_math.c.o.provides: CMakeFiles/RTv1.dir/SRC/ft_
 CMakeFiles/RTv1.dir/SRC/ft_vector_math.c.o.provides.build: CMakeFiles/RTv1.dir/SRC/ft_vector_math.c.o
 
 
-CMakeFiles/RTv1.dir/SRC/ft_math.c.c.o: CMakeFiles/RTv1.dir/flags.make
-CMakeFiles/RTv1.dir/SRC/ft_math.c.c.o: ../SRC/ft_math.c.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/akrotov/akrotov/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/RTv1.dir/SRC/ft_math.c.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/SRC/ft_math.c.c.o   -c /nfs/2016/a/akrotov/akrotov/RTv1/SRC/ft_math.c.c
+CMakeFiles/RTv1.dir/SRC/ft_math.c.o: CMakeFiles/RTv1.dir/flags.make
+CMakeFiles/RTv1.dir/SRC/ft_math.c.o: ../SRC/ft_math.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/akrotov/akrotov/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/RTv1.dir/SRC/ft_math.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/SRC/ft_math.c.o   -c /nfs/2016/a/akrotov/akrotov/RTv1/SRC/ft_math.c
 
-CMakeFiles/RTv1.dir/SRC/ft_math.c.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/SRC/ft_math.c.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/akrotov/akrotov/RTv1/SRC/ft_math.c.c > CMakeFiles/RTv1.dir/SRC/ft_math.c.c.i
+CMakeFiles/RTv1.dir/SRC/ft_math.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/SRC/ft_math.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/akrotov/akrotov/RTv1/SRC/ft_math.c > CMakeFiles/RTv1.dir/SRC/ft_math.c.i
 
-CMakeFiles/RTv1.dir/SRC/ft_math.c.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/SRC/ft_math.c.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/akrotov/akrotov/RTv1/SRC/ft_math.c.c -o CMakeFiles/RTv1.dir/SRC/ft_math.c.c.s
+CMakeFiles/RTv1.dir/SRC/ft_math.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/SRC/ft_math.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/akrotov/akrotov/RTv1/SRC/ft_math.c -o CMakeFiles/RTv1.dir/SRC/ft_math.c.s
 
-CMakeFiles/RTv1.dir/SRC/ft_math.c.c.o.requires:
+CMakeFiles/RTv1.dir/SRC/ft_math.c.o.requires:
 
-.PHONY : CMakeFiles/RTv1.dir/SRC/ft_math.c.c.o.requires
+.PHONY : CMakeFiles/RTv1.dir/SRC/ft_math.c.o.requires
 
-CMakeFiles/RTv1.dir/SRC/ft_math.c.c.o.provides: CMakeFiles/RTv1.dir/SRC/ft_math.c.c.o.requires
-	$(MAKE) -f CMakeFiles/RTv1.dir/build.make CMakeFiles/RTv1.dir/SRC/ft_math.c.c.o.provides.build
-.PHONY : CMakeFiles/RTv1.dir/SRC/ft_math.c.c.o.provides
+CMakeFiles/RTv1.dir/SRC/ft_math.c.o.provides: CMakeFiles/RTv1.dir/SRC/ft_math.c.o.requires
+	$(MAKE) -f CMakeFiles/RTv1.dir/build.make CMakeFiles/RTv1.dir/SRC/ft_math.c.o.provides.build
+.PHONY : CMakeFiles/RTv1.dir/SRC/ft_math.c.o.provides
 
-CMakeFiles/RTv1.dir/SRC/ft_math.c.c.o.provides.build: CMakeFiles/RTv1.dir/SRC/ft_math.c.c.o
+CMakeFiles/RTv1.dir/SRC/ft_math.c.o.provides.build: CMakeFiles/RTv1.dir/SRC/ft_math.c.o
 
 
 CMakeFiles/RTv1.dir/SRC/ft_create_scene_map.c.o: CMakeFiles/RTv1.dir/flags.make
@@ -306,7 +306,7 @@ RTv1_OBJECTS = \
 "CMakeFiles/RTv1.dir/SRC/ft_render.c.o" \
 "CMakeFiles/RTv1.dir/SRC/ft_init_all.c.o" \
 "CMakeFiles/RTv1.dir/SRC/ft_vector_math.c.o" \
-"CMakeFiles/RTv1.dir/SRC/ft_math.c.c.o" \
+"CMakeFiles/RTv1.dir/SRC/ft_math.c.o" \
 "CMakeFiles/RTv1.dir/SRC/ft_create_scene_map.c.o" \
 "CMakeFiles/RTv1.dir/SRC/ft_sphere.c.o"
 
@@ -320,7 +320,7 @@ RTv1: CMakeFiles/RTv1.dir/SRC/ft_mous_hook.c.o
 RTv1: CMakeFiles/RTv1.dir/SRC/ft_render.c.o
 RTv1: CMakeFiles/RTv1.dir/SRC/ft_init_all.c.o
 RTv1: CMakeFiles/RTv1.dir/SRC/ft_vector_math.c.o
-RTv1: CMakeFiles/RTv1.dir/SRC/ft_math.c.c.o
+RTv1: CMakeFiles/RTv1.dir/SRC/ft_math.c.o
 RTv1: CMakeFiles/RTv1.dir/SRC/ft_create_scene_map.c.o
 RTv1: CMakeFiles/RTv1.dir/SRC/ft_sphere.c.o
 RTv1: CMakeFiles/RTv1.dir/build.make
@@ -341,7 +341,7 @@ CMakeFiles/RTv1.dir/requires: CMakeFiles/RTv1.dir/SRC/ft_mous_hook.c.o.requires
 CMakeFiles/RTv1.dir/requires: CMakeFiles/RTv1.dir/SRC/ft_render.c.o.requires
 CMakeFiles/RTv1.dir/requires: CMakeFiles/RTv1.dir/SRC/ft_init_all.c.o.requires
 CMakeFiles/RTv1.dir/requires: CMakeFiles/RTv1.dir/SRC/ft_vector_math.c.o.requires
-CMakeFiles/RTv1.dir/requires: CMakeFiles/RTv1.dir/SRC/ft_math.c.c.o.requires
+CMakeFiles/RTv1.dir/requires: CMakeFiles/RTv1.dir/SRC/ft_math.c.o.requires
 CMakeFiles/RTv1.dir/requires: CMakeFiles/RTv1.dir/SRC/ft_create_scene_map.c.o.requires
 CMakeFiles/RTv1.dir/requires: CMakeFiles/RTv1.dir/SRC/ft_sphere.c.o.requires
 

@@ -6,7 +6,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/RTv1.dir/SRC/ft_render.c.o"
   "CMakeFiles/RTv1.dir/SRC/ft_init_all.c.o"
   "CMakeFiles/RTv1.dir/SRC/ft_vector_math.c.o"
-  "CMakeFiles/RTv1.dir/SRC/ft_math.c.c.o"
+  "CMakeFiles/RTv1.dir/SRC/ft_math.c.o"
   "CMakeFiles/RTv1.dir/SRC/ft_create_scene_map.c.o"
   "CMakeFiles/RTv1.dir/SRC/ft_sphere.c.o"
   "RTv1.pdb"

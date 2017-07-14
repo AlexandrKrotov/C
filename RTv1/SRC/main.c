@@ -29,20 +29,7 @@ void	lets_start(void)
 
 int		main(int ac, char **av)
 {
-	t_vertex *a  = malloc(sizeof(t_vertex));
-	t_vertex *b  = malloc(sizeof(t_vertex));
-	t_vertex *c  = malloc(sizeof(t_vertex));
-	*a = (t_vertex){1,2,3};
-	*b = (t_vertex){1,2,3};
-	printf("a: (%.1f, %.1f, %.1f)\n", a->x, a->y, a->z);
-	printf("b: (%.1f, %.1f, %.1f)\n", b->x, b->y, b->z);
-
-	ft_mult_vector3(*a, *b, c);
-
-	printf("c: (%.1f, %.1f, %.1f)\n", c->x, c->y, c->z);
-	printf("%.3f\n", 8 * sin(125 * M_PI / 180));
 	lets_start();
-
 
 	return (0);
 }

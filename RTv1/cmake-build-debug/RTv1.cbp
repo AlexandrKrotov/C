@@ -96,7 +96,7 @@
 		<Unit filename="/nfs/2016/a/akrotov/akrotov/RTv1/SRC/ft_key_hook.c">
 			<Option target="RTv1"/>
 		</Unit>
-		<Unit filename="/nfs/2016/a/akrotov/akrotov/RTv1/SRC/ft_math.c.c">
+		<Unit filename="/nfs/2016/a/akrotov/akrotov/RTv1/SRC/ft_math.c">
 			<Option target="RTv1"/>
 		</Unit>
 		<Unit filename="/nfs/2016/a/akrotov/akrotov/RTv1/SRC/ft_mous_hook.c">

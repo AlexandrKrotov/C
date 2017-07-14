@@ -1,22 +1,43 @@
 #include "rtv1.h"
 
 
-int		ft_sphere_intersect(t_all *all, t_vector *ray, double *t)
+int		ft_sphere_intersect(t_all *all, t_ray *ray, t_objs *ptr)
 {
-	t_sphere *s = all->scene->obj;
-	t_vertex o = ray->origin;
-	t_vertex d = ray->direct;
-	t_vertex *oc =malloc(sizeof(t_vertex));
-	ft_sub_vector(o, s->center, oc);
-	double b =  2 * ft_sum_scalar(*oc, d);
-	double c = ft_sum_scalar(*oc, *oc) - s->radius * s->radius;
-	double disc = b * b - 4 * c;
+	t_sphere	*s;
+	t_vertex	o;
+	t_vertex	d;
+	t_vertex	temp;
+	t_vertex	*oc;
+	double		b;
+	double		c;
+	double		disc;
+	double		t0;
+	double		t1;
+
+	s = ptr->obj;
+	o = ray->origin;
+	d = ray->direct;
+	oc = malloc(sizeof(t_vertex));
+	*oc = ft_sub_vector(o, s->center);
+	b = 2 * ft_dot_product(*oc, d);
+	c = ft_dot_product(*oc, *oc) - s->radius * s->radius;
+	disc = b * b - 4 * c;
 	free(oc);
 	if (disc < 1e-4)
-		return (FALSE);
+		return(FALSE);
 	disc = sqrt(disc);
-	double t0 = -b - disc;
-	double t1 = -b + disc;
-	*t = (t0 < t1) ? t0 : t1;
-	return (TRUE);
+	t0 = (-b - disc) / 2;
+	t1 = (-b + disc) / 2;
+	t0 = (t0 < t1 && (t0 > 0 || t1 > 0)) ? t0 : t1;
+	if (t0 > 1e-4 && t0 < all->rt.t)
+	{
+		all->rt.t = t0;
+		all->rt.rgb = s->color;
+		temp = ft_mult_vec_double(d, all->rt.t);
+		all->rt.inter = ft_sum_vector(o, temp);
+		all->rt.norm = ft_sub_vector(all->rt.inter, s->center);
+		all->rt.norm = ft_normalized_vector(all->rt.norm, s->radius);
+		return(TRUE);
+	}
+	return(FALSE);
 }
