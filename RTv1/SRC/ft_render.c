@@ -25,7 +25,6 @@ int	ft_primary_ray(t_all *all, int x, int y)
 	int 		inter;
 
 	cam = all->cam;
-	cam.z += all->trans.zoom;
 	ptr = all->scene;
 	inter = FALSE;
 	orig = (t_vertex){x, y, 0};
@@ -36,7 +35,7 @@ int	ft_primary_ray(t_all *all, int x, int y)
 	all->rt.t = 200000;
 	while (ptr != NULL)
 	{
-		if(ft_sphere_intersect(all, &ray, ptr))
+		if(ptr->ft_inter(all, &ray, ptr))
 			inter = TRUE;
 		ptr = ptr->next;
 	}
@@ -61,7 +60,7 @@ int ft_shadow_ray(t_all *all)
 	ray = (t_ray){orig, dir};
 	while (ptr != NULL)
 	{
-		if(ft_sphere_intersect(all, &ray, ptr))
+		if(all->scene->ft_inter(all, &ray, ptr))
 		{
 			shadow = TRUE;
 			break;

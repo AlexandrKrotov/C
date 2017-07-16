@@ -10,19 +10,37 @@
 /*
 ** GRAPHIC
 */
-# include <mlx.h>
 
+# include <mlx.h>
 /*
 ************************
 */
 
 # define D_NAME		"RTv1"
-# define D_WIDTH	1200
-# define D_HEIGHT	900
+# define D_WIDTH	800
+# define D_HEIGHT	600
 # define BPP		4
 # define TRUE		1
 # define FALSE		0
 
+/*
+** KEY_DEFINE
+*/
+
+#ifdef __linux
+
+# define ESC 65307
+# define W 119
+# define A 97
+# define S 115
+# define D 100
+# define Z 122
+# define X 120
+
+#endif
+
+typedef struct		s_all t_all;
+typedef struct		s_objs t_objs;
 
 typedef	struct		s_vertex{
 	double			x;
@@ -51,12 +69,6 @@ typedef	struct		s_rt{
 	t_rgb			rgb;
 }					t_rt;
 
-typedef struct		s_objs{
-	void			*obj;
-	struct	s_objs	*next;
-}					t_objs;
-
-
 typedef struct		s_sphere{
 	double			radius;
 	t_vertex		center;
@@ -64,6 +76,7 @@ typedef struct		s_sphere{
 }					t_sphere;
 
 typedef struct		s_plane{
+	double          d;
 	t_vertex		point;
 	t_vertex		norm;
 	t_rgb			color;
@@ -93,7 +106,13 @@ typedef struct		s_mlx{
 	int				size_line;
 	int				endian;
 
-}					t_mlx;
+}
+		t_mlx;
+typedef struct		s_objs{
+	void			*obj;
+	int 			(*ft_inter)(t_all*,t_ray*,t_objs*);
+	struct	s_objs	*next;
+}					t_objs;
 
 typedef struct		s_all{
 	t_mlx			*mlx;
@@ -124,6 +143,7 @@ t_vertex			ft_mult_vec_double(t_vertex a, double b);
 
 
 int					ft_sphere_intersect(t_all *all, t_ray *ray, t_objs *ptr);
+int					ft_plane_intersect(t_all *all, t_ray *ray, t_objs *ptr);
 
 int					ft_exit(void);
 

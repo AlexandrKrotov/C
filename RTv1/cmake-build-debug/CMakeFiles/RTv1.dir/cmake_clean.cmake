@@ -9,6 +9,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/RTv1.dir/SRC/ft_math.c.o"
   "CMakeFiles/RTv1.dir/SRC/ft_create_scene_map.c.o"
   "CMakeFiles/RTv1.dir/SRC/ft_sphere.c.o"
+  "CMakeFiles/RTv1.dir/SRC/ft_plane.c.o"
   "RTv1.pdb"
   "RTv1"
 )

@@ -25,6 +25,10 @@ CMakeFiles/RTv1.dir/SRC/ft_mous_hook.c.o: ../includes/libft.h
 CMakeFiles/RTv1.dir/SRC/ft_mous_hook.c.o: ../includes/rtv1.h
 CMakeFiles/RTv1.dir/SRC/ft_mous_hook.c.o: ../SRC/ft_mous_hook.c
 
+CMakeFiles/RTv1.dir/SRC/ft_plane.c.o: ../includes/libft.h
+CMakeFiles/RTv1.dir/SRC/ft_plane.c.o: ../includes/rtv1.h
+CMakeFiles/RTv1.dir/SRC/ft_plane.c.o: ../SRC/ft_plane.c
+
 CMakeFiles/RTv1.dir/SRC/ft_render.c.o: ../includes/libft.h
 CMakeFiles/RTv1.dir/SRC/ft_render.c.o: ../includes/rtv1.h
 CMakeFiles/RTv1.dir/SRC/ft_render.c.o: ../SRC/ft_render.c

@@ -28,43 +28,47 @@ math.h
 mlx.h
 -
 
-/nfs/2016/a/akrotov/akrotov/RTv1/SRC/ft_create_scene_map.c
+/home/m0le/akrotov/GH_my/RTv1/SRC/ft_create_scene_map.c
 rtv1.h
-/nfs/2016/a/akrotov/akrotov/RTv1/SRC/rtv1.h
+/home/m0le/akrotov/GH_my/RTv1/SRC/rtv1.h
 
-/nfs/2016/a/akrotov/akrotov/RTv1/SRC/ft_exit.c
+/home/m0le/akrotov/GH_my/RTv1/SRC/ft_exit.c
 rtv1.h
-/nfs/2016/a/akrotov/akrotov/RTv1/SRC/rtv1.h
+/home/m0le/akrotov/GH_my/RTv1/SRC/rtv1.h
 
-/nfs/2016/a/akrotov/akrotov/RTv1/SRC/ft_init_all.c
+/home/m0le/akrotov/GH_my/RTv1/SRC/ft_init_all.c
 rtv1.h
-/nfs/2016/a/akrotov/akrotov/RTv1/SRC/rtv1.h
+/home/m0le/akrotov/GH_my/RTv1/SRC/rtv1.h
 
-/nfs/2016/a/akrotov/akrotov/RTv1/SRC/ft_key_hook.c
+/home/m0le/akrotov/GH_my/RTv1/SRC/ft_key_hook.c
 rtv1.h
-/nfs/2016/a/akrotov/akrotov/RTv1/SRC/rtv1.h
+/home/m0le/akrotov/GH_my/RTv1/SRC/rtv1.h
 
-/nfs/2016/a/akrotov/akrotov/RTv1/SRC/ft_math.c
+/home/m0le/akrotov/GH_my/RTv1/SRC/ft_math.c
 rtv1.h
-/nfs/2016/a/akrotov/akrotov/RTv1/SRC/rtv1.h
+/home/m0le/akrotov/GH_my/RTv1/SRC/rtv1.h
 
-/nfs/2016/a/akrotov/akrotov/RTv1/SRC/ft_mous_hook.c
+/home/m0le/akrotov/GH_my/RTv1/SRC/ft_mous_hook.c
 rtv1.h
-/nfs/2016/a/akrotov/akrotov/RTv1/SRC/rtv1.h
+/home/m0le/akrotov/GH_my/RTv1/SRC/rtv1.h
 
-/nfs/2016/a/akrotov/akrotov/RTv1/SRC/ft_render.c
+/home/m0le/akrotov/GH_my/RTv1/SRC/ft_plane.c
 rtv1.h
-/nfs/2016/a/akrotov/akrotov/RTv1/SRC/rtv1.h
+/home/m0le/akrotov/GH_my/RTv1/SRC/rtv1.h
 
-/nfs/2016/a/akrotov/akrotov/RTv1/SRC/ft_sphere.c
+/home/m0le/akrotov/GH_my/RTv1/SRC/ft_render.c
 rtv1.h
-/nfs/2016/a/akrotov/akrotov/RTv1/SRC/rtv1.h
+/home/m0le/akrotov/GH_my/RTv1/SRC/rtv1.h
 
-/nfs/2016/a/akrotov/akrotov/RTv1/SRC/ft_vector_math.c
+/home/m0le/akrotov/GH_my/RTv1/SRC/ft_sphere.c
 rtv1.h
-/nfs/2016/a/akrotov/akrotov/RTv1/SRC/rtv1.h
+/home/m0le/akrotov/GH_my/RTv1/SRC/rtv1.h
 
-/nfs/2016/a/akrotov/akrotov/RTv1/SRC/main.c
+/home/m0le/akrotov/GH_my/RTv1/SRC/ft_vector_math.c
 rtv1.h
-/nfs/2016/a/akrotov/akrotov/RTv1/SRC/rtv1.h
+/home/m0le/akrotov/GH_my/RTv1/SRC/rtv1.h
+
+/home/m0le/akrotov/GH_my/RTv1/SRC/main.c
+rtv1.h
+/home/m0le/akrotov/GH_my/RTv1/SRC/rtv1.h
 
