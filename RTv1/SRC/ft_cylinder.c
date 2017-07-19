@@ -12,6 +12,38 @@ void	ft_get_normal_cylinder(t_all *all, t_cylinder *cylinder)
 	all->rt.norm = ft_normalized_vector(bn);
 }
 
+int		ft_cylinder_shadowray(t_all *all, t_ray *ray, t_objs *ptr)
+{
+	t_cylinder	*cyl;
+	t_vertex	o;
+	t_vertex	d;
+	t_vertex	oc;
+	double		a;
+	double		b;
+	double		c;
+	double		disc;
+	double		t0;
+	double		t1;
+
+	cyl = ptr->obj;
+	o = ray->origin;
+	d = ray->direct;
+	oc = ft_sub_vector(o, cyl->center);
+	a = d.x * d.x + d.z * d.z;
+	b = (2 * d.x * (oc.x)) + (2 * d.z * (oc.z));
+	c = (oc.x * oc.x) + (oc.z * oc.z) - cyl->r * cyl->r;
+	disc = b * b - 4 * a * c;
+	if (disc < 0)
+		return(FALSE);
+	disc = sqrt(disc);
+	t0 = (-b - disc) / 2 * a;
+	t1 = (-b + disc) / 2 * a;
+	t0 = (t0 < t1 && (t0 > 0 || t1 > 0)) ? t0 : t1;
+	if (t0 > 1e-6)
+		return(TRUE);
+	return(FALSE);
+}
+
 int		ft_cylinder_intersect(t_all *all, t_ray *ray, t_objs *ptr)
 {
 	t_cylinder	*cyl;

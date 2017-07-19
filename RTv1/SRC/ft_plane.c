@@ -20,7 +20,7 @@ int		ft_plane_shadowray(t_all *all,t_ray *ray, t_objs *ptr)
 	}
 	else
 		return (FALSE);
-	if (t > 1e-6 && t < all->rt.t)
+	if (t > 1e-6)
 		return(TRUE);
 	return(FALSE);
 }

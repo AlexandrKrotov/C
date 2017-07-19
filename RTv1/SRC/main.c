@@ -30,6 +30,5 @@ void	lets_start(void)
 int		main(int ac, char **av)
 {
 	lets_start();
-
 	return (0);
 }

@@ -71,6 +71,7 @@ typedef	struct		s_rt{
 
 typedef struct		s_sphere{
 	double			radius;
+	double			r2;
 	t_vertex		center;
 	t_rgb			color;
 }					t_sphere;
@@ -170,6 +171,9 @@ int					ft_cone_intersect(t_all *all, t_ray *ray, t_objs *ptr);
 
 int					ft_sphere_shadowray(t_all *all, t_ray *ray, t_objs *ptr);
 int					ft_plane_shadowray(t_all *all, t_ray *ray, t_objs *ptr);
+int					ft_cylinder_shadowray(t_all *all, t_ray *ray, t_objs *ptr);
+int					ft_cone_shadowray(t_all *all, t_ray *ray, t_objs *ptr);
+
 
 
 int					ft_exit(void);

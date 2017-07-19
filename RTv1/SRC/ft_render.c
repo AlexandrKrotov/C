@@ -51,7 +51,7 @@ int		ft_shadow_ray(t_all *all)
 	shadow = FALSE;
 	ptr = all->scene;
 	orig = all->rt.inter;
-	dir = ft_sub_vector(orig, all->light);
+	dir = ft_reverse_vector(ft_sub_vector(orig, all->light));
 	dir = ft_normalized_vector(dir);
 	ray = (t_ray){orig, dir};
 	all->rt.t = 200000;
@@ -72,11 +72,9 @@ void	main_while(t_all *all)
 	int			x;
 	int			y;
 	t_vertex	vec1;
-	int 		shadow;
 	int 		inter;
 	t_rgb		test;
 
-	shadow = FALSE;
 	y = all->dsp.rend_hs;
 	while (y < all->dsp.rend_he)
 	{
