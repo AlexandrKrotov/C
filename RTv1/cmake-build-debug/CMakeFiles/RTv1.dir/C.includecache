@@ -28,7 +28,15 @@ math.h
 mlx.h
 -
 
+/home/m0le/akrotov/GH_my/RTv1/SRC/ft_cone.c
+rtv1.h
+/home/m0le/akrotov/GH_my/RTv1/SRC/rtv1.h
+
 /home/m0le/akrotov/GH_my/RTv1/SRC/ft_create_scene_map.c
+rtv1.h
+/home/m0le/akrotov/GH_my/RTv1/SRC/rtv1.h
+
+/home/m0le/akrotov/GH_my/RTv1/SRC/ft_cylinder.c
 rtv1.h
 /home/m0le/akrotov/GH_my/RTv1/SRC/rtv1.h
 

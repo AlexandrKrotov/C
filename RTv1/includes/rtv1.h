@@ -77,10 +77,21 @@ typedef struct		s_sphere{
 
 typedef struct		s_plane{
 	double          d;
-	t_vertex		point;
 	t_vertex		norm;
 	t_rgb			color;
 }					t_plane;
+
+typedef struct		s_cylinder{
+	t_vertex		center;
+	t_vertex		norm;
+	double 			r;
+	t_rgb 			color;
+}					t_cylinder;
+
+typedef struct		s_cone{
+	t_vertex		center;
+	t_rgb 			color;
+}					t_cone;
 
 typedef struct		s_dsp{
 	int				dsp_h;
@@ -97,6 +108,13 @@ typedef struct		s_trans{
 	double 			zoom;
 }					t_trans;
 
+typedef	struct 		s_light{
+	t_vertex		light;
+	double 			angle;
+	double 			power;
+	struct s_light	*next;
+}					t_light;
+
 typedef struct		s_mlx{
 	void			*mlx;
 	void			*wnd;
@@ -105,12 +123,12 @@ typedef struct		s_mlx{
 	int				bpp;
 	int				size_line;
 	int				endian;
+}					t_mlx;
 
-}
-		t_mlx;
 typedef struct		s_objs{
 	void			*obj;
-	int 			(*ft_inter)(t_all*,t_ray*,t_objs*);
+	int 			(*ft_inter)(t_all*, t_ray*, t_objs*);
+	int 			(*ft_shadow)(t_all*, t_ray*, t_objs*);
 	struct	s_objs	*next;
 }					t_objs;
 
@@ -119,6 +137,7 @@ typedef struct		s_all{
 	t_dsp			dsp;
 	t_objs			*scene;
 	t_vertex 		light;
+	t_light 		light_list;
 	t_vertex		cam;
 	t_rt			rt;
 	t_trans			trans;
@@ -138,12 +157,20 @@ t_vertex			ft_sub_vector(t_vertex a, t_vertex b);
 t_vertex			ft_sum_vector(t_vertex a, t_vertex b);
 double				ft_dot_product(t_vertex a, t_vertex b);
 double				ft_get_magnitude(t_vertex a);
-t_vertex			ft_normalized_vector(t_vertex a, double b);
+t_vertex			ft_normalized_vector(t_vertex a);
 t_vertex			ft_mult_vec_double(t_vertex a, double b);
+t_vertex			ft_devide_vec_double(t_vertex a, double b);
+t_vertex			ft_reverse_vector(t_vertex v1);
 
 
 int					ft_sphere_intersect(t_all *all, t_ray *ray, t_objs *ptr);
 int					ft_plane_intersect(t_all *all, t_ray *ray, t_objs *ptr);
+int					ft_cylinder_intersect(t_all *all, t_ray *ray, t_objs *ptr);
+int					ft_cone_intersect(t_all *all, t_ray *ray, t_objs *ptr);
+
+int					ft_sphere_shadowray(t_all *all, t_ray *ray, t_objs *ptr);
+int					ft_plane_shadowray(t_all *all, t_ray *ray, t_objs *ptr);
+
 
 int					ft_exit(void);
 

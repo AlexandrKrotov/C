@@ -123,6 +123,33 @@ RTv1/fast:
 	$(MAKE) -f CMakeFiles/RTv1.dir/build.make CMakeFiles/RTv1.dir/build
 .PHONY : RTv1/fast
 
+SRC/ft_cone.o: SRC/ft_cone.c.o
+
+.PHONY : SRC/ft_cone.o
+
+# target to build an object file
+SRC/ft_cone.c.o:
+	$(MAKE) -f CMakeFiles/RTv1.dir/build.make CMakeFiles/RTv1.dir/SRC/ft_cone.c.o
+.PHONY : SRC/ft_cone.c.o
+
+SRC/ft_cone.i: SRC/ft_cone.c.i
+
+.PHONY : SRC/ft_cone.i
+
+# target to preprocess a source file
+SRC/ft_cone.c.i:
+	$(MAKE) -f CMakeFiles/RTv1.dir/build.make CMakeFiles/RTv1.dir/SRC/ft_cone.c.i
+.PHONY : SRC/ft_cone.c.i
+
+SRC/ft_cone.s: SRC/ft_cone.c.s
+
+.PHONY : SRC/ft_cone.s
+
+# target to generate assembly for a file
+SRC/ft_cone.c.s:
+	$(MAKE) -f CMakeFiles/RTv1.dir/build.make CMakeFiles/RTv1.dir/SRC/ft_cone.c.s
+.PHONY : SRC/ft_cone.c.s
+
 SRC/ft_create_scene_map.o: SRC/ft_create_scene_map.c.o
 
 .PHONY : SRC/ft_create_scene_map.o
@@ -149,6 +176,33 @@ SRC/ft_create_scene_map.s: SRC/ft_create_scene_map.c.s
 SRC/ft_create_scene_map.c.s:
 	$(MAKE) -f CMakeFiles/RTv1.dir/build.make CMakeFiles/RTv1.dir/SRC/ft_create_scene_map.c.s
 .PHONY : SRC/ft_create_scene_map.c.s
+
+SRC/ft_cylinder.o: SRC/ft_cylinder.c.o
+
+.PHONY : SRC/ft_cylinder.o
+
+# target to build an object file
+SRC/ft_cylinder.c.o:
+	$(MAKE) -f CMakeFiles/RTv1.dir/build.make CMakeFiles/RTv1.dir/SRC/ft_cylinder.c.o
+.PHONY : SRC/ft_cylinder.c.o
+
+SRC/ft_cylinder.i: SRC/ft_cylinder.c.i
+
+.PHONY : SRC/ft_cylinder.i
+
+# target to preprocess a source file
+SRC/ft_cylinder.c.i:
+	$(MAKE) -f CMakeFiles/RTv1.dir/build.make CMakeFiles/RTv1.dir/SRC/ft_cylinder.c.i
+.PHONY : SRC/ft_cylinder.c.i
+
+SRC/ft_cylinder.s: SRC/ft_cylinder.c.s
+
+.PHONY : SRC/ft_cylinder.s
+
+# target to generate assembly for a file
+SRC/ft_cylinder.c.s:
+	$(MAKE) -f CMakeFiles/RTv1.dir/build.make CMakeFiles/RTv1.dir/SRC/ft_cylinder.c.s
+.PHONY : SRC/ft_cylinder.c.s
 
 SRC/ft_exit.o: SRC/ft_exit.c.o
 
@@ -429,9 +483,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... RTv1"
+	@echo "... SRC/ft_cone.o"
+	@echo "... SRC/ft_cone.i"
+	@echo "... SRC/ft_cone.s"
 	@echo "... SRC/ft_create_scene_map.o"
 	@echo "... SRC/ft_create_scene_map.i"
 	@echo "... SRC/ft_create_scene_map.s"
+	@echo "... SRC/ft_cylinder.o"
+	@echo "... SRC/ft_cylinder.i"
+	@echo "... SRC/ft_cylinder.s"
 	@echo "... SRC/ft_exit.o"
 	@echo "... SRC/ft_exit.i"
 	@echo "... SRC/ft_exit.s"

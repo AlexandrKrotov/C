@@ -4,7 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
+  "/home/m0le/akrotov/GH_my/RTv1/SRC/ft_cone.c" "/home/m0le/akrotov/GH_my/RTv1/cmake-build-debug/CMakeFiles/RTv1.dir/SRC/ft_cone.c.o"
   "/home/m0le/akrotov/GH_my/RTv1/SRC/ft_create_scene_map.c" "/home/m0le/akrotov/GH_my/RTv1/cmake-build-debug/CMakeFiles/RTv1.dir/SRC/ft_create_scene_map.c.o"
+  "/home/m0le/akrotov/GH_my/RTv1/SRC/ft_cylinder.c" "/home/m0le/akrotov/GH_my/RTv1/cmake-build-debug/CMakeFiles/RTv1.dir/SRC/ft_cylinder.c.o"
   "/home/m0le/akrotov/GH_my/RTv1/SRC/ft_exit.c" "/home/m0le/akrotov/GH_my/RTv1/cmake-build-debug/CMakeFiles/RTv1.dir/SRC/ft_exit.c.o"
   "/home/m0le/akrotov/GH_my/RTv1/SRC/ft_init_all.c" "/home/m0le/akrotov/GH_my/RTv1/cmake-build-debug/CMakeFiles/RTv1.dir/SRC/ft_init_all.c.o"
   "/home/m0le/akrotov/GH_my/RTv1/SRC/ft_key_hook.c" "/home/m0le/akrotov/GH_my/RTv1/cmake-build-debug/CMakeFiles/RTv1.dir/SRC/ft_key_hook.c.o"

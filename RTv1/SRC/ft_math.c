@@ -1,7 +1,10 @@
 #include "rtv1.h"
 
 
-//double	ft_cos_alpha(t_vector a, t_vector b, double scl_sum)
-//{
-//	return (scl_sum / (a.magnitude * b.magnitude));
-//}
+t_vertex	ft_reverse_vector(t_vertex v1)
+{
+	t_vertex	ret;
+
+	ret = (t_vertex){v1.x * -1, v1.y * -1, v1.z * -1};
+	return (ret);
+}

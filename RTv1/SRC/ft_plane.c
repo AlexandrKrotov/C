@@ -1,16 +1,37 @@
 #include "rtv1.h"
 
 
+int		ft_plane_shadowray(t_all *all,t_ray *ray, t_objs *ptr)
+{
+	t_plane     *p;
+	t_vertex	o;
+	t_vertex	d;
+	double		b;
+	double		t;
+
+	p = ptr->obj;
+	o = ray->origin;
+	d = ray->direct;
+	b = ft_dot_product(p->norm, d);
+	if (b != 0)
+	{
+		t = -ft_dot_product(p->norm, o) - p->d;
+		t = t / b;
+	}
+	else
+		return (FALSE);
+	if (t > 1e-6 && t < all->rt.t)
+		return(TRUE);
+	return(FALSE);
+}
+
 int		ft_plane_intersect(t_all *all, t_ray *ray, t_objs *ptr)
 {
 	t_plane     *p;
 	t_vertex	o;
 	t_vertex	d;
 	t_vertex	temp;
-	t_vertex	*oc;
 	double		b;
-	double		c;
-	double		disc;
 	double		t;
 
 	p = ptr->obj;
@@ -25,7 +46,7 @@ int		ft_plane_intersect(t_all *all, t_ray *ray, t_objs *ptr)
 	}
 	else
 		return (FALSE);
-	if (t > 1e-4 && t < all->rt.t)
+	if (t > 1e-6 && t < all->rt.t)
 	{
 		all->rt.t = t;
 		all->rt.rgb = p->color;

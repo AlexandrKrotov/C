@@ -17,5 +17,8 @@ int		ft_key_hook(int key, t_all *all)
 		all->light.z += 20;
 	if (key == X)
 		all->light.z -= 20;
+	printf("light.x: %f\n", all->light.x);
+	printf("light.y: %f\n", all->light.y);
+	printf("light.z: %f\n", all->light.z);
 	return (1);
 }

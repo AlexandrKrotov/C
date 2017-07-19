@@ -20,7 +20,19 @@ t_vertex	ft_sub_vector(t_vertex a, t_vertex b)
 	return(ret);
 }
 
-t_vertex	ft_normalized_vector(t_vertex a, double b)
+t_vertex	ft_normalized_vector(t_vertex a)
+{
+	t_vertex	ret;
+	double		b;
+
+	b = ft_get_magnitude(a);
+	ret.x = a.x / b;
+	ret.y = a.y / b;
+	ret.z = a.z / b;
+	return(ret);
+}
+
+t_vertex	ft_devide_vec_double(t_vertex a, double b)
 {
 	t_vertex	ret;
 
@@ -29,6 +41,7 @@ t_vertex	ft_normalized_vector(t_vertex a, double b)
 	ret.z = a.z / b;
 	return(ret);
 }
+
 t_vertex	ft_mult_vec_double(t_vertex a, double b)
 {
 	t_vertex	ret;
