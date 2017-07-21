@@ -17,8 +17,8 @@
 */
 
 # define D_NAME		"RTv1"
-# define D_WIDTH	800
-# define D_HEIGHT	600
+# define D_WIDTH	1200
+# define D_HEIGHT	800
 # define BPP		4
 # define TRUE		1
 # define FALSE		0
@@ -36,6 +36,16 @@
 # define D 100
 # define Z 122
 # define X 120
+
+#else __APPLE__
+
+# define ESC 53
+# define W 13
+# define A 0
+# define S 1
+# define D 2
+# define Z 6
+# define X 7
 
 #endif
 

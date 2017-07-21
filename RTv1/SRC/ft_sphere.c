@@ -19,13 +19,13 @@ int		ft_sphere_shadowray(t_all *all, t_ray *ray, t_objs *ptr)
 	b = 2 * ft_dot_product(oc, d);
 	c = ft_dot_product(oc, oc) - s->r2;
 	disc = b * b - 4 * c;
-	if (disc < 0)
+	if (disc < 1e-4)
 		return(FALSE);
 	disc = sqrt(disc);
 	t0 = (-b - disc) / 2;
 	t1 = (-b + disc) / 2;
 	t0 = (t0 < t1 && (t0 > 0 || t1 > 0)) ? t0 : t1;
-	if (t0 > 1e-6)
+	if (t0 > 1e-4)
 		return(TRUE);
 	return(FALSE);
 }
@@ -50,13 +50,13 @@ int		ft_sphere_intersect(t_all *all, t_ray *ray, t_objs *ptr)
 	b = 2 * ft_dot_product(oc, d);
 	c = ft_dot_product(oc, oc) - s->r2;
 	disc = b * b - 4 * c;
-	if (disc < 0)
+	if (disc < 1e-4)
 		return(FALSE);
 	disc = sqrt(disc);
 	t0 = (-b - disc) / 2;
 	t1 = (-b + disc) / 2;
 	t0 = (t0 < t1 && (t0 > 0 || t1 > 0)) ? t0 : t1;
-	if (t0 > 1e-6 && t0 < all->rt.t)
+	if (t0 > 1e-4 && t0 < all->rt.t)
 	{
 		all->rt.t = t0;
 		all->rt.rgb = s->color;
