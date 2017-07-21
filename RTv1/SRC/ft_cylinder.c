@@ -7,18 +7,20 @@ void	ft_get_normal_cylinder(t_all *all, t_cylinder *cylinder)
 	t_vertex bn;
 
 	gip = ft_sub_vector(all->rt.inter, cylinder->center);
-	a = ft_mult_vec_double(cylinder->norm, ft_dot_product(gip, cylinder->norm));
+	a = ft_mult_vec_double(cylinder->dir, ft_dot_product(gip, cylinder->dir));
 	bn = ft_sub_vector(gip, a);
 	all->rt.norm = ft_normalized_vector(bn);
 }
 
-int		ft_cylinder_shadowray(t_all *all, t_ray *ray, t_objs *ptr)
+int		ft_cylinder_shadowray(t_ray *ray, t_objs *ptr)
 {
 	t_cylinder	*cyl;
 	t_vertex	o;
 	t_vertex	d;
 	t_vertex	oc;
 	double		a;
+	t_vertex	av;
+	t_vertex	cv;
 	double		b;
 	double		c;
 	double		disc;
@@ -29,9 +31,12 @@ int		ft_cylinder_shadowray(t_all *all, t_ray *ray, t_objs *ptr)
 	o = ray->origin;
 	d = ray->direct;
 	oc = ft_sub_vector(o, cyl->center);
-	a = d.x * d.x + d.z * d.z;
-	b = (2 * d.x * (oc.x)) + (2 * d.z * (oc.z));
-	c = (oc.x * oc.x) + (oc.z * oc.z) - cyl->r * cyl->r;
+
+	av = ft_sub_vector(d, ft_mult_vec_double(cyl->dir, ft_dot_product(d, cyl->dir)));
+	cv = ft_sub_vector(oc, ft_mult_vec_double(cyl->dir, ft_dot_product(oc, cyl->dir)));
+	a = ft_dot_product(av, av);
+	b = 2 * ft_dot_product(av, cv);
+	c = ft_dot_product(cv, cv) - cyl->r2;
 	disc = b * b - 4 * a * c;
 	if (disc < 0)
 		return(FALSE);
@@ -49,22 +54,27 @@ int		ft_cylinder_intersect(t_all *all, t_ray *ray, t_objs *ptr)
 	t_cylinder	*cyl;
 	t_vertex	o;
 	t_vertex	d;
-	t_vertex	temp;
 	t_vertex	oc;
 	double		a;
+	t_vertex	av;
+	t_vertex	cv;
 	double		b;
 	double		c;
 	double		disc;
 	double		t0;
 	double		t1;
+	t_vertex	temp;
 
 	cyl = ptr->obj;
 	o = ray->origin;
 	d = ray->direct;
 	oc = ft_sub_vector(o, cyl->center);
-	a = d.x * d.x + d.z * d.z;
-	b = (2 * d.x * (oc.x)) + (2 * d.z * (oc.z));
-	c = (oc.x * oc.x) + (oc.z * oc.z) - cyl->r * cyl->r;
+
+	av = ft_sub_vector(d, ft_mult_vec_double(cyl->dir, ft_dot_product(d, cyl->dir)));
+	cv = ft_sub_vector(oc, ft_mult_vec_double(cyl->dir, ft_dot_product(oc, cyl->dir)));
+	a = ft_dot_product(av, av);
+	b = 2 * ft_dot_product(av, cv);
+	c = ft_dot_product(cv, cv) - cyl->r2;
 	disc = b * b - 4 * a * c;
 	if (disc < 1e-6)
 		return(FALSE);

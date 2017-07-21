@@ -1,7 +1,7 @@
 #include "rtv1.h"
 
 
-int		ft_plane_shadowray(t_all *all,t_ray *ray, t_objs *ptr)
+int		ft_plane_shadowray(t_ray *ray, t_objs *ptr)
 {
 	t_plane     *p;
 	t_vertex	o;

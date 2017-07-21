@@ -6,7 +6,7 @@ t_vertex		ft_get_normal_at_cone(t_all *all, t_cone *cone)
 	all->rt.norm = ft_normalized_vector(ft_sum_vector(all->rt.inter, ft_reverse_vector(cone->center)));
 }
 
-int		ft_cone_shadowray(t_all *all, t_ray *ray, t_objs *ptr)
+int		ft_cone_shadowray(t_ray *ray, t_objs *ptr)
 {
 	t_cone		*con;
 	t_vertex	o;

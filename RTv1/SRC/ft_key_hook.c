@@ -20,5 +20,9 @@ int		ft_key_hook(int key, t_all *all)
 	printf("light.x: %f\n", all->light.x);
 	printf("light.y: %f\n", all->light.y);
 	printf("light.z: %f\n", all->light.z);
+	if (key == UP)
+		all->trans.zoom += 100;
+	if (key == DOWN)
+		all->trans.zoom -= 100;
 	return (1);
 }

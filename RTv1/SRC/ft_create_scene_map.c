@@ -101,18 +101,19 @@ void 	ft_crete_lst(t_all *all)
 	plane->d = 600;
 	plane->color = (t_rgb){0, 0, 255, 0};
 	///CYLINDER
-//	ptr->next = malloc(sizeof(t_objs));
-//	ptr = ptr->next;
-//	ptr->next = NULL;
-//	cylinder = malloc(sizeof(t_cylinder));
-//	ptr->obj = cylinder;
-//	ptr->ft_inter = ft_cylinder_intersect;
-//	ptr->ft_shadow = ft_cylinder_shadowray;
-//	cylinder->norm = (t_vertex){0, 1, 0};
-//	cylinder->center = (t_vertex){300, 0, 250};
-//	cylinder->r = 50;
-//	cylinder->color = (t_rgb){244, 215, 66, 0};
-//	///CONE
+	ptr->next = malloc(sizeof(t_objs));
+	ptr = ptr->next;
+	ptr->next = NULL;
+	cylinder = malloc(sizeof(t_cylinder));
+	ptr->obj = cylinder;
+	ptr->ft_inter = ft_cylinder_intersect;
+	ptr->ft_shadow = ft_cylinder_shadowray;
+	cylinder->dir = (t_vertex){-1, 0, 0};
+	cylinder->center = (t_vertex){300, 0, 0};
+	cylinder->r = 100;
+	cylinder->r2 = cylinder->r * cylinder->r;
+	cylinder->color = (t_rgb){244, 215, 66, 0};
+	///CONE
 //	ptr->next = malloc(sizeof(t_objs));
 //	ptr = ptr->next;
 //	ptr->next = NULL;

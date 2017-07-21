@@ -14,7 +14,7 @@ void	init_all(t_all *all)
 	all->dsp.rend_ws = 0 - all->dsp.half_w;
 	all->dsp.rend_we = 0 + all->dsp.half_w;
 	all->cam = (t_vertex){0, 0, -1000};
-	all->light = (t_vertex){0, -1000, 0};
+	all->light = (t_vertex){0, 0, -1000};
 	all->trans.zoom = 0;
 	all->rt.brightness = 0;
 	all->rt.rgb = (t_rgb){0, 0, 0, 0};

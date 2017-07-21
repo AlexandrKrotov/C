@@ -12,6 +12,7 @@
 */
 
 # include <mlx.h>
+
 /*
 ************************
 */
@@ -36,6 +37,8 @@
 # define D 100
 # define Z 122
 # define X 120
+# define UP 126
+# define DOWN 125
 
 #else __APPLE__
 
@@ -46,6 +49,8 @@
 # define D 2
 # define Z 6
 # define X 7
+# define UP 126
+# define DOWN 125
 
 #endif
 
@@ -94,8 +99,9 @@ typedef struct		s_plane{
 
 typedef struct		s_cylinder{
 	t_vertex		center;
-	t_vertex		norm;
+	t_vertex		dir;
 	double 			r;
+	double 			r2;
 	t_rgb 			color;
 }					t_cylinder;
 
@@ -139,7 +145,7 @@ typedef struct		s_mlx{
 typedef struct		s_objs{
 	void			*obj;
 	int 			(*ft_inter)(t_all*, t_ray*, t_objs*);
-	int 			(*ft_shadow)(t_all*, t_ray*, t_objs*);
+	int 			(*ft_shadow)(t_ray*, t_objs*);
 	struct	s_objs	*next;
 }					t_objs;
 
@@ -179,10 +185,10 @@ int					ft_plane_intersect(t_all *all, t_ray *ray, t_objs *ptr);
 int					ft_cylinder_intersect(t_all *all, t_ray *ray, t_objs *ptr);
 int					ft_cone_intersect(t_all *all, t_ray *ray, t_objs *ptr);
 
-int					ft_sphere_shadowray(t_all *all, t_ray *ray, t_objs *ptr);
-int					ft_plane_shadowray(t_all *all, t_ray *ray, t_objs *ptr);
-int					ft_cylinder_shadowray(t_all *all, t_ray *ray, t_objs *ptr);
-int					ft_cone_shadowray(t_all *all, t_ray *ray, t_objs *ptr);
+int					ft_sphere_shadowray(t_ray *ray, t_objs *ptr);
+int					ft_plane_shadowray(t_ray *ray, t_objs *ptr);
+int					ft_cylinder_shadowray(t_ray *ray, t_objs *ptr);
+int					ft_cone_shadowray(t_ray *ray, t_objs *ptr);
 
 
 

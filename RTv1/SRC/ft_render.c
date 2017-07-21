@@ -24,9 +24,10 @@ int		ft_primary_ray(t_all *all, int x, int y)
 	int 		inter;
 
 	cam = all->cam;
+	cam.z += all->trans.zoom;
 	ptr = all->scene;
 	inter = FALSE;
-	orig = (t_vertex){x, y, 0};
+	orig = (t_vertex){x, y, 0 + all->trans.zoom};
 	dir = ft_sub_vector(orig, cam);
 	dir =ft_normalized_vector(dir);
 	ray = (t_ray){cam, dir};
@@ -57,7 +58,7 @@ int		ft_shadow_ray(t_all *all)
 	all->rt.t = 200000;
 	while (ptr != NULL)
 	{
-		if(all->scene->ft_shadow(all, &ray, ptr))
+		if(all->scene->ft_shadow(&ray, ptr))
 		{
 			shadow = TRUE;
 			break;

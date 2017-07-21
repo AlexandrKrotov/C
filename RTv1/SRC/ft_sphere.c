@@ -1,6 +1,6 @@
 #include "rtv1.h"
 
-int		ft_sphere_shadowray(t_all *all, t_ray *ray, t_objs *ptr)
+int		ft_sphere_shadowray(t_ray *ray, t_objs *ptr)
 {
 	t_sphere	*s;
 	t_vertex	o;
