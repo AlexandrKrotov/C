@@ -5,6 +5,7 @@ int		ft_plane_shadowray(t_ray *ray, t_objs *ptr)
 {
 	t_plane     *p;
 	t_vertex	o;
+	t_vertex	oc;
 	t_vertex	d;
 	double		b;
 	double		t;
@@ -12,11 +13,12 @@ int		ft_plane_shadowray(t_ray *ray, t_objs *ptr)
 	p = ptr->obj;
 	o = ray->origin;
 	d = ray->direct;
-	b = ft_dot_product(p->norm, d);
-	if (b != 0)
+	b = fabs((ft_dot_product(d, p->norm)));
+	if (b > 1e-6)
 	{
-		t = -ft_dot_product(p->norm, o) - p->d;
-		t = t / b;
+		oc = ft_sub_vector(p->start, o);
+		t = ft_dot_product(oc, p->norm);
+		t = (t / b);
 	}
 	else
 		return (FALSE);
@@ -29,6 +31,7 @@ int		ft_plane_intersect(t_all *all, t_ray *ray, t_objs *ptr)
 {
 	t_plane     *p;
 	t_vertex	o;
+	t_vertex	oc;
 	t_vertex	d;
 	t_vertex	temp;
 	double		b;
@@ -37,12 +40,12 @@ int		ft_plane_intersect(t_all *all, t_ray *ray, t_objs *ptr)
 	p = ptr->obj;
 	o = ray->origin;
 	d = ray->direct;
-	b = ft_dot_product(p->norm, d);
-
+	b = (ft_dot_product(d, p->norm));
 	if (b != 0)
 	{
-		t = -ft_dot_product(p->norm, o) - p->d;
-		t = t / b;
+		oc = ft_sub_vector(p->start, o);
+		t = ft_dot_product(oc, p->norm);
+		t = (t / b);
 	}
 	else
 		return (FALSE);

@@ -92,8 +92,8 @@ typedef struct		s_sphere{
 }					t_sphere;
 
 typedef struct		s_plane{
-	double          d;
 	t_vertex		norm;
+	t_vertex		start;
 	t_rgb			color;
 }					t_plane;
 
@@ -199,8 +199,6 @@ int					ft_sphere_shadowray(t_ray *ray, t_objs *ptr);
 int					ft_plane_shadowray(t_ray *ray, t_objs *ptr);
 int					ft_cylinder_shadowray(t_ray *ray, t_objs *ptr);
 int					ft_cone_shadowray(t_ray *ray, t_objs *ptr);
-
-
 
 int					ft_exit(void);
 

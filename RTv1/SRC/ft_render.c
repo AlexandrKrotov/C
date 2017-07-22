@@ -97,10 +97,8 @@ void	main_while(t_all *all)
 			}
 			test = all->rt.rgb;
 			if (inter == TRUE)
-			{
 				if(ft_shadow_ray(all))
 					all->rt.rgb = (t_rgb){(unsigned char)(test.r * 0.30), (unsigned char)(test.g * 0.30 ), (unsigned char)(test.b * 0.30), 0};
-			}
 			ft_put_color(all, x + all->dsp.half_w, y + all->dsp.half_h);
 			x++;
 		}
