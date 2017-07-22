@@ -55,9 +55,9 @@ int		ft_cylinder_intersect(t_all *all, t_ray *ray, t_objs *ptr)
 	t_vertex	o;
 	t_vertex	d;
 	t_vertex	oc;
-	double		a;
 	t_vertex	av;
 	t_vertex	cv;
+	double		a;
 	double		b;
 	double		c;
 	double		disc;

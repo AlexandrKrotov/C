@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.7)
 project(RTv1)
 
 include_directories(includes)
-if(UNIX)
+if(Darwin)
     set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -framework OpenGL -framework AppKit -framework OpenCL -lmlx")
 else(LINUX)
     set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -lmlx_Linux -L/usr/X11/lib -lXext -lX11 -lm")

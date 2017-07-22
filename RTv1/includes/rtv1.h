@@ -18,8 +18,8 @@
 */
 
 # define D_NAME		"RTv1"
-# define D_WIDTH	1200
-# define D_HEIGHT	800
+# define D_WIDTH	800
+# define D_HEIGHT	600
 # define BPP		4
 # define TRUE		1
 # define FALSE		0
@@ -37,8 +37,8 @@
 # define D 100
 # define Z 122
 # define X 120
-# define UP 126
-# define DOWN 125
+# define UP 65362
+# define DOWN 65364
 
 #else __APPLE__
 
@@ -105,9 +105,18 @@ typedef struct		s_cylinder{
 	t_rgb 			color;
 }					t_cylinder;
 
+typedef struct 		s_flags{
+	int 			redraw;
+}					t_flags;
+
 typedef struct		s_cone{
 	t_vertex		center;
+	t_vertex		dir;
 	t_rgb 			color;
+	double 			alpha;
+	double 			rad;
+	double			cos2;
+	double			sin2;
 }					t_cone;
 
 typedef struct		s_dsp{
@@ -158,6 +167,7 @@ typedef struct		s_all{
 	t_vertex		cam;
 	t_rt			rt;
 	t_trans			trans;
+	t_flags			flags;
 }					t_all;
 
 void				init_all(t_all *all);

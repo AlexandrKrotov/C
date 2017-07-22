@@ -99,11 +99,7 @@ void	main_while(t_all *all)
 			if (inter == TRUE)
 			{
 				if(ft_shadow_ray(all))
-				{
 					all->rt.rgb = (t_rgb){(unsigned char)(test.r * 0.30), (unsigned char)(test.g * 0.30 ), (unsigned char)(test.b * 0.30), 0};
-					if(x == -111, y == 183)
-						printf("WTF\n");
-				}
 			}
 			ft_put_color(all, x + all->dsp.half_w, y + all->dsp.half_h);
 			x++;
@@ -114,11 +110,13 @@ void	main_while(t_all *all)
 
 int	ft_render(t_all *all)
 {
-	all->mlx->img = mlx_new_image(all->mlx->mlx, D_WIDTH, D_HEIGHT);
-	all->mlx->gda = mlx_get_data_addr(all->mlx->img, &all->mlx->bpp, &all->mlx->size_line, &all->mlx->endian);
-	main_while(all);
-	mlx_put_image_to_window(all->mlx->mlx, all->mlx->wnd, all->mlx->img, 0, 0);
-	mlx_destroy_image(all->mlx->mlx, all->mlx->img);
+	if (all->flags.redraw == TRUE)
+	{
+		all->mlx->img = mlx_new_image(all->mlx->mlx, D_WIDTH, D_HEIGHT);
+		all->mlx->gda = mlx_get_data_addr(all->mlx->img, &all->mlx->bpp, &all->mlx->size_line, &all->mlx->endian);
+		main_while(all);
+		mlx_put_image_to_window(all->mlx->mlx, all->mlx->wnd, all->mlx->img, 0, 0);
+		mlx_destroy_image(all->mlx->mlx, all->mlx->img);
+		all->flags.redraw = FALSE;
+	}
 }
-
-

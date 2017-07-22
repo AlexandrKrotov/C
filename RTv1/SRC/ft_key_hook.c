@@ -24,5 +24,6 @@ int		ft_key_hook(int key, t_all *all)
 		all->trans.zoom += 100;
 	if (key == DOWN)
 		all->trans.zoom -= 100;
+	all->flags.redraw = TRUE;
 	return (1);
 }

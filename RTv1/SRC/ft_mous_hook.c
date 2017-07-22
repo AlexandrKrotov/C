@@ -13,4 +13,5 @@ int 	ft_mouse_hook(int key, int x, int y, t_all *all)
 		all->trans.zoom += 100;
 	if (key == 4)
 		all->trans.zoom -= 100;
+	all->flags.redraw = TRUE;
 }
