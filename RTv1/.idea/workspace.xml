@@ -31,44 +31,34 @@
     <favorites_list name="RTv1" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5519481">
+    <splitter split-orientation="horizontal" split-proportion="0.5866543">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="ft_create_scene_map.c" pinned="false" current-in-tab="true">
+          <file leaf-file-name="ft_create_scene_map.c" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/SRC/ft_create_scene_map.c">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="357">
-                  <caret line="21" column="7" lean-forward="false" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+                <state relative-caret-position="417">
+                  <caret line="102" column="0" lean-forward="false" selection-start-line="102" selection-start-column="2" selection-end-line="113" selection-end-column="47" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="ft_render.c" pinned="false" current-in-tab="false">
+          <file leaf-file-name="ft_render.c" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/SRC/ft_render.c">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="207">
-                  <caret line="100" column="0" lean-forward="false" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
+                <state relative-caret-position="1036">
+                  <caret line="113" column="1" lean-forward="true" selection-start-line="113" selection-start-column="1" selection-end-line="113" selection-end-column="1" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="ft_cone.c" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/SRC/ft_cone.c">
+          <file leaf-file-name="ft_math.c" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/SRC/ft_math.c">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="204">
-                  <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="ft_plane.c" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/SRC/ft_plane.c">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="799">
-                  <caret line="47" column="12" lean-forward="false" selection-start-line="47" selection-start-column="12" selection-end-line="47" selection-end-column="12" />
+                <state relative-caret-position="68">
+                  <caret line="4" column="1" lean-forward="false" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
                   <folding />
                 </state>
               </provider>
@@ -77,7 +67,7 @@
           <file leaf-file-name="main.c" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/SRC/main.c">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="325">
+                <state relative-caret-position="179">
                   <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
                   <folding />
                 </state>
@@ -87,8 +77,8 @@
           <file leaf-file-name="ft_init_all.c" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/SRC/ft_init_all.c">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="374">
-                  <caret line="22" column="1" lean-forward="false" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+                <state relative-caret-position="272">
+                  <caret line="16" column="37" lean-forward="false" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
                   <folding />
                 </state>
               </provider>
@@ -101,11 +91,11 @@
           <file leaf-file-name="rtv1.h" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/includes/rtv1.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="188">
-                  <caret line="94" column="11" lean-forward="false" selection-start-line="94" selection-start-column="11" selection-end-line="94" selection-end-column="11" />
+                <state relative-caret-position="317">
+                  <caret line="201" column="0" lean-forward="false" selection-start-line="200" selection-start-column="0" selection-end-line="201" selection-end-column="0" />
                   <folding>
                     <element signature="e#32#51#0" expanded="true" />
-                    <element signature="e#526#654#0" expanded="true" />
+                    <element signature="e#575#703#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -133,19 +123,19 @@
         <option value="$PROJECT_DIR$/SRC/ft_math.c.c" />
         <option value="$PROJECT_DIR$/SRC/ft_plaine.c" />
         <option value="$PROJECT_DIR$/SRC/ft_math.c" />
-        <option value="$PROJECT_DIR$/SRC/ft_vector_math.c" />
         <option value="$PROJECT_DIR$/SRC/main.c" />
-        <option value="$PROJECT_DIR$/SRC/ft_sphere.c" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/SRC/ft_cylinder.c" />
-        <option value="$PROJECT_DIR$/SRC/ft_init_all.c" />
         <option value="$PROJECT_DIR$/SRC/ft_mous_hook.c" />
+        <option value="$PROJECT_DIR$/SRC/ft_vector_math.c" />
         <option value="$PROJECT_DIR$/SRC/ft_key_hook.c" />
         <option value="$PROJECT_DIR$/SRC/ft_plane.c" />
-        <option value="$PROJECT_DIR$/includes/rtv1.h" />
-        <option value="$PROJECT_DIR$/SRC/ft_render.c" />
         <option value="$PROJECT_DIR$/SRC/ft_cone.c" />
+        <option value="$PROJECT_DIR$/SRC/ft_cylinder.c" />
+        <option value="$PROJECT_DIR$/SRC/ft_sphere.c" />
+        <option value="$PROJECT_DIR$/includes/rtv1.h" />
+        <option value="$PROJECT_DIR$/SRC/ft_init_all.c" />
         <option value="$PROJECT_DIR$/SRC/ft_create_scene_map.c" />
+        <option value="$PROJECT_DIR$/SRC/ft_render.c" />
       </list>
     </option>
   </component>
@@ -463,12 +453,12 @@
       <workItem from="1500207423459" duration="53432000" />
       <workItem from="1500632260819" duration="2554000" />
       <workItem from="1500638490048" duration="10173000" />
-      <workItem from="1500725943566" duration="4350000" />
+      <workItem from="1500725943566" duration="21712000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="210305000" />
+    <option name="totallyTimeSpent" value="227667000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -481,16 +471,18 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="27" width="1368" height="742" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18009119" sideWeight="0.48994976" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23873122" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32888147" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6293823" sideWeight="0.50303954" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15191987" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25709516" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3505843" sideWeight="0.4969605" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18009119" sideWeight="0.48994976" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32888147" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19300912" sideWeight="0.51005024" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39565945" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -499,7 +491,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -570,7 +561,7 @@
           <caret line="91" column="20" lean-forward="false" selection-start-line="91" selection-start-column="20" selection-end-line="91" selection-end-column="20" />
           <folding>
             <element signature="e#32#51#0" expanded="true" />
-            <element signature="e#526#654#0" expanded="true" />
+            <element signature="e#575#703#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -603,7 +594,7 @@
           <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding>
             <element signature="e#32#51#0" expanded="true" />
-            <element signature="e#526#654#0" expanded="true" />
+            <element signature="e#575#703#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -637,7 +628,7 @@
           <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding>
             <element signature="e#32#51#0" expanded="true" />
-            <element signature="e#526#654#0" expanded="true" />
+            <element signature="e#575#703#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -663,7 +654,7 @@
           <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding>
             <element signature="e#32#51#0" expanded="true" />
-            <element signature="e#526#654#0" expanded="true" />
+            <element signature="e#575#703#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -682,7 +673,7 @@
           <caret line="45" column="26" lean-forward="true" selection-start-line="45" selection-start-column="26" selection-end-line="45" selection-end-column="26" />
           <folding>
             <element signature="e#32#51#0" expanded="true" />
-            <element signature="e#526#654#0" expanded="true" />
+            <element signature="e#575#703#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -709,7 +700,7 @@
           <caret line="14" column="21" lean-forward="true" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
           <folding>
             <element signature="e#32#51#0" expanded="true" />
-            <element signature="e#526#654#0" expanded="true" />
+            <element signature="e#575#703#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -766,39 +757,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SRC/ft_vector_math.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="46" column="20" lean-forward="false" selection-start-line="46" selection-start-column="20" selection-end-line="46" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SRC/ft_sphere.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="28" lean-forward="false" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/local/include/mlx.h" />
-    <entry file="file://$PROJECT_DIR$/SRC/ft_math.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="1" lean-forward="false" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SRC/ft_cylinder.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="23" lean-forward="false" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/include/math.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="7021">
@@ -823,70 +782,102 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/SRC/ft_vector_math.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/SRC/ft_key_hook.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="26" column="29" lean-forward="false" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
+        <state relative-caret-position="493">
+          <caret line="29" column="24" lean-forward="false" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SRC/ft_math.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="1" lean-forward="false" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SRC/main.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
+        <state relative-caret-position="179">
           <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SRC/ft_plane.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="47" column="12" lean-forward="false" selection-start-line="47" selection-start-column="12" selection-end-line="47" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SRC/ft_render.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="100" column="0" lean-forward="false" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SRC/ft_init_all.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="1" lean-forward="false" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+        <state relative-caret-position="272">
+          <caret line="16" column="37" lean-forward="false" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SRC/ft_cylinder.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-505">
+          <caret line="0" column="17" lean-forward="true" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SRC/ft_cone.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        <state relative-caret-position="34">
+          <caret line="2" column="28" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SRC/ft_sphere.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="21" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SRC/ft_plane.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="10" column="16" lean-forward="true" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SRC/ft_create_scene_map.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="7" lean-forward="false" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+        <state relative-caret-position="417">
+          <caret line="102" column="0" lean-forward="false" selection-start-line="102" selection-start-column="2" selection-end-line="113" selection-end-column="47" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/includes/rtv1.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="94" column="11" lean-forward="false" selection-start-line="94" selection-start-column="11" selection-end-line="94" selection-end-column="11" />
+        <state relative-caret-position="317">
+          <caret line="201" column="0" lean-forward="false" selection-start-line="200" selection-start-column="0" selection-end-line="201" selection-end-column="0" />
           <folding>
             <element signature="e#32#51#0" expanded="true" />
-            <element signature="e#526#654#0" expanded="true" />
+            <element signature="e#575#703#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SRC/ft_render.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1036">
+          <caret line="113" column="1" lean-forward="true" selection-start-line="113" selection-start-column="1" selection-end-line="113" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>

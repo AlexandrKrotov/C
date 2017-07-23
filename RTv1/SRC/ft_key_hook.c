@@ -20,10 +20,14 @@ int		ft_key_hook(int key, t_all *all)
 	printf("light.x: %f\n", all->light.x);
 	printf("light.y: %f\n", all->light.y);
 	printf("light.z: %f\n", all->light.z);
-	if (key == UP)
+	if (key == K_UP)
 		all->trans.zoom += 100;
-	if (key == DOWN)
+	if (key == K_DOWN)
 		all->trans.zoom -= 100;
+	if (key == K_LEFT)
+		all->trans.shift -= 100;
+	if (key == K_RIGHT)
+		all->trans.shift += 100;
 	all->flags.redraw = TRUE;
 	return (1);
 }

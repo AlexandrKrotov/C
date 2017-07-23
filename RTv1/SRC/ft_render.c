@@ -1,16 +1,16 @@
 #include "rtv1.h"
 
-void	ft_put_color(t_all *all, int x, int y)
+void	ft_put_color(t_all *all, int x, int y, t_rgb color)
 {
 	int	a;
 
 	if ((x < (D_WIDTH) && x >= 0) && y < D_HEIGHT && y >= 0)
 	{
 		a = ((y * all->dsp.dsp_w + x) * 4);
-		all->mlx->gda[a] = all->rt.rgb.b;
-		all->mlx->gda[a + 1] = all->rt.rgb.g;
-		all->mlx->gda[a + 2] = all->rt.rgb.r;
-		all->mlx->gda[a + 3] = all->rt.rgb.opacity;
+		all->mlx->gda[a] = color.b;
+		all->mlx->gda[a + 1] = color.g;
+		all->mlx->gda[a + 2] = color.r;
+		all->mlx->gda[a + 3] = color.opacity;
 	}
 }
 
@@ -25,9 +25,10 @@ int		ft_primary_ray(t_all *all, int x, int y)
 
 	cam = all->cam;
 	cam.z += all->trans.zoom;
+	cam.x += all->trans.shift;
 	ptr = all->scene;
 	inter = FALSE;
-	orig = (t_vertex){x, y, 0 + all->trans.zoom};
+	orig = (t_vertex){x + all->trans.shift, y, 0 + all->trans.zoom};
 	dir = ft_sub_vector(orig, cam);
 	dir =ft_normalized_vector(dir);
 	ray = (t_ray){cam, dir};
@@ -35,7 +36,10 @@ int		ft_primary_ray(t_all *all, int x, int y)
 	while (ptr != NULL)
 	{
 		if(ptr->ft_inter(all, &ray, ptr))
+		{
+			ptr->ft_info(all, &ray, ptr);
 			inter = TRUE;
+		}
 		ptr = ptr->next;
 	}
 	return(inter);
@@ -52,16 +56,16 @@ int		ft_shadow_ray(t_all *all)
 	shadow = FALSE;
 	ptr = all->scene;
 	orig = all->rt.inter;
-	dir = ft_reverse_vector(ft_sub_vector(orig, all->light));
+	dir = ft_sub_vector(all->light, orig);
 	dir = ft_normalized_vector(dir);
 	ray = (t_ray){orig, dir};
 	all->rt.t = 200000;
 	while (ptr != NULL)
 	{
-		if(all->scene->ft_shadow(&ray, ptr))
+		if(ptr->ft_inter(all, &ray, ptr))
 		{
-			shadow = TRUE;
-			break;
+				shadow = TRUE;
+				break;
 		}
 		ptr = ptr->next;
 	}
@@ -74,7 +78,7 @@ void	main_while(t_all *all)
 	int			y;
 	t_vertex	vec1;
 	int 		inter;
-	t_rgb		test;
+	t_rgb		color;
 
 	y = all->dsp.rend_hs;
 	while (y < all->dsp.rend_he)
@@ -84,22 +88,22 @@ void	main_while(t_all *all)
 		{
 			all->rt.rgb = (t_rgb){0, 0, 0, 0};
 			inter = ft_primary_ray(all, x, y);
-			test = all->rt.rgb;
+			color = all->rt.rgb;
 			if (inter == TRUE)
 			{
-				vec1 = ft_normalized_vector(ft_sub_vector(all->light, all->rt.inter));
-				all->rt.brightness = ft_dot_product(vec1, all->rt.norm);
-				if (all->rt.brightness < 0)
-					all->rt.brightness = 0;
-				all->rt.rgb = (t_rgb){(unsigned char)(test.r * all->rt.brightness),
-							   (unsigned char)(test.g * all->rt.brightness),
-							   (unsigned char)(test.b * all->rt.brightness), 0};
+				vec1 = ft_sub_vector(all->light, all->rt.inter);
+				vec1 = ft_normalized_vector(vec1);
+					all->rt.brightness = ft_dot_product(vec1, all->rt.norm);
+					if (all->rt.brightness < 0)
+						all->rt.brightness = 0;
+					color = (t_rgb) {(unsigned char)(color.r * all->rt.brightness),
+										   (unsigned char)(color.g * all->rt.brightness),
+										   (unsigned char)(color.b * all->rt.brightness), 0};
 			}
-			test = all->rt.rgb;
 			if (inter == TRUE)
 				if(ft_shadow_ray(all))
-					all->rt.rgb = (t_rgb){(unsigned char)(test.r * 0.30), (unsigned char)(test.g * 0.30 ), (unsigned char)(test.b * 0.30), 0};
-			ft_put_color(all, x + all->dsp.half_w, y + all->dsp.half_h);
+					color = (t_rgb){(unsigned char)(color.r * 0.30), (unsigned char)(color.g * 0.30 ), (unsigned char)(color.b * 0.30), 0};
+			ft_put_color(all, x + all->dsp.half_w, y + all->dsp.half_h, color);
 			x++;
 		}
 		y++;

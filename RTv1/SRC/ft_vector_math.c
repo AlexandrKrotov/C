@@ -63,3 +63,27 @@ double		ft_get_magnitude(t_vertex a)
 	ret = fabs(sqrt(pow(a.x, 2) + pow(a.y, 2) + pow(a.z, 2)));
 	return (ret);
 }
+
+
+double		ft_cos_vector(t_vertex u, t_vertex v)
+{
+	double	a;
+	double	b;
+	double	c;
+
+	a = ft_dot_product(u , v);
+	b = ft_dot_product(u, u);
+	c = ft_dot_product(v,v);
+	return (a / (b * c));
+}
+
+t_vertex	ft_cross_vector(t_vertex a, t_vertex b)
+{
+	t_vertex ret;
+
+	ret.x = (a.y * b.z) - (a.z * b.y);
+	ret.y = (a.z * b.x) - (a.x * b.z);
+	ret.z = (a.x * b.y) - (a.y * b.x);
+
+	return (ret);
+}

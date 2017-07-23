@@ -16,6 +16,7 @@ void	init_all(t_all *all)
 	all->cam = (t_vertex){0, 0, -1000};
 	all->light = (t_vertex){0, 0, -1000};
 	all->trans.zoom = 0;
+	all->trans.shift = 0;
 	all->rt.brightness = 0;
 	all->rt.rgb = (t_rgb){0, 0, 0, 0};
 	all->rt.norm = (t_vertex){0, 0, 0};

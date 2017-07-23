@@ -37,8 +37,10 @@
 # define D 100
 # define Z 122
 # define X 120
-# define UP 65362
-# define DOWN 65364
+# define K_UP 65362
+# define K_DOWN 65364
+# define K_LEFT 65361
+# define K_RIGHT 65363
 
 #else __APPLE__
 
@@ -71,8 +73,8 @@ typedef struct		s_rgb{
 }					t_rgb;
 
 typedef struct		s_ray{
-	t_vertex		origin;
-	t_vertex		direct;
+	t_vertex		o;
+	t_vertex		d;
 	//double	 	magnitude;
 }					t_ray;
 
@@ -92,14 +94,12 @@ typedef struct		s_sphere{
 }					t_sphere;
 
 typedef struct		s_plane{
-	t_vertex		norm;
-	t_vertex		start;
+	t_ray			ray;
 	t_rgb			color;
 }					t_plane;
 
 typedef struct		s_cylinder{
-	t_vertex		center;
-	t_vertex		dir;
+	t_ray			ray;
 	double 			r;
 	double 			r2;
 	t_rgb 			color;
@@ -110,8 +110,7 @@ typedef struct 		s_flags{
 }					t_flags;
 
 typedef struct		s_cone{
-	t_vertex		center;
-	t_vertex		dir;
+	t_ray			ray;
 	t_rgb 			color;
 	double 			alpha;
 	double 			rad;
@@ -132,6 +131,7 @@ typedef struct		s_dsp{
 
 typedef struct		s_trans{
 	double 			zoom;
+	double 			shift;
 }					t_trans;
 
 typedef	struct 		s_light{
@@ -154,7 +154,7 @@ typedef struct		s_mlx{
 typedef struct		s_objs{
 	void			*obj;
 	int 			(*ft_inter)(t_all*, t_ray*, t_objs*);
-	int 			(*ft_shadow)(t_ray*, t_objs*);
+	void			(*ft_info)(t_all*, t_ray*, t_objs*);
 	struct	s_objs	*next;
 }					t_objs;
 
@@ -183,10 +183,12 @@ int 				ft_mouse_cord(int x, int y, t_all *all);
 t_vertex			ft_sub_vector(t_vertex a, t_vertex b);
 t_vertex			ft_sum_vector(t_vertex a, t_vertex b);
 double				ft_dot_product(t_vertex a, t_vertex b);
+t_vertex			ft_cross_vector(t_vertex a, t_vertex b);
 double				ft_get_magnitude(t_vertex a);
 t_vertex			ft_normalized_vector(t_vertex a);
 t_vertex			ft_mult_vec_double(t_vertex a, double b);
 t_vertex			ft_devide_vec_double(t_vertex a, double b);
+double				ft_cos_vector(t_vertex u, t_vertex v);
 t_vertex			ft_reverse_vector(t_vertex v1);
 
 
@@ -195,10 +197,13 @@ int					ft_plane_intersect(t_all *all, t_ray *ray, t_objs *ptr);
 int					ft_cylinder_intersect(t_all *all, t_ray *ray, t_objs *ptr);
 int					ft_cone_intersect(t_all *all, t_ray *ray, t_objs *ptr);
 
-int					ft_sphere_shadowray(t_ray *ray, t_objs *ptr);
-int					ft_plane_shadowray(t_ray *ray, t_objs *ptr);
-int					ft_cylinder_shadowray(t_ray *ray, t_objs *ptr);
-int					ft_cone_shadowray(t_ray *ray, t_objs *ptr);
+void				ft_get_info_sphere(t_all *all, t_ray *ray, t_objs *ptr);
+void				ft_get_info_plane(t_all *all, t_ray *ray, t_objs *ptr);
+void				ft_get_info_cylinder(t_all *all, t_ray *ray, t_objs *ptr);
+void				ft_get_info_cone(t_all *all, t_ray *ray, t_objs *ptr);
+
+void				ft_get_norm_sphere(t_all *all, t_objs *ptr);
+
 
 int					ft_exit(void);
 
