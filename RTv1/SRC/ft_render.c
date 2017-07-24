@@ -57,9 +57,9 @@ int		ft_shadow_ray(t_all *all)
 	ptr = all->scene;
 	orig = all->rt.inter;
 	dir = ft_sub_vector(all->light, orig);
+	all->rt.t = ft_get_magnitude(dir);
 	dir = ft_normalized_vector(dir);
 	ray = (t_ray){orig, dir};
-	all->rt.t = 200000;
 	while (ptr != NULL)
 	{
 		if(ptr->ft_inter(all, &ray, ptr))
@@ -93,9 +93,19 @@ void	main_while(t_all *all)
 			{
 				vec1 = ft_sub_vector(all->light, all->rt.inter);
 				vec1 = ft_normalized_vector(vec1);
-					all->rt.brightness = ft_dot_product(vec1, all->rt.norm);
+				if (x == 0 && y == -15)
+					printf("x: %f\ny: %f\nz: %f\n", all->rt.norm.x, all->rt.norm.y, all->rt.norm.z);
+				if (x == -300 && y == -15)
+					printf("+x: %f\n+y: %f\n+z: %f\n", all->rt.norm.x, all->rt.norm.y, all->rt.norm.z);
+				if (x == 300 && y == -15)
+					printf("-x: %f\n-y: %f\n-z: %f\n", all->rt.norm.x, all->rt.norm.y, all->rt.norm.z);
+				all->rt.brightness = ft_dot_product(vec1, all->rt.norm);
 					if (all->rt.brightness < 0)
 						all->rt.brightness = 0;
+				if (x == -1 && y == 84)
+						printf("br1: %f\n", all->rt.brightness);
+				if (x == -283 && y == 85)
+						printf("br2: %f\n", all->rt.brightness);
 					color = (t_rgb) {(unsigned char)(color.r * all->rt.brightness),
 										   (unsigned char)(color.g * all->rt.brightness),
 										   (unsigned char)(color.b * all->rt.brightness), 0};

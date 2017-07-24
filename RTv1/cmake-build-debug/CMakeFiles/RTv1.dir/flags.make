@@ -6,5 +6,5 @@ C_FLAGS =  -lmlx_Linux -L/usr/X11/lib -lXext -lX11 -lm -g
 
 C_DEFINES = 
 
-C_INCLUDES = -I/home/m0le/akrotov/GH_my/RTv1/includes 
+C_INCLUDES = -I/home/m0le/akrotov/backup_RTV/C/RTv1/includes 
 

@@ -9,15 +9,17 @@ void		ft_get_info_cone(t_all *all, t_ray *ray, t_objs *ptr)
 	t_vertex	tmp;
 
 	con = ptr->obj;
+	tmp = ft_mult_vec_double(ray->d, all->rt.t);
+	all->rt.inter = ft_sum_vector(ray->o, tmp);
+
 	a = ft_sub_vector(all->rt.inter, con->ray.o);
 	b = ft_mult_vec_double(con->ray.d, ft_cos_vector(a, con->ray.d));
 	all->rt.norm = ft_sub_vector(a, b);
 	scaled = ft_cross_vector(a, all->rt.norm);
 	all->rt.norm = ft_cross_vector(scaled, a);
 	all->rt.norm = ft_normalized_vector(all->rt.norm);
+
 	all->rt.rgb = con->color;
-	tmp = ft_mult_vec_double(ray->d, all->rt.t);
-	all->rt.inter = ft_sum_vector(ray->o, tmp);
 }
 
 int		ft_cone_intersect(t_all *all, t_ray *ray, t_objs *ptr)
