@@ -11,14 +11,12 @@ void		ft_get_info_cone(t_all *all, t_ray *ray, t_objs *ptr)
 	con = ptr->obj;
 	tmp = ft_mult_vec_double(ray->d, all->rt.t);
 	all->rt.inter = ft_sum_vector(ray->o, tmp);
-
-	a = ft_sub_vector(all->rt.inter, con->ray.o);
-	b = ft_mult_vec_double(con->ray.d, ft_cos_vector(a, con->ray.d));
-	all->rt.norm = ft_sub_vector(a, b);
-	scaled = ft_cross_vector(a, all->rt.norm);
-	all->rt.norm = ft_cross_vector(scaled, a);
+	b = ft_sub_vector(all->rt.inter, con->ray.o);
+	a = ft_mult_vec_double(con->ray.d, ft_cos_vector(b, con->ray.d));
+	all->rt.norm = ft_sub_vector(b, a);
+	scaled = ft_cross_vector(b, all->rt.norm);
+	all->rt.norm = ft_cross_vector(scaled, b);
 	all->rt.norm = ft_normalized_vector(all->rt.norm);
-
 	all->rt.rgb = con->color;
 }
 
@@ -50,8 +48,8 @@ int		ft_cone_intersect(t_all *all, t_ray *ray, t_objs *ptr)
 	if (disc < 1e-6)
 		return(FALSE);
 	disc = sqrt(disc);
-	t0 = (-b - disc) / 2 * a;
-	t1 = (-b + disc) / 2 * a;
+	t0 = (-b - disc) / (2 * a);
+	t1 = (-b + disc) / (2 * a);
 	t0 = (t0 < t1 && (t0 > 0 || t1 > 0)) ? t0 : t1;
 	if (t0 > 1e-6 && t0 < all->rt.t)
 	{

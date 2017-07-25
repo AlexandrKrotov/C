@@ -93,11 +93,11 @@ void	main_while(t_all *all)
 			{
 				vec1 = ft_sub_vector(all->light, all->rt.inter);
 				vec1 = ft_normalized_vector(vec1);
-				if (x == 0 && y == -15)
+				if (x == 360 && y == 190)
 					printf("x: %f\ny: %f\nz: %f\n", all->rt.norm.x, all->rt.norm.y, all->rt.norm.z);
-				if (x == -300 && y == -15)
+				if (x == 300 && y == 190)
 					printf("+x: %f\n+y: %f\n+z: %f\n", all->rt.norm.x, all->rt.norm.y, all->rt.norm.z);
-				if (x == 300 && y == -15)
+				if (x == 240 && y == 190)
 					printf("-x: %f\n-y: %f\n-z: %f\n", all->rt.norm.x, all->rt.norm.y, all->rt.norm.z);
 				all->rt.brightness = ft_dot_product(vec1, all->rt.norm);
 					if (all->rt.brightness < 0)

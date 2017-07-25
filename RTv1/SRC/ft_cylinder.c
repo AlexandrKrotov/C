@@ -13,9 +13,7 @@ void	ft_get_info_cylinder(t_all *all, t_ray *ray, t_objs *ptr)
 	all->rt.inter = ft_sum_vector(ray->o, tmp);
 
 	gip = ft_sub_vector(all->rt.inter, cyl->ray.o);
-//	gip = ft_sub_vector( cyl->ray.o, all->rt.inter);
 	a = ft_mult_vec_double(cyl->ray.d, ft_dot_product(gip, cyl->ray.d));
-//	a = ft_mult_vec_double(all->rt.inter, ft_dot_product(gip, cyl->ray.d));
 	bn = ft_sub_vector(gip, a);
 	all->rt.norm = ft_normalized_vector(bn);
 	all->rt.rgb = cyl->color;
@@ -45,8 +43,8 @@ int		ft_cylinder_intersect(t_all *all, t_ray *ray, t_objs *ptr)
 	if (disc < 1e-6)
 		return(FALSE);
 	disc = sqrt(disc);
-	t0 = (-b - disc) / 2 * a;
-	t1 = (-b + disc) / 2 * a;
+	t0 = (-b + disc) / (2 * a);
+	t1 = (-b - disc) / (2 * a);
 	t0 = (t0 < t1 && (t0 > 0 || t1 > 0)) ? t0 : t1;
 	if (t0 > 1e-6 && t0 < all->rt.t)
 	{
