@@ -18,6 +18,10 @@ void		ft_get_info_cone(t_all *all, t_ray *ray, t_objs *ptr)
 	all->rt.norm = ft_cross_vector(scaled, b);
 	all->rt.norm = ft_normalized_vector(all->rt.norm);
 	all->rt.rgb = con->color;
+	all->rt.n = con->n;
+	all->rt.amb_int = con->amb_int;
+	all->rt.dif_int = con->dif_int;
+	all->rt.spc_int = con->spc_int;
 }
 
 int		ft_cone_intersect(t_all *all, t_ray *ray, t_objs *ptr)

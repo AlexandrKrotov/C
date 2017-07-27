@@ -23,6 +23,7 @@
 # define BPP		4
 # define TRUE		1
 # define FALSE		0
+# define SHADOW		0.20
 
 /*
 ** KEY_DEFINE
@@ -56,8 +57,8 @@
 
 #endif
 
-typedef struct		s_all t_all;
-typedef struct		s_objs t_objs;
+typedef struct		s_all	t_all;
+typedef struct		s_objs	t_objs;
 
 typedef	struct		s_vertex{
 	double			x;
@@ -84,18 +85,30 @@ typedef	struct		s_rt{
 	t_vertex		norm;
 	t_vertex		inter;
 	t_rgb			rgb;
+	int 			n;
+	double			amb_int;
+	double			dif_int;
+	double			spc_int;
 }					t_rt;
 
 typedef struct		s_sphere{
 	double			radius;
 	double			r2;
+	int 			n;
 	t_vertex		center;
 	t_rgb			color;
+	double			amb_int;
+	double			dif_int;
+	double			spc_int;
 }					t_sphere;
 
 typedef struct		s_plane{
 	t_ray			ray;
 	t_rgb			color;
+	int 			n;
+	double			amb_int;
+	double			dif_int;
+	double			spc_int;
 }					t_plane;
 
 typedef struct		s_cylinder{
@@ -103,11 +116,12 @@ typedef struct		s_cylinder{
 	double 			r;
 	double 			r2;
 	t_rgb 			color;
+	int 			n;
+	double			amb_int;
+	double			dif_int;
+	double			spc_int;
 }					t_cylinder;
 
-typedef struct 		s_flags{
-	int 			redraw;
-}					t_flags;
 
 typedef struct		s_cone{
 	t_ray			ray;
@@ -116,6 +130,10 @@ typedef struct		s_cone{
 	double 			rad;
 	double			cos2;
 	double			sin2;
+	int 			n;
+	double			amb_int;
+	double			dif_int;
+	double			spc_int;
 }					t_cone;
 
 typedef struct		s_dsp{
@@ -129,15 +147,27 @@ typedef struct		s_dsp{
 	int				rend_he;
 }					t_dsp;
 
+typedef struct 		s_flags{
+	int 			redraw;
+	int 			shadow;
+}					t_flags;
+
 typedef struct		s_trans{
 	double 			zoom;
 	double 			shift;
 }					t_trans;
 
+typedef	struct		s_phong
+{
+	t_rgb			amb;
+	t_rgb			dif;
+	t_rgb			spc;
+}					t_phong;
+
 typedef	struct 		s_light{
-	t_vertex		light;
-	double 			angle;
-	double 			power;
+	t_vertex		o;
+//	double 			angle;
+//	double 			power;
 	struct s_light	*next;
 }					t_light;
 
@@ -162,8 +192,9 @@ typedef struct		s_all{
 	t_mlx			*mlx;
 	t_dsp			dsp;
 	t_objs			*scene;
-	t_vertex 		light;
-	t_light 		light_list;
+//	t_vertex 		light;
+	t_light 		*light;
+	t_phong			phong;
 	t_vertex		cam;
 	t_rt			rt;
 	t_trans			trans;
@@ -187,9 +218,10 @@ t_vertex			ft_cross_vector(t_vertex a, t_vertex b);
 double				ft_get_magnitude(t_vertex a);
 t_vertex			ft_normalized_vector(t_vertex a);
 t_vertex			ft_mult_vec_double(t_vertex a, double b);
-t_vertex			ft_devide_vec_double(t_vertex a, double b);
+t_vertex			ft_divide_vec_double(t_vertex a, double b);
 double				ft_cos_vector(t_vertex u, t_vertex v);
-t_vertex			ft_reverse_vector(t_vertex v1);
+t_vertex			ft_reverse_vector(t_vertex a);
+t_vertex			ft_reflect_vector(t_vertex a, t_vertex b);
 
 
 int					ft_sphere_intersect(t_all *all, t_ray *ray, t_objs *ptr);

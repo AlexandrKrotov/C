@@ -10,6 +10,10 @@ void	ft_get_info_plane(t_all *all, t_ray *ray, t_objs *ptr)
 	tmp = ft_mult_vec_double(ray->d, all->rt.t);
 	all->rt.inter = ft_sum_vector(ray->o, tmp);
 	all->rt.norm = p->ray.d;
+	all->rt.n = p->n;
+	all->rt.amb_int = p->amb_int;
+	all->rt.dif_int = p->dif_int;
+	all->rt.spc_int = p->spc_int;
 }
 
 int		ft_plane_intersect(t_all *all, t_ray *ray, t_objs *ptr)

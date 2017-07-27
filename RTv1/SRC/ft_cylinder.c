@@ -17,6 +17,10 @@ void	ft_get_info_cylinder(t_all *all, t_ray *ray, t_objs *ptr)
 	bn = ft_sub_vector(gip, a);
 	all->rt.norm = ft_normalized_vector(bn);
 	all->rt.rgb = cyl->color;
+	all->rt.n = cyl->n;
+	all->rt.amb_int = cyl->amb_int;
+	all->rt.dif_int = cyl->dif_int;
+	all->rt.spc_int = cyl->spc_int;
 }
 
 int		ft_cylinder_intersect(t_all *all, t_ray *ray, t_objs *ptr)

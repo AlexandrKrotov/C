@@ -32,7 +32,7 @@ t_vertex	ft_normalized_vector(t_vertex a)
 	return(ret);
 }
 
-t_vertex	ft_devide_vec_double(t_vertex a, double b)
+t_vertex	ft_divide_vec_double(t_vertex a, double b)
 {
 	t_vertex	ret;
 
@@ -85,5 +85,22 @@ t_vertex	ft_cross_vector(t_vertex a, t_vertex b)
 	ret.y = (a.z * b.x) - (a.x * b.z);
 	ret.z = (a.x * b.y) - (a.y * b.x);
 
+	return (ret);
+}
+
+t_vertex	ft_reverse_vector(t_vertex a)
+{
+	a.x = -a.x;
+	a.y = -a.y;
+	a.z = -a.z;
+	return (a);
+}
+
+t_vertex	ft_reflect_vector(t_vertex a, t_vertex b)
+{
+	t_vertex ret;
+
+	ret = ft_mult_vec_double(b, 2 * (ft_dot_product(a,b)));
+	ret = ft_sub_vector(ret, a);
 	return (ret);
 }
