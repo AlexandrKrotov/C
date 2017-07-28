@@ -17,7 +17,7 @@ void	lets_start(void)
 	t_all	all;
 
 	init_all(&all);
-	ft_crete_lst(&all);
+	ft_create_obj_lst(&all);
 	ft_render(&all);
 	mlx_mouse_hook(all.mlx->wnd, ft_mouse_hook, &all);
 	mlx_hook(all.mlx->wnd, 2, 3, ft_key_hook, &all);

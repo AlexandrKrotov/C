@@ -25,6 +25,10 @@ CMakeFiles/RTv1.dir/SRC/ft_key_hook.c.o
  ../includes/libft.h
  ../includes/rtv1.h
  /home/m0le/akrotov/backup_RTV/C/RTv1/SRC/ft_key_hook.c
+CMakeFiles/RTv1.dir/SRC/ft_light.c.o
+ ../includes/libft.h
+ ../includes/rtv1.h
+ /home/m0le/akrotov/backup_RTV/C/RTv1/SRC/ft_light.c
 CMakeFiles/RTv1.dir/SRC/ft_math.c.o
  ../includes/libft.h
  ../includes/rtv1.h

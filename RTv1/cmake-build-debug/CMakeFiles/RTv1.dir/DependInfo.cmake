@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/home/m0le/akrotov/backup_RTV/C/RTv1/SRC/ft_exit.c" "/home/m0le/akrotov/backup_RTV/C/RTv1/cmake-build-debug/CMakeFiles/RTv1.dir/SRC/ft_exit.c.o"
   "/home/m0le/akrotov/backup_RTV/C/RTv1/SRC/ft_init_all.c" "/home/m0le/akrotov/backup_RTV/C/RTv1/cmake-build-debug/CMakeFiles/RTv1.dir/SRC/ft_init_all.c.o"
   "/home/m0le/akrotov/backup_RTV/C/RTv1/SRC/ft_key_hook.c" "/home/m0le/akrotov/backup_RTV/C/RTv1/cmake-build-debug/CMakeFiles/RTv1.dir/SRC/ft_key_hook.c.o"
+  "/home/m0le/akrotov/backup_RTV/C/RTv1/SRC/ft_light.c" "/home/m0le/akrotov/backup_RTV/C/RTv1/cmake-build-debug/CMakeFiles/RTv1.dir/SRC/ft_light.c.o"
   "/home/m0le/akrotov/backup_RTV/C/RTv1/SRC/ft_math.c" "/home/m0le/akrotov/backup_RTV/C/RTv1/cmake-build-debug/CMakeFiles/RTv1.dir/SRC/ft_math.c.o"
   "/home/m0le/akrotov/backup_RTV/C/RTv1/SRC/ft_mous_hook.c" "/home/m0le/akrotov/backup_RTV/C/RTv1/cmake-build-debug/CMakeFiles/RTv1.dir/SRC/ft_mous_hook.c.o"
   "/home/m0le/akrotov/backup_RTV/C/RTv1/SRC/ft_plane.c" "/home/m0le/akrotov/backup_RTV/C/RTv1/cmake-build-debug/CMakeFiles/RTv1.dir/SRC/ft_plane.c.o"

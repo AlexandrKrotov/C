@@ -7,7 +7,7 @@ if(Darwin)
 else(LINUX)
     set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -lmlx_Linux -L/usr/X11/lib -lXext -lX11 -lm")
 endif()
-set(SOURCE_FILES SRC/main.c includes/rtv1.h SRC/ft_key_hook.c SRC/ft_exit.c SRC/ft_mous_hook.c SRC/ft_render.c SRC/ft_init_all.c SRC/ft_vector_math.c SRC/ft_math.c SRC/ft_create_scene_map.c SRC/ft_sphere.c SRC/ft_plane.c SRC/ft_cylinder.c SRC/ft_cone.c)
+set(SOURCE_FILES SRC/main.c includes/rtv1.h SRC/ft_key_hook.c SRC/ft_exit.c SRC/ft_mous_hook.c SRC/ft_render.c SRC/ft_init_all.c SRC/ft_vector_math.c SRC/ft_math.c SRC/ft_create_scene_map.c SRC/ft_sphere.c SRC/ft_plane.c SRC/ft_cylinder.c SRC/ft_cone.c SRC/ft_light.c)
 
 add_executable(RTv1 ${SOURCE_FILES} includes/rtv1.h)
 set(HEADER_FILES includes/rtv1.h includes/libft.h)

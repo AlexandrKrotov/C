@@ -20,10 +20,12 @@
 # define D_NAME		"RTv1"
 # define D_WIDTH	800
 # define D_HEIGHT	600
-# define BPP		4
 # define TRUE		1
 # define FALSE		0
 # define SHADOW		0.20
+
+
+# define UC			unsigned char
 
 /*
 ** KEY_DEFINE
@@ -72,6 +74,12 @@ typedef struct		s_rgb{
 	unsigned char	b;
 	unsigned char	opacity;
 }					t_rgb;
+
+typedef struct		s_irgb{
+	int				r;
+	int				g;
+	int				b;
+}					t_irgb;
 
 typedef struct		s_ray{
 	t_vertex		o;
@@ -202,9 +210,10 @@ typedef struct		s_all{
 }					t_all;
 
 void				init_all(t_all *all);
-void				ft_crete_lst(t_all *all);
+void				ft_create_obj_lst(t_all *all);
 
 int					ft_render(t_all *all);
+t_rgb				ft_light_calc(t_all *all, t_rgb *color);
 
 int					ft_key_hook(int keycode, t_all *all);
 
@@ -236,6 +245,7 @@ void				ft_get_info_cone(t_all *all, t_ray *ray, t_objs *ptr);
 
 void				ft_get_norm_sphere(t_all *all, t_objs *ptr);
 
+int					ft_shadow_ray(t_all *all, t_light *light);
 
 int					ft_exit(void);
 
