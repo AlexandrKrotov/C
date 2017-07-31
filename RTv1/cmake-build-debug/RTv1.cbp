@@ -122,6 +122,9 @@
 		<Unit filename="/home/m0le/akrotov/backup_RTV/C/RTv1/SRC/ft_render.c">
 			<Option target="RTv1"/>
 		</Unit>
+		<Unit filename="/home/m0le/akrotov/backup_RTV/C/RTv1/SRC/ft_rotate_axis.c">
+			<Option target="RTv1"/>
+		</Unit>
 		<Unit filename="/home/m0le/akrotov/backup_RTV/C/RTv1/SRC/ft_sphere.c">
 			<Option target="RTv1"/>
 		</Unit>

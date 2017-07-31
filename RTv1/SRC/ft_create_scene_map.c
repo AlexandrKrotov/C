@@ -47,10 +47,10 @@ void 	ft_create_obj_lst(t_all *all)
 	ptr->obj = sphere;
 	ptr->ft_inter = &ft_sphere_intersect;
 	ptr->ft_info = ft_get_info_sphere;
-	sphere->center = (t_vertex){-185, -200, 600};
-	sphere->radius = 100.0;
+	sphere->center = (t_vertex){0, 0, 0};
+	sphere->radius = 300.0;
 	sphere->r2 = sphere->radius * sphere->radius;
-	sphere->color = (t_rgb){0, 255, 0, 0};
+	sphere->color = (t_rgb){50, 50, 50, 0};
 	sphere->n = 50;
 	sphere->amb_int = 0.1;
 	sphere->dif_int = 1;
@@ -63,7 +63,7 @@ void 	ft_create_obj_lst(t_all *all)
 	ptr->obj = sphere;
 	ptr->ft_inter = ft_sphere_intersect;
 	ptr->ft_info = ft_get_info_sphere;
-	sphere->center = (t_vertex){100, -300, 600};
+	sphere->center = (t_vertex){0, 0, 0};
 	sphere->radius = 100.0;
 	sphere->r2 = sphere->radius * sphere->radius;
 	sphere->color = (t_rgb){255, 0, 0, 0};

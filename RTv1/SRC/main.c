@@ -30,6 +30,10 @@ void	lets_start(void)
 
 int		main(int ac, char **av)
 {
+	char c = 127;
+	unsigned char v;
+	v = (unsigned char)(c + 128);
+	printf("%d", v);
 	lets_start();
 	return (0);
 }

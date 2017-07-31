@@ -47,13 +47,17 @@ t_rgb		ft_light_calc(t_all *all, t_rgb *color)
 	while (ptr != NULL)
 	{
 		size++;
+		all->phong = ft_phong(&all->rt, color, ptr, all->cam);
 		all->flags.shadow = ft_shadow_ray(all, ptr);
-		all->phong = ft_phong(all, color, ptr);
 		if (!all->flags.shadow)
 		{
+//			color->r = (UC)fmin((all->phong.amb.r + all->phong.dif.r + all->phong.spc.r * all->rt.spc_int), 255);
+//			color->g = (UC)fmin((all->phong.amb.g + all->phong.dif.g + all->phong.spc.g * all->rt.spc_int), 255);
+//			color->b = (UC)fmin((all->phong.amb.b + all->phong.dif.b + all->phong.spc.b * all->rt.spc_int), 255);
 			color->r = (UC)fmin((all->phong.dif.r + all->phong.spc.r * all->rt.spc_int), 255);
 			color->g = (UC)fmin((all->phong.dif.g + all->phong.spc.g * all->rt.spc_int), 255);
 			color->b = (UC)fmin((all->phong.dif.b + all->phong.spc.b * all->rt.spc_int), 255);
+			color->opacity = 0;
 			color->opacity = 0;
 		}
 		else
@@ -70,7 +74,10 @@ t_rgb		ft_light_calc(t_all *all, t_rgb *color)
 		ptr = ptr->next;
 	}
 	if (size == 0)
+	{
+		all->phong = ft_phong(&all->rt, color, ptr, all->cam);
 		return (all->phong.amb);
+	}
 	return ((t_rgb){(UC)(ic.r / size),
 					(UC)(ic.g / size),
 					(UC)(ic.b / size)});

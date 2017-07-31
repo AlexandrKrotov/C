@@ -49,6 +49,10 @@ CMakeFiles/RTv1.dir/SRC/ft_render.c.o
  ../includes/libft.h
  ../includes/rtv1.h
  /home/m0le/akrotov/backup_RTV/C/RTv1/SRC/ft_render.c
+CMakeFiles/RTv1.dir/SRC/ft_rotate_axis.c.o
+ ../includes/libft.h
+ ../includes/rtv1.h
+ /home/m0le/akrotov/backup_RTV/C/RTv1/SRC/ft_rotate_axis.c
 CMakeFiles/RTv1.dir/SRC/ft_sphere.c.o
  ../includes/libft.h
  ../includes/rtv1.h

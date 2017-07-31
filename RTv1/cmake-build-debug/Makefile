@@ -447,6 +447,33 @@ SRC/ft_render.c.s:
 	$(MAKE) -f CMakeFiles/RTv1.dir/build.make CMakeFiles/RTv1.dir/SRC/ft_render.c.s
 .PHONY : SRC/ft_render.c.s
 
+SRC/ft_rotate_axis.o: SRC/ft_rotate_axis.c.o
+
+.PHONY : SRC/ft_rotate_axis.o
+
+# target to build an object file
+SRC/ft_rotate_axis.c.o:
+	$(MAKE) -f CMakeFiles/RTv1.dir/build.make CMakeFiles/RTv1.dir/SRC/ft_rotate_axis.c.o
+.PHONY : SRC/ft_rotate_axis.c.o
+
+SRC/ft_rotate_axis.i: SRC/ft_rotate_axis.c.i
+
+.PHONY : SRC/ft_rotate_axis.i
+
+# target to preprocess a source file
+SRC/ft_rotate_axis.c.i:
+	$(MAKE) -f CMakeFiles/RTv1.dir/build.make CMakeFiles/RTv1.dir/SRC/ft_rotate_axis.c.i
+.PHONY : SRC/ft_rotate_axis.c.i
+
+SRC/ft_rotate_axis.s: SRC/ft_rotate_axis.c.s
+
+.PHONY : SRC/ft_rotate_axis.s
+
+# target to generate assembly for a file
+SRC/ft_rotate_axis.c.s:
+	$(MAKE) -f CMakeFiles/RTv1.dir/build.make CMakeFiles/RTv1.dir/SRC/ft_rotate_axis.c.s
+.PHONY : SRC/ft_rotate_axis.c.s
+
 SRC/ft_sphere.o: SRC/ft_sphere.c.o
 
 .PHONY : SRC/ft_sphere.o
@@ -573,6 +600,9 @@ help:
 	@echo "... SRC/ft_render.o"
 	@echo "... SRC/ft_render.i"
 	@echo "... SRC/ft_render.s"
+	@echo "... SRC/ft_rotate_axis.o"
+	@echo "... SRC/ft_rotate_axis.i"
+	@echo "... SRC/ft_rotate_axis.s"
 	@echo "... SRC/ft_sphere.o"
 	@echo "... SRC/ft_sphere.i"
 	@echo "... SRC/ft_sphere.s"

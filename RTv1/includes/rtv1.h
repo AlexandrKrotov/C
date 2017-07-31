@@ -59,23 +59,29 @@
 
 #endif
 
-typedef struct		s_all	t_all;
-typedef struct		s_objs	t_objs;
+typedef	struct s_vertex t_vertex;
+typedef struct s_rgb	t_rgb;
+typedef struct s_irgb	t_irgb;
+typedef struct s_all	t_all;
+typedef struct s_objs	t_objs;
 
-typedef	struct		s_vertex{
-	double			x;
-	double			y;
-	double			z;
-}					t_vertex;
+struct	s_vertex
+{
+	double	x;
+	double	y;
+	double	z;
+};
 
-typedef struct		s_rgb{
+typedef struct		s_rgb
+{
 	unsigned char	r;
 	unsigned char	g;
 	unsigned char	b;
 	unsigned char	opacity;
 }					t_rgb;
 
-typedef struct		s_irgb{
+typedef struct		s_irgb
+{
 	int				r;
 	int				g;
 	int				b;
@@ -165,6 +171,15 @@ typedef struct		s_trans{
 	double 			shift;
 }					t_trans;
 
+typedef struct			s_calc{
+	double				cos_x;
+	double				sin_x;
+	double				cos_y;
+	double				sin_y;
+	double				cos_z;
+	double				sin_z;
+}						t_calc;
+
 typedef	struct		s_phong
 {
 	t_rgb			amb;
@@ -200,7 +215,7 @@ typedef struct		s_all{
 	t_mlx			*mlx;
 	t_dsp			dsp;
 	t_objs			*scene;
-//	t_vertex 		light;
+	t_calc	 		calc;
 	t_light 		*light;
 	t_phong			phong;
 	t_vertex		cam;
@@ -214,8 +229,7 @@ void				ft_create_obj_lst(t_all *all);
 void				ft_create_light_lst(t_all *all);
 
 int					ft_render(t_all *all);
-t_phong				ft_phong(t_all *all, t_rgb *color, t_light *light);
-t_rgb				ft_light_calc(t_all *all, t_rgb *color);
+t_phong				ft_phong(const t_rt *rt, t_rgb *color, t_light *light, t_vertex cam);t_rgb				ft_light_calc(t_all *all, t_rgb *color);
 
 int					ft_key_hook(int keycode, t_all *all);
 

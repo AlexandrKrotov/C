@@ -16,6 +16,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/home/m0le/akrotov/backup_RTV/C/RTv1/SRC/ft_phong.c" "/home/m0le/akrotov/backup_RTV/C/RTv1/cmake-build-debug/CMakeFiles/RTv1.dir/SRC/ft_phong.c.o"
   "/home/m0le/akrotov/backup_RTV/C/RTv1/SRC/ft_plane.c" "/home/m0le/akrotov/backup_RTV/C/RTv1/cmake-build-debug/CMakeFiles/RTv1.dir/SRC/ft_plane.c.o"
   "/home/m0le/akrotov/backup_RTV/C/RTv1/SRC/ft_render.c" "/home/m0le/akrotov/backup_RTV/C/RTv1/cmake-build-debug/CMakeFiles/RTv1.dir/SRC/ft_render.c.o"
+  "/home/m0le/akrotov/backup_RTV/C/RTv1/SRC/ft_rotate_axis.c" "/home/m0le/akrotov/backup_RTV/C/RTv1/cmake-build-debug/CMakeFiles/RTv1.dir/SRC/ft_rotate_axis.c.o"
   "/home/m0le/akrotov/backup_RTV/C/RTv1/SRC/ft_sphere.c" "/home/m0le/akrotov/backup_RTV/C/RTv1/cmake-build-debug/CMakeFiles/RTv1.dir/SRC/ft_sphere.c.o"
   "/home/m0le/akrotov/backup_RTV/C/RTv1/SRC/ft_vector_math.c" "/home/m0le/akrotov/backup_RTV/C/RTv1/cmake-build-debug/CMakeFiles/RTv1.dir/SRC/ft_vector_math.c.o"
   "/home/m0le/akrotov/backup_RTV/C/RTv1/SRC/main.c" "/home/m0le/akrotov/backup_RTV/C/RTv1/cmake-build-debug/CMakeFiles/RTv1.dir/SRC/main.c.o"
