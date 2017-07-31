@@ -113,6 +113,9 @@
 		<Unit filename="/home/m0le/akrotov/backup_RTV/C/RTv1/SRC/ft_mous_hook.c">
 			<Option target="RTv1"/>
 		</Unit>
+		<Unit filename="/home/m0le/akrotov/backup_RTV/C/RTv1/SRC/ft_phong.c">
+			<Option target="RTv1"/>
+		</Unit>
 		<Unit filename="/home/m0le/akrotov/backup_RTV/C/RTv1/SRC/ft_plane.c">
 			<Option target="RTv1"/>
 		</Unit>

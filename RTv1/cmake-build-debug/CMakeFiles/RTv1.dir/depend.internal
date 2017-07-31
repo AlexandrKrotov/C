@@ -37,6 +37,10 @@ CMakeFiles/RTv1.dir/SRC/ft_mous_hook.c.o
  ../includes/libft.h
  ../includes/rtv1.h
  /home/m0le/akrotov/backup_RTV/C/RTv1/SRC/ft_mous_hook.c
+CMakeFiles/RTv1.dir/SRC/ft_phong.c.o
+ ../includes/libft.h
+ ../includes/rtv1.h
+ /home/m0le/akrotov/backup_RTV/C/RTv1/SRC/ft_phong.c
 CMakeFiles/RTv1.dir/SRC/ft_plane.c.o
  ../includes/libft.h
  ../includes/rtv1.h

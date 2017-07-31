@@ -13,6 +13,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/RTv1.dir/SRC/ft_cylinder.c.o"
   "CMakeFiles/RTv1.dir/SRC/ft_cone.c.o"
   "CMakeFiles/RTv1.dir/SRC/ft_light.c.o"
+  "CMakeFiles/RTv1.dir/SRC/ft_phong.c.o"
   "RTv1.pdb"
   "RTv1"
 )

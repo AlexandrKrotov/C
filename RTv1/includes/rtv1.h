@@ -211,8 +211,10 @@ typedef struct		s_all{
 
 void				init_all(t_all *all);
 void				ft_create_obj_lst(t_all *all);
+void				ft_create_light_lst(t_all *all);
 
 int					ft_render(t_all *all);
+t_phong				ft_phong(t_all *all, t_rgb *color, t_light *light);
 t_rgb				ft_light_calc(t_all *all, t_rgb *color);
 
 int					ft_key_hook(int keycode, t_all *all);

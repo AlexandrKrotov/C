@@ -366,6 +366,33 @@ SRC/ft_mous_hook.c.s:
 	$(MAKE) -f CMakeFiles/RTv1.dir/build.make CMakeFiles/RTv1.dir/SRC/ft_mous_hook.c.s
 .PHONY : SRC/ft_mous_hook.c.s
 
+SRC/ft_phong.o: SRC/ft_phong.c.o
+
+.PHONY : SRC/ft_phong.o
+
+# target to build an object file
+SRC/ft_phong.c.o:
+	$(MAKE) -f CMakeFiles/RTv1.dir/build.make CMakeFiles/RTv1.dir/SRC/ft_phong.c.o
+.PHONY : SRC/ft_phong.c.o
+
+SRC/ft_phong.i: SRC/ft_phong.c.i
+
+.PHONY : SRC/ft_phong.i
+
+# target to preprocess a source file
+SRC/ft_phong.c.i:
+	$(MAKE) -f CMakeFiles/RTv1.dir/build.make CMakeFiles/RTv1.dir/SRC/ft_phong.c.i
+.PHONY : SRC/ft_phong.c.i
+
+SRC/ft_phong.s: SRC/ft_phong.c.s
+
+.PHONY : SRC/ft_phong.s
+
+# target to generate assembly for a file
+SRC/ft_phong.c.s:
+	$(MAKE) -f CMakeFiles/RTv1.dir/build.make CMakeFiles/RTv1.dir/SRC/ft_phong.c.s
+.PHONY : SRC/ft_phong.c.s
+
 SRC/ft_plane.o: SRC/ft_plane.c.o
 
 .PHONY : SRC/ft_plane.o
@@ -537,6 +564,9 @@ help:
 	@echo "... SRC/ft_mous_hook.o"
 	@echo "... SRC/ft_mous_hook.i"
 	@echo "... SRC/ft_mous_hook.s"
+	@echo "... SRC/ft_phong.o"
+	@echo "... SRC/ft_phong.i"
+	@echo "... SRC/ft_phong.s"
 	@echo "... SRC/ft_plane.o"
 	@echo "... SRC/ft_plane.i"
 	@echo "... SRC/ft_plane.s"

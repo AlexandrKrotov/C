@@ -14,12 +14,7 @@ void	init_all(t_all *all)
 	all->dsp.rend_ws = 0 - all->dsp.half_w;
 	all->dsp.rend_we = 0 + all->dsp.half_w;
 	all->cam = (t_vertex){0, 0, -1000};
-	all->light = malloc(sizeof(t_light));
-	all->light->o = (t_vertex){0, 0, -1000};
-	all->light->next = NULL;
-	all->light->next = malloc(sizeof(t_light));
-	all->light->next->o = (t_vertex){0, 0, -1000};
-	all->light->next->next = NULL;
+	all->light = NULL;
 	all->trans.zoom = 0;
 	all->trans.shift = 0;
 	all->rt.brightness = 0;
