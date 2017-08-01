@@ -29,7 +29,8 @@ t_light		*ft_add_light_lst(t_light *light, t_vertex pos)
 
 void	ft_create_light_lst(t_all *all)
 {
-	all->light = ft_add_light_lst(all->light, (t_vertex){0, -1000, -1000});
+	///ЗАЙМИСЬ! 1 ИСТОЧНИК ЯРЧЕ ЧЕМ НЕСКОЛЬКО!
+//	all->light = ft_add_light_lst(all->light, (t_vertex){0, -1000, -1000});
 	all->light = ft_add_light_lst(all->light, (t_vertex){-1000, 0, -1000});
 	all->light = ft_add_light_lst(all->light, (t_vertex){0, 0, -1000});
 }

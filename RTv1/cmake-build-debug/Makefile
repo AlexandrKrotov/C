@@ -123,6 +123,33 @@ RTv1/fast:
 	$(MAKE) -f CMakeFiles/RTv1.dir/build.make CMakeFiles/RTv1.dir/build
 .PHONY : RTv1/fast
 
+SRC/ft_antialiasing.o: SRC/ft_antialiasing.c.o
+
+.PHONY : SRC/ft_antialiasing.o
+
+# target to build an object file
+SRC/ft_antialiasing.c.o:
+	$(MAKE) -f CMakeFiles/RTv1.dir/build.make CMakeFiles/RTv1.dir/SRC/ft_antialiasing.c.o
+.PHONY : SRC/ft_antialiasing.c.o
+
+SRC/ft_antialiasing.i: SRC/ft_antialiasing.c.i
+
+.PHONY : SRC/ft_antialiasing.i
+
+# target to preprocess a source file
+SRC/ft_antialiasing.c.i:
+	$(MAKE) -f CMakeFiles/RTv1.dir/build.make CMakeFiles/RTv1.dir/SRC/ft_antialiasing.c.i
+.PHONY : SRC/ft_antialiasing.c.i
+
+SRC/ft_antialiasing.s: SRC/ft_antialiasing.c.s
+
+.PHONY : SRC/ft_antialiasing.s
+
+# target to generate assembly for a file
+SRC/ft_antialiasing.c.s:
+	$(MAKE) -f CMakeFiles/RTv1.dir/build.make CMakeFiles/RTv1.dir/SRC/ft_antialiasing.c.s
+.PHONY : SRC/ft_antialiasing.c.s
+
 SRC/ft_cone.o: SRC/ft_cone.c.o
 
 .PHONY : SRC/ft_cone.o
@@ -564,6 +591,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... RTv1"
+	@echo "... SRC/ft_antialiasing.o"
+	@echo "... SRC/ft_antialiasing.i"
+	@echo "... SRC/ft_antialiasing.s"
 	@echo "... SRC/ft_cone.o"
 	@echo "... SRC/ft_cone.i"
 	@echo "... SRC/ft_cone.s"

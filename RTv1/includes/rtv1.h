@@ -194,14 +194,19 @@ typedef	struct 		s_light{
 	struct s_light	*next;
 }					t_light;
 
-typedef struct		s_mlx{
-	void			*mlx;
-	void			*wnd;
+
+typedef struct		s_img{
 	void			*img;
 	char			*gda;
 	int				bpp;
 	int				size_line;
 	int				endian;
+}					t_img;
+typedef struct		s_mlx{
+	void			*mlx;
+	void			*wnd;
+	t_img			img;
+	t_img			img_a;
 }					t_mlx;
 
 typedef struct		s_objs{
@@ -262,6 +267,7 @@ void				ft_get_info_cone(t_all *all, t_ray *ray, t_objs *ptr);
 void				ft_get_norm_sphere(t_all *all, t_objs *ptr);
 
 int					ft_shadow_ray(t_all *all, t_light *light);
+void				ft_antialiasing(t_mlx *mlx);
 
 int					ft_exit(void);
 

@@ -7,10 +7,10 @@ void	ft_put_color(t_all *all, int x, int y, t_rgb color)
 	if ((x < (D_WIDTH) && x >= 0) && y < D_HEIGHT && y >= 0)
 	{
 		a = ((y * all->dsp.dsp_w + x) * 4);
-		all->mlx->gda[a] = color.b;
-		all->mlx->gda[a + 1] = color.g;
-		all->mlx->gda[a + 2] = color.r;
-		all->mlx->gda[a + 3] = color.opacity;
+		all->mlx->img.gda[a] = color.b;
+		all->mlx->img.gda[a + 1] = color.g;
+		all->mlx->img.gda[a + 2] = color.r;
+		all->mlx->img.gda[a + 3] = 0;
 	}
 }
 
@@ -96,80 +96,20 @@ void		ft_draw(t_all *all)
 	}
 }
 
-void	ft_antialiasing(t_mlx *mlx)
-{
-	int x;
-	int y;
-	int size;
-	int color_1;
-	int color_2;
-	int color_3;
-	int color_4;
-	int mid;
-	char *ptr;
-
-	y = 0;
-	while (y < D_HEIGHT)
-	{
-		x = 0;
-		while (x < D_WIDTH)
-		{
-			color_1 = 0;
-			color_2 = 0;
-			color_3 = 0;
-			color_4 = 0;
-			size = 1;
-			t_rgb c;
-
-			if (y - 1 >= 0)
-			{
-				ptr = mlx->gda + (y -1) * mlx->size_line + x * 4;
-				color_1 = *((int *)ptr);
-				size++;
-			}
-			if (x + 1 < D_WIDTH)
-			{
-				ptr = mlx->gda + y * mlx->size_line + (x + 1) * 4;
-				color_2 = *((int *)ptr);
-				size++;
-			}
-			if (y + 1 < D_HEIGHT)
-			{
-				ptr = mlx->gda + (y + 1) * mlx->size_line + x * 4;
-				color_3 = *((int *)ptr);
-				size++;
-
-			}
-			if (x - 1 >= 0)
-			{
-				ptr = mlx->gda + y * mlx->size_line + (x - 1) * 4;
-				color_4 = *((int *)ptr);
-				size++;
-			}
-			ptr = mlx->gda + y * mlx->size_line + x * 4;
-			mid = *((int *)ptr) + color_1 + color_2 +  color_3 + color_4;
-			mid /= size;
-//			c.b = (unsigned char)*ptr;
-//			c.g = (unsigned char)ptr[1];
-//			c.r = (unsigned char)ptr[2];
-//			*ptr = c.b
-			*((int *)ptr) = mid;
-			x++;
-		}
-		y++;
-	}
-}
 
 int		ft_render(t_all *all)
 {
 	if (all->flags.redraw == TRUE)
 	{
-		all->mlx->img = mlx_new_image(all->mlx->mlx, D_WIDTH, D_HEIGHT);
-		all->mlx->gda = mlx_get_data_addr(all->mlx->img, &all->mlx->bpp, &all->mlx->size_line, &all->mlx->endian);
+		all->mlx->img.img = mlx_new_image(all->mlx->mlx, D_WIDTH, D_HEIGHT);
+		all->mlx->img.gda = mlx_get_data_addr(all->mlx->img.img, &all->mlx->img.bpp, &all->mlx->img.size_line, &all->mlx->img.endian);
+		all->mlx->img_a.img = mlx_new_image(all->mlx->mlx, D_WIDTH, D_HEIGHT);
+		all->mlx->img_a.gda = mlx_get_data_addr(all->mlx->img_a.img, &all->mlx->img_a.bpp, &all->mlx->img_a.size_line, &all->mlx->img_a.endian);
 		ft_draw(all);
-		ft_antialiasing(all->mlx);
-		mlx_put_image_to_window(all->mlx->mlx, all->mlx->wnd, all->mlx->img, 0, 0);
-		mlx_destroy_image(all->mlx->mlx, all->mlx->img);
+//		ft_antialiasing(all->mlx);
+		mlx_put_image_to_window(all->mlx->mlx, all->mlx->wnd, all->mlx->img.img, 0, 0);
+		mlx_destroy_image(all->mlx->mlx, all->mlx->img.img);
+		mlx_destroy_image(all->mlx->mlx, all->mlx->img_a.img);
 		all->flags.redraw = FALSE;
 	}
 }

@@ -86,6 +86,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/m0le/akrotov/backup_RTV/C/RTv1/SRC/ft_antialiasing.c">
+			<Option target="RTv1"/>
+		</Unit>
 		<Unit filename="/home/m0le/akrotov/backup_RTV/C/RTv1/SRC/ft_cone.c">
 			<Option target="RTv1"/>
 		</Unit>
