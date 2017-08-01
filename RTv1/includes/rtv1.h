@@ -227,6 +227,8 @@ typedef struct		s_all{
 	t_rt			rt;
 	t_trans			trans;
 	t_flags			flags;
+	int				x;
+	int				y;
 }					t_all;
 
 void				init_all(t_all *all);

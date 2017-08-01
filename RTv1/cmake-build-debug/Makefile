@@ -339,33 +339,6 @@ SRC/ft_light.c.s:
 	$(MAKE) -f CMakeFiles/RTv1.dir/build.make CMakeFiles/RTv1.dir/SRC/ft_light.c.s
 .PHONY : SRC/ft_light.c.s
 
-SRC/ft_math.o: SRC/ft_math.c.o
-
-.PHONY : SRC/ft_math.o
-
-# target to build an object file
-SRC/ft_math.c.o:
-	$(MAKE) -f CMakeFiles/RTv1.dir/build.make CMakeFiles/RTv1.dir/SRC/ft_math.c.o
-.PHONY : SRC/ft_math.c.o
-
-SRC/ft_math.i: SRC/ft_math.c.i
-
-.PHONY : SRC/ft_math.i
-
-# target to preprocess a source file
-SRC/ft_math.c.i:
-	$(MAKE) -f CMakeFiles/RTv1.dir/build.make CMakeFiles/RTv1.dir/SRC/ft_math.c.i
-.PHONY : SRC/ft_math.c.i
-
-SRC/ft_math.s: SRC/ft_math.c.s
-
-.PHONY : SRC/ft_math.s
-
-# target to generate assembly for a file
-SRC/ft_math.c.s:
-	$(MAKE) -f CMakeFiles/RTv1.dir/build.make CMakeFiles/RTv1.dir/SRC/ft_math.c.s
-.PHONY : SRC/ft_math.c.s
-
 SRC/ft_mous_hook.o: SRC/ft_mous_hook.c.o
 
 .PHONY : SRC/ft_mous_hook.o
@@ -615,9 +588,6 @@ help:
 	@echo "... SRC/ft_light.o"
 	@echo "... SRC/ft_light.i"
 	@echo "... SRC/ft_light.s"
-	@echo "... SRC/ft_math.o"
-	@echo "... SRC/ft_math.i"
-	@echo "... SRC/ft_math.s"
 	@echo "... SRC/ft_mous_hook.o"
 	@echo "... SRC/ft_mous_hook.i"
 	@echo "... SRC/ft_mous_hook.s"

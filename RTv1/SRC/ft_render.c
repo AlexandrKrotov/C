@@ -83,6 +83,8 @@ void		ft_draw(t_all *all)
 		x = all->dsp.rend_ws;
 		while (x < all->dsp.rend_we)
 		{
+			all->x = x;
+			all->y = y;
 			all->rt.rgb = (t_rgb){0, 0, 0, 0};
 			all->rt.n = 0;
 			inter = ft_primary_ray(all, x, y);

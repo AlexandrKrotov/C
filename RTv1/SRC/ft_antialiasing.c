@@ -2,11 +2,9 @@
 
 void	ft_ptr_to_rgb(char *ptr, t_rgb *rgb)
 {
-	char *ptr_new = ptr;
-
-	rgb->b = 256 + *ptr++;
-	rgb->g = 256 + *ptr++;
-	rgb->r = 256 + *ptr;
+	rgb->b = (unsigned char)(256 + *ptr++);
+	rgb->g = (unsigned char)(256 + *ptr++);
+	rgb->r = (unsigned char)(256 + *ptr);
 	rgb->opacity = 0;
 }
 
@@ -15,12 +13,12 @@ void	ft_antialiasing(t_mlx *mlx)
 	int 	x;
 	int 	y;
 	int 	size;
+	char	*ptr;
 	t_rgb 	color_1;
 	t_rgb 	color_2;
 	t_rgb 	color_3;
 	t_rgb 	color_4;
 	t_irgb	mid;
-	unsigned char	*ptr;
 
 	y = 0;
 	while (y < D_HEIGHT)
@@ -37,33 +35,29 @@ void	ft_antialiasing(t_mlx *mlx)
 			if (y - 1 >= 0)
 			{
 				ptr = (mlx->img.gda + (y - 1) * mlx->img.size_line + x * 4);
-//				color_1 = *((int *)ptr);
 				ft_ptr_to_rgb(ptr, &color_1);
 				size++;
 			}
 			if (x + 1 < D_WIDTH)
 			{
-				ptr = (unsigned char *)(mlx->img.gda + y * mlx->img.size_line + (x + 1) * 4);
-//				color_2 = *((int *)ptr);
+				ptr = (mlx->img.gda + y * mlx->img.size_line + (x + 1) * 4);
 				ft_ptr_to_rgb(ptr, &color_2);
 				size++;
 			}
 			if (y + 1 < D_HEIGHT)
 			{
-				ptr = (unsigned char *) (mlx->img.gda + (y + 1) * mlx->img.size_line + x * 4);
-//				color_3 = *((int *)ptr);
+				ptr = (mlx->img.gda + (y + 1) * mlx->img.size_line + x * 4);
 				ft_ptr_to_rgb(ptr, &color_3);
 				size++;
 
 			}
 			if (x - 1 >= 0)
 			{
-				ptr = (unsigned char *)(mlx->img.gda + y * mlx->img.size_line + (x - 1) * 4);
-//				color_4 = *((int *)ptr);
+				ptr = (mlx->img.gda + y * mlx->img.size_line + (x - 1) * 4);
 				ft_ptr_to_rgb(ptr, &color_4);
 				size++;
 			}
-			ptr = (unsigned char *)(mlx->img.gda + y * mlx->img.size_line + x * 4);
+			ptr = (mlx->img.gda + y * mlx->img.size_line + x * 4);
 			mid.b = (unsigned char)(256 + *ptr++);
 			mid.g = (unsigned char)(256 + *ptr++);
 			mid.r = (unsigned char)(256 + *ptr);
@@ -73,7 +67,7 @@ void	ft_antialiasing(t_mlx *mlx)
 			mid.r /= size;
 			mid.g /= size;
 			mid.b /= size;
-			ptr = (unsigned char *)(mlx->img_a.gda + y * mlx->img.size_line + x * 4);
+			ptr = (mlx->img_a.gda + y * mlx->img.size_line + x * 4);
 			ptr[0] = (char)mid.b;
 			ptr[1] = (char)mid.g;
 			ptr[2] = (char)mid.r;

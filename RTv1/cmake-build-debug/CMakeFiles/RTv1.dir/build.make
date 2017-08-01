@@ -225,33 +225,9 @@ CMakeFiles/RTv1.dir/SRC/ft_vector_math.c.o.provides: CMakeFiles/RTv1.dir/SRC/ft_
 CMakeFiles/RTv1.dir/SRC/ft_vector_math.c.o.provides.build: CMakeFiles/RTv1.dir/SRC/ft_vector_math.c.o
 
 
-CMakeFiles/RTv1.dir/SRC/ft_math.c.o: CMakeFiles/RTv1.dir/flags.make
-CMakeFiles/RTv1.dir/SRC/ft_math.c.o: ../SRC/ft_math.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/m0le/akrotov/backup_RTV/C/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/RTv1.dir/SRC/ft_math.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/SRC/ft_math.c.o   -c /home/m0le/akrotov/backup_RTV/C/RTv1/SRC/ft_math.c
-
-CMakeFiles/RTv1.dir/SRC/ft_math.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/SRC/ft_math.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/m0le/akrotov/backup_RTV/C/RTv1/SRC/ft_math.c > CMakeFiles/RTv1.dir/SRC/ft_math.c.i
-
-CMakeFiles/RTv1.dir/SRC/ft_math.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/SRC/ft_math.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/m0le/akrotov/backup_RTV/C/RTv1/SRC/ft_math.c -o CMakeFiles/RTv1.dir/SRC/ft_math.c.s
-
-CMakeFiles/RTv1.dir/SRC/ft_math.c.o.requires:
-
-.PHONY : CMakeFiles/RTv1.dir/SRC/ft_math.c.o.requires
-
-CMakeFiles/RTv1.dir/SRC/ft_math.c.o.provides: CMakeFiles/RTv1.dir/SRC/ft_math.c.o.requires
-	$(MAKE) -f CMakeFiles/RTv1.dir/build.make CMakeFiles/RTv1.dir/SRC/ft_math.c.o.provides.build
-.PHONY : CMakeFiles/RTv1.dir/SRC/ft_math.c.o.provides
-
-CMakeFiles/RTv1.dir/SRC/ft_math.c.o.provides.build: CMakeFiles/RTv1.dir/SRC/ft_math.c.o
-
-
 CMakeFiles/RTv1.dir/SRC/ft_create_scene_map.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/SRC/ft_create_scene_map.c.o: ../SRC/ft_create_scene_map.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/m0le/akrotov/backup_RTV/C/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/RTv1.dir/SRC/ft_create_scene_map.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/m0le/akrotov/backup_RTV/C/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/RTv1.dir/SRC/ft_create_scene_map.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/SRC/ft_create_scene_map.c.o   -c /home/m0le/akrotov/backup_RTV/C/RTv1/SRC/ft_create_scene_map.c
 
 CMakeFiles/RTv1.dir/SRC/ft_create_scene_map.c.i: cmake_force
@@ -275,7 +251,7 @@ CMakeFiles/RTv1.dir/SRC/ft_create_scene_map.c.o.provides.build: CMakeFiles/RTv1.
 
 CMakeFiles/RTv1.dir/SRC/ft_sphere.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/SRC/ft_sphere.c.o: ../SRC/ft_sphere.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/m0le/akrotov/backup_RTV/C/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/RTv1.dir/SRC/ft_sphere.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/m0le/akrotov/backup_RTV/C/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/RTv1.dir/SRC/ft_sphere.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/SRC/ft_sphere.c.o   -c /home/m0le/akrotov/backup_RTV/C/RTv1/SRC/ft_sphere.c
 
 CMakeFiles/RTv1.dir/SRC/ft_sphere.c.i: cmake_force
@@ -299,7 +275,7 @@ CMakeFiles/RTv1.dir/SRC/ft_sphere.c.o.provides.build: CMakeFiles/RTv1.dir/SRC/ft
 
 CMakeFiles/RTv1.dir/SRC/ft_plane.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/SRC/ft_plane.c.o: ../SRC/ft_plane.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/m0le/akrotov/backup_RTV/C/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/RTv1.dir/SRC/ft_plane.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/m0le/akrotov/backup_RTV/C/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/RTv1.dir/SRC/ft_plane.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/SRC/ft_plane.c.o   -c /home/m0le/akrotov/backup_RTV/C/RTv1/SRC/ft_plane.c
 
 CMakeFiles/RTv1.dir/SRC/ft_plane.c.i: cmake_force
@@ -323,7 +299,7 @@ CMakeFiles/RTv1.dir/SRC/ft_plane.c.o.provides.build: CMakeFiles/RTv1.dir/SRC/ft_
 
 CMakeFiles/RTv1.dir/SRC/ft_cylinder.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/SRC/ft_cylinder.c.o: ../SRC/ft_cylinder.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/m0le/akrotov/backup_RTV/C/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/RTv1.dir/SRC/ft_cylinder.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/m0le/akrotov/backup_RTV/C/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/RTv1.dir/SRC/ft_cylinder.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/SRC/ft_cylinder.c.o   -c /home/m0le/akrotov/backup_RTV/C/RTv1/SRC/ft_cylinder.c
 
 CMakeFiles/RTv1.dir/SRC/ft_cylinder.c.i: cmake_force
@@ -347,7 +323,7 @@ CMakeFiles/RTv1.dir/SRC/ft_cylinder.c.o.provides.build: CMakeFiles/RTv1.dir/SRC/
 
 CMakeFiles/RTv1.dir/SRC/ft_cone.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/SRC/ft_cone.c.o: ../SRC/ft_cone.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/m0le/akrotov/backup_RTV/C/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/RTv1.dir/SRC/ft_cone.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/m0le/akrotov/backup_RTV/C/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/RTv1.dir/SRC/ft_cone.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/SRC/ft_cone.c.o   -c /home/m0le/akrotov/backup_RTV/C/RTv1/SRC/ft_cone.c
 
 CMakeFiles/RTv1.dir/SRC/ft_cone.c.i: cmake_force
@@ -371,7 +347,7 @@ CMakeFiles/RTv1.dir/SRC/ft_cone.c.o.provides.build: CMakeFiles/RTv1.dir/SRC/ft_c
 
 CMakeFiles/RTv1.dir/SRC/ft_light.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/SRC/ft_light.c.o: ../SRC/ft_light.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/m0le/akrotov/backup_RTV/C/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/RTv1.dir/SRC/ft_light.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/m0le/akrotov/backup_RTV/C/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/RTv1.dir/SRC/ft_light.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/SRC/ft_light.c.o   -c /home/m0le/akrotov/backup_RTV/C/RTv1/SRC/ft_light.c
 
 CMakeFiles/RTv1.dir/SRC/ft_light.c.i: cmake_force
@@ -395,7 +371,7 @@ CMakeFiles/RTv1.dir/SRC/ft_light.c.o.provides.build: CMakeFiles/RTv1.dir/SRC/ft_
 
 CMakeFiles/RTv1.dir/SRC/ft_phong.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/SRC/ft_phong.c.o: ../SRC/ft_phong.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/m0le/akrotov/backup_RTV/C/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/RTv1.dir/SRC/ft_phong.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/m0le/akrotov/backup_RTV/C/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/RTv1.dir/SRC/ft_phong.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/SRC/ft_phong.c.o   -c /home/m0le/akrotov/backup_RTV/C/RTv1/SRC/ft_phong.c
 
 CMakeFiles/RTv1.dir/SRC/ft_phong.c.i: cmake_force
@@ -419,7 +395,7 @@ CMakeFiles/RTv1.dir/SRC/ft_phong.c.o.provides.build: CMakeFiles/RTv1.dir/SRC/ft_
 
 CMakeFiles/RTv1.dir/SRC/ft_rotate_axis.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/SRC/ft_rotate_axis.c.o: ../SRC/ft_rotate_axis.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/m0le/akrotov/backup_RTV/C/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/RTv1.dir/SRC/ft_rotate_axis.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/m0le/akrotov/backup_RTV/C/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/RTv1.dir/SRC/ft_rotate_axis.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/SRC/ft_rotate_axis.c.o   -c /home/m0le/akrotov/backup_RTV/C/RTv1/SRC/ft_rotate_axis.c
 
 CMakeFiles/RTv1.dir/SRC/ft_rotate_axis.c.i: cmake_force
@@ -443,7 +419,7 @@ CMakeFiles/RTv1.dir/SRC/ft_rotate_axis.c.o.provides.build: CMakeFiles/RTv1.dir/S
 
 CMakeFiles/RTv1.dir/SRC/ft_antialiasing.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/SRC/ft_antialiasing.c.o: ../SRC/ft_antialiasing.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/m0le/akrotov/backup_RTV/C/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/RTv1.dir/SRC/ft_antialiasing.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/m0le/akrotov/backup_RTV/C/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/RTv1.dir/SRC/ft_antialiasing.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/SRC/ft_antialiasing.c.o   -c /home/m0le/akrotov/backup_RTV/C/RTv1/SRC/ft_antialiasing.c
 
 CMakeFiles/RTv1.dir/SRC/ft_antialiasing.c.i: cmake_force
@@ -474,7 +450,6 @@ RTv1_OBJECTS = \
 "CMakeFiles/RTv1.dir/SRC/ft_render.c.o" \
 "CMakeFiles/RTv1.dir/SRC/ft_init_all.c.o" \
 "CMakeFiles/RTv1.dir/SRC/ft_vector_math.c.o" \
-"CMakeFiles/RTv1.dir/SRC/ft_math.c.o" \
 "CMakeFiles/RTv1.dir/SRC/ft_create_scene_map.c.o" \
 "CMakeFiles/RTv1.dir/SRC/ft_sphere.c.o" \
 "CMakeFiles/RTv1.dir/SRC/ft_plane.c.o" \
@@ -495,7 +470,6 @@ RTv1: CMakeFiles/RTv1.dir/SRC/ft_mous_hook.c.o
 RTv1: CMakeFiles/RTv1.dir/SRC/ft_render.c.o
 RTv1: CMakeFiles/RTv1.dir/SRC/ft_init_all.c.o
 RTv1: CMakeFiles/RTv1.dir/SRC/ft_vector_math.c.o
-RTv1: CMakeFiles/RTv1.dir/SRC/ft_math.c.o
 RTv1: CMakeFiles/RTv1.dir/SRC/ft_create_scene_map.c.o
 RTv1: CMakeFiles/RTv1.dir/SRC/ft_sphere.c.o
 RTv1: CMakeFiles/RTv1.dir/SRC/ft_plane.c.o
@@ -509,7 +483,7 @@ RTv1: CMakeFiles/RTv1.dir/build.make
 RTv1: ../libft/libft.a
 RTv1: ../minilibx/libmlx_Linux.a
 RTv1: CMakeFiles/RTv1.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/m0le/akrotov/backup_RTV/C/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking C executable RTv1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/m0le/akrotov/backup_RTV/C/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking C executable RTv1"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/RTv1.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -524,7 +498,6 @@ CMakeFiles/RTv1.dir/requires: CMakeFiles/RTv1.dir/SRC/ft_mous_hook.c.o.requires
 CMakeFiles/RTv1.dir/requires: CMakeFiles/RTv1.dir/SRC/ft_render.c.o.requires
 CMakeFiles/RTv1.dir/requires: CMakeFiles/RTv1.dir/SRC/ft_init_all.c.o.requires
 CMakeFiles/RTv1.dir/requires: CMakeFiles/RTv1.dir/SRC/ft_vector_math.c.o.requires
-CMakeFiles/RTv1.dir/requires: CMakeFiles/RTv1.dir/SRC/ft_math.c.o.requires
 CMakeFiles/RTv1.dir/requires: CMakeFiles/RTv1.dir/SRC/ft_create_scene_map.c.o.requires
 CMakeFiles/RTv1.dir/requires: CMakeFiles/RTv1.dir/SRC/ft_sphere.c.o.requires
 CMakeFiles/RTv1.dir/requires: CMakeFiles/RTv1.dir/SRC/ft_plane.c.o.requires
