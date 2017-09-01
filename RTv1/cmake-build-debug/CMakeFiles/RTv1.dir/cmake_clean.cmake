@@ -15,6 +15,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/RTv1.dir/SRC/ft_phong.c.o"
   "CMakeFiles/RTv1.dir/SRC/ft_rotate_axis.c.o"
   "CMakeFiles/RTv1.dir/SRC/ft_antialiasing.c.o"
+  "CMakeFiles/RTv1.dir/SRC/ft_error.c.o"
   "RTv1.pdb"
   "RTv1"
 )

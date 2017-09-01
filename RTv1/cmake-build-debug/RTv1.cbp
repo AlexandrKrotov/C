@@ -98,6 +98,9 @@
 		<Unit filename="/home/m0le/akrotov/backup_RTV/C/RTv1/SRC/ft_cylinder.c">
 			<Option target="RTv1"/>
 		</Unit>
+		<Unit filename="/home/m0le/akrotov/backup_RTV/C/RTv1/SRC/ft_error.c">
+			<Option target="RTv1"/>
+		</Unit>
 		<Unit filename="/home/m0le/akrotov/backup_RTV/C/RTv1/SRC/ft_exit.c">
 			<Option target="RTv1"/>
 		</Unit>

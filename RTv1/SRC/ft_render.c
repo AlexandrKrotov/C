@@ -29,7 +29,7 @@ int		ft_primary_ray(t_all *all, int x, int y)
 	ray.d = ft_sub_vector(ray.o, cam);
 	ray.d =ft_normalized_vector(ray.d);
 	ray = (t_ray){cam, ray.d};
-	all->rt.t = 200000;
+	all->rt.t = 20000;
 	inter = FALSE;
 	while (ptr != NULL)
 	{
@@ -105,13 +105,11 @@ int		ft_render(t_all *all)
 	{
 		all->mlx->img.img = mlx_new_image(all->mlx->mlx, D_WIDTH, D_HEIGHT);
 		all->mlx->img.gda = mlx_get_data_addr(all->mlx->img.img, &all->mlx->img.bpp, &all->mlx->img.size_line, &all->mlx->img.endian);
-		all->mlx->img_a.img = mlx_new_image(all->mlx->mlx, D_WIDTH, D_HEIGHT);
-		all->mlx->img_a.gda = mlx_get_data_addr(all->mlx->img_a.img, &all->mlx->img_a.bpp, &all->mlx->img_a.size_line, &all->mlx->img_a.endian);
 		ft_draw(all);
-//		ft_antialiasing(all->mlx);
+		if (all->flags.aliasing == TRUE)
+			ft_antialiasing(all->mlx->img.gda, 2);
 		mlx_put_image_to_window(all->mlx->mlx, all->mlx->wnd, all->mlx->img.img, 0, 0);
 		mlx_destroy_image(all->mlx->mlx, all->mlx->img.img);
-		mlx_destroy_image(all->mlx->mlx, all->mlx->img_a.img);
 		all->flags.redraw = FALSE;
 	}
 }

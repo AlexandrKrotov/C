@@ -17,6 +17,10 @@ CMakeFiles/RTv1.dir/SRC/ft_cylinder.c.o
  ../includes/libft.h
  ../includes/rtv1.h
  /home/m0le/akrotov/backup_RTV/C/RTv1/SRC/ft_cylinder.c
+CMakeFiles/RTv1.dir/SRC/ft_error.c.o
+ ../includes/libft.h
+ ../includes/rtv1.h
+ /home/m0le/akrotov/backup_RTV/C/RTv1/SRC/ft_error.c
 CMakeFiles/RTv1.dir/SRC/ft_exit.c.o
  ../includes/libft.h
  ../includes/rtv1.h

@@ -20,6 +20,7 @@
 # define D_NAME		"RTv1"
 # define D_WIDTH	800
 # define D_HEIGHT	600
+# define SIZE_LINE  D_WIDTH * 4
 # define TRUE		1
 # define FALSE		0
 # define SHADOW		0.20
@@ -60,6 +61,7 @@
 #endif
 
 typedef	struct s_vertex t_vertex;
+typedef struct s_cord   t_cord;
 typedef struct s_rgb	t_rgb;
 typedef struct s_irgb	t_irgb;
 typedef struct s_all	t_all;
@@ -70,6 +72,12 @@ struct	s_vertex
 	double	x;
 	double	y;
 	double	z;
+};
+
+struct	s_cord
+{
+	int		x;
+	int 	y;
 };
 
 typedef struct		s_rgb
@@ -164,6 +172,7 @@ typedef struct		s_dsp{
 typedef struct 		s_flags{
 	int 			redraw;
 	int 			shadow;
+	int				aliasing;
 }					t_flags;
 
 typedef struct		s_trans{
@@ -202,6 +211,7 @@ typedef struct		s_img{
 	int				size_line;
 	int				endian;
 }					t_img;
+
 typedef struct		s_mlx{
 	void			*mlx;
 	void			*wnd;
@@ -269,8 +279,9 @@ void				ft_get_info_cone(t_all *all, t_ray *ray, t_objs *ptr);
 void				ft_get_norm_sphere(t_all *all, t_objs *ptr);
 
 int					ft_shadow_ray(t_all *all, t_light *light);
-void				ft_antialiasing(t_mlx *mlx);
+void				ft_antialiasing(char *data_in, int n);
 
+void				ft_error(int error);
 int					ft_exit(void);
 
 #endif

@@ -231,6 +231,33 @@ SRC/ft_cylinder.c.s:
 	$(MAKE) -f CMakeFiles/RTv1.dir/build.make CMakeFiles/RTv1.dir/SRC/ft_cylinder.c.s
 .PHONY : SRC/ft_cylinder.c.s
 
+SRC/ft_error.o: SRC/ft_error.c.o
+
+.PHONY : SRC/ft_error.o
+
+# target to build an object file
+SRC/ft_error.c.o:
+	$(MAKE) -f CMakeFiles/RTv1.dir/build.make CMakeFiles/RTv1.dir/SRC/ft_error.c.o
+.PHONY : SRC/ft_error.c.o
+
+SRC/ft_error.i: SRC/ft_error.c.i
+
+.PHONY : SRC/ft_error.i
+
+# target to preprocess a source file
+SRC/ft_error.c.i:
+	$(MAKE) -f CMakeFiles/RTv1.dir/build.make CMakeFiles/RTv1.dir/SRC/ft_error.c.i
+.PHONY : SRC/ft_error.c.i
+
+SRC/ft_error.s: SRC/ft_error.c.s
+
+.PHONY : SRC/ft_error.s
+
+# target to generate assembly for a file
+SRC/ft_error.c.s:
+	$(MAKE) -f CMakeFiles/RTv1.dir/build.make CMakeFiles/RTv1.dir/SRC/ft_error.c.s
+.PHONY : SRC/ft_error.c.s
+
 SRC/ft_exit.o: SRC/ft_exit.c.o
 
 .PHONY : SRC/ft_exit.o
@@ -576,6 +603,9 @@ help:
 	@echo "... SRC/ft_cylinder.o"
 	@echo "... SRC/ft_cylinder.i"
 	@echo "... SRC/ft_cylinder.s"
+	@echo "... SRC/ft_error.o"
+	@echo "... SRC/ft_error.i"
+	@echo "... SRC/ft_error.s"
 	@echo "... SRC/ft_exit.o"
 	@echo "... SRC/ft_exit.i"
 	@echo "... SRC/ft_exit.s"

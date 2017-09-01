@@ -21,4 +21,5 @@ void	init_all(t_all *all)
 	all->rt.rgb = (t_rgb){0, 0, 0, 0};
 	all->rt.norm = (t_vertex){0, 0, 0};
 	all->flags.redraw = TRUE;
+	all->flags.aliasing = FALSE;
 }
