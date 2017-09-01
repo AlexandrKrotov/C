@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/m0le/ClionProjects/clion-2017.1.3/bin/cmake/bin/cmake
+CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /home/m0le/ClionProjects/clion-2017.1.3/bin/cmake/bin/cmake -E remove -f
+RM = /Applications/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/m0le/akrotov/backup_RTV/C/RTv1
+CMAKE_SOURCE_DIR = /nfs/2016/a/akrotov/work_repository/RTv1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/m0le/akrotov/backup_RTV/C/RTv1/cmake-build-debug
+CMAKE_BINARY_DIR = /nfs/2016/a/akrotov/work_repository/RTv1/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/RTv1.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/RTv1.dir/flags.make
 
 CMakeFiles/RTv1.dir/SRC/main.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/SRC/main.c.o: ../SRC/main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/m0le/akrotov/backup_RTV/C/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/RTv1.dir/SRC/main.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/SRC/main.c.o   -c /home/m0le/akrotov/backup_RTV/C/RTv1/SRC/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/akrotov/work_repository/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/RTv1.dir/SRC/main.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/SRC/main.c.o   -c /nfs/2016/a/akrotov/work_repository/RTv1/SRC/main.c
 
 CMakeFiles/RTv1.dir/SRC/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/SRC/main.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/m0le/akrotov/backup_RTV/C/RTv1/SRC/main.c > CMakeFiles/RTv1.dir/SRC/main.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/akrotov/work_repository/RTv1/SRC/main.c > CMakeFiles/RTv1.dir/SRC/main.c.i
 
 CMakeFiles/RTv1.dir/SRC/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/SRC/main.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/m0le/akrotov/backup_RTV/C/RTv1/SRC/main.c -o CMakeFiles/RTv1.dir/SRC/main.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/akrotov/work_repository/RTv1/SRC/main.c -o CMakeFiles/RTv1.dir/SRC/main.c.s
 
 CMakeFiles/RTv1.dir/SRC/main.c.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/RTv1.dir/SRC/main.c.o.provides.build: CMakeFiles/RTv1.dir/SRC/main.c.
 
 CMakeFiles/RTv1.dir/SRC/ft_key_hook.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/SRC/ft_key_hook.c.o: ../SRC/ft_key_hook.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/m0le/akrotov/backup_RTV/C/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/RTv1.dir/SRC/ft_key_hook.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/SRC/ft_key_hook.c.o   -c /home/m0le/akrotov/backup_RTV/C/RTv1/SRC/ft_key_hook.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/akrotov/work_repository/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/RTv1.dir/SRC/ft_key_hook.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/SRC/ft_key_hook.c.o   -c /nfs/2016/a/akrotov/work_repository/RTv1/SRC/ft_key_hook.c
 
 CMakeFiles/RTv1.dir/SRC/ft_key_hook.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/SRC/ft_key_hook.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/m0le/akrotov/backup_RTV/C/RTv1/SRC/ft_key_hook.c > CMakeFiles/RTv1.dir/SRC/ft_key_hook.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/akrotov/work_repository/RTv1/SRC/ft_key_hook.c > CMakeFiles/RTv1.dir/SRC/ft_key_hook.c.i
 
 CMakeFiles/RTv1.dir/SRC/ft_key_hook.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/SRC/ft_key_hook.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/m0le/akrotov/backup_RTV/C/RTv1/SRC/ft_key_hook.c -o CMakeFiles/RTv1.dir/SRC/ft_key_hook.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/akrotov/work_repository/RTv1/SRC/ft_key_hook.c -o CMakeFiles/RTv1.dir/SRC/ft_key_hook.c.s
 
 CMakeFiles/RTv1.dir/SRC/ft_key_hook.c.o.requires:
 
@@ -107,16 +107,16 @@ CMakeFiles/RTv1.dir/SRC/ft_key_hook.c.o.provides.build: CMakeFiles/RTv1.dir/SRC/
 
 CMakeFiles/RTv1.dir/SRC/ft_exit.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/SRC/ft_exit.c.o: ../SRC/ft_exit.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/m0le/akrotov/backup_RTV/C/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/RTv1.dir/SRC/ft_exit.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/SRC/ft_exit.c.o   -c /home/m0le/akrotov/backup_RTV/C/RTv1/SRC/ft_exit.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/akrotov/work_repository/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/RTv1.dir/SRC/ft_exit.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/SRC/ft_exit.c.o   -c /nfs/2016/a/akrotov/work_repository/RTv1/SRC/ft_exit.c
 
 CMakeFiles/RTv1.dir/SRC/ft_exit.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/SRC/ft_exit.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/m0le/akrotov/backup_RTV/C/RTv1/SRC/ft_exit.c > CMakeFiles/RTv1.dir/SRC/ft_exit.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/akrotov/work_repository/RTv1/SRC/ft_exit.c > CMakeFiles/RTv1.dir/SRC/ft_exit.c.i
 
 CMakeFiles/RTv1.dir/SRC/ft_exit.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/SRC/ft_exit.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/m0le/akrotov/backup_RTV/C/RTv1/SRC/ft_exit.c -o CMakeFiles/RTv1.dir/SRC/ft_exit.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/akrotov/work_repository/RTv1/SRC/ft_exit.c -o CMakeFiles/RTv1.dir/SRC/ft_exit.c.s
 
 CMakeFiles/RTv1.dir/SRC/ft_exit.c.o.requires:
 
@@ -131,16 +131,16 @@ CMakeFiles/RTv1.dir/SRC/ft_exit.c.o.provides.build: CMakeFiles/RTv1.dir/SRC/ft_e
 
 CMakeFiles/RTv1.dir/SRC/ft_mous_hook.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/SRC/ft_mous_hook.c.o: ../SRC/ft_mous_hook.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/m0le/akrotov/backup_RTV/C/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/RTv1.dir/SRC/ft_mous_hook.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/SRC/ft_mous_hook.c.o   -c /home/m0le/akrotov/backup_RTV/C/RTv1/SRC/ft_mous_hook.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/akrotov/work_repository/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/RTv1.dir/SRC/ft_mous_hook.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/SRC/ft_mous_hook.c.o   -c /nfs/2016/a/akrotov/work_repository/RTv1/SRC/ft_mous_hook.c
 
 CMakeFiles/RTv1.dir/SRC/ft_mous_hook.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/SRC/ft_mous_hook.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/m0le/akrotov/backup_RTV/C/RTv1/SRC/ft_mous_hook.c > CMakeFiles/RTv1.dir/SRC/ft_mous_hook.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/akrotov/work_repository/RTv1/SRC/ft_mous_hook.c > CMakeFiles/RTv1.dir/SRC/ft_mous_hook.c.i
 
 CMakeFiles/RTv1.dir/SRC/ft_mous_hook.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/SRC/ft_mous_hook.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/m0le/akrotov/backup_RTV/C/RTv1/SRC/ft_mous_hook.c -o CMakeFiles/RTv1.dir/SRC/ft_mous_hook.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/akrotov/work_repository/RTv1/SRC/ft_mous_hook.c -o CMakeFiles/RTv1.dir/SRC/ft_mous_hook.c.s
 
 CMakeFiles/RTv1.dir/SRC/ft_mous_hook.c.o.requires:
 
@@ -155,16 +155,16 @@ CMakeFiles/RTv1.dir/SRC/ft_mous_hook.c.o.provides.build: CMakeFiles/RTv1.dir/SRC
 
 CMakeFiles/RTv1.dir/SRC/ft_render.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/SRC/ft_render.c.o: ../SRC/ft_render.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/m0le/akrotov/backup_RTV/C/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/RTv1.dir/SRC/ft_render.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/SRC/ft_render.c.o   -c /home/m0le/akrotov/backup_RTV/C/RTv1/SRC/ft_render.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/akrotov/work_repository/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/RTv1.dir/SRC/ft_render.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/SRC/ft_render.c.o   -c /nfs/2016/a/akrotov/work_repository/RTv1/SRC/ft_render.c
 
 CMakeFiles/RTv1.dir/SRC/ft_render.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/SRC/ft_render.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/m0le/akrotov/backup_RTV/C/RTv1/SRC/ft_render.c > CMakeFiles/RTv1.dir/SRC/ft_render.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/akrotov/work_repository/RTv1/SRC/ft_render.c > CMakeFiles/RTv1.dir/SRC/ft_render.c.i
 
 CMakeFiles/RTv1.dir/SRC/ft_render.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/SRC/ft_render.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/m0le/akrotov/backup_RTV/C/RTv1/SRC/ft_render.c -o CMakeFiles/RTv1.dir/SRC/ft_render.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/akrotov/work_repository/RTv1/SRC/ft_render.c -o CMakeFiles/RTv1.dir/SRC/ft_render.c.s
 
 CMakeFiles/RTv1.dir/SRC/ft_render.c.o.requires:
 
@@ -179,16 +179,16 @@ CMakeFiles/RTv1.dir/SRC/ft_render.c.o.provides.build: CMakeFiles/RTv1.dir/SRC/ft
 
 CMakeFiles/RTv1.dir/SRC/ft_init_all.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/SRC/ft_init_all.c.o: ../SRC/ft_init_all.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/m0le/akrotov/backup_RTV/C/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/RTv1.dir/SRC/ft_init_all.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/SRC/ft_init_all.c.o   -c /home/m0le/akrotov/backup_RTV/C/RTv1/SRC/ft_init_all.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/akrotov/work_repository/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/RTv1.dir/SRC/ft_init_all.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/SRC/ft_init_all.c.o   -c /nfs/2016/a/akrotov/work_repository/RTv1/SRC/ft_init_all.c
 
 CMakeFiles/RTv1.dir/SRC/ft_init_all.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/SRC/ft_init_all.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/m0le/akrotov/backup_RTV/C/RTv1/SRC/ft_init_all.c > CMakeFiles/RTv1.dir/SRC/ft_init_all.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/akrotov/work_repository/RTv1/SRC/ft_init_all.c > CMakeFiles/RTv1.dir/SRC/ft_init_all.c.i
 
 CMakeFiles/RTv1.dir/SRC/ft_init_all.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/SRC/ft_init_all.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/m0le/akrotov/backup_RTV/C/RTv1/SRC/ft_init_all.c -o CMakeFiles/RTv1.dir/SRC/ft_init_all.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/akrotov/work_repository/RTv1/SRC/ft_init_all.c -o CMakeFiles/RTv1.dir/SRC/ft_init_all.c.s
 
 CMakeFiles/RTv1.dir/SRC/ft_init_all.c.o.requires:
 
@@ -203,16 +203,16 @@ CMakeFiles/RTv1.dir/SRC/ft_init_all.c.o.provides.build: CMakeFiles/RTv1.dir/SRC/
 
 CMakeFiles/RTv1.dir/SRC/ft_vector_math.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/SRC/ft_vector_math.c.o: ../SRC/ft_vector_math.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/m0le/akrotov/backup_RTV/C/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/RTv1.dir/SRC/ft_vector_math.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/SRC/ft_vector_math.c.o   -c /home/m0le/akrotov/backup_RTV/C/RTv1/SRC/ft_vector_math.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/akrotov/work_repository/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/RTv1.dir/SRC/ft_vector_math.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/SRC/ft_vector_math.c.o   -c /nfs/2016/a/akrotov/work_repository/RTv1/SRC/ft_vector_math.c
 
 CMakeFiles/RTv1.dir/SRC/ft_vector_math.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/SRC/ft_vector_math.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/m0le/akrotov/backup_RTV/C/RTv1/SRC/ft_vector_math.c > CMakeFiles/RTv1.dir/SRC/ft_vector_math.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/akrotov/work_repository/RTv1/SRC/ft_vector_math.c > CMakeFiles/RTv1.dir/SRC/ft_vector_math.c.i
 
 CMakeFiles/RTv1.dir/SRC/ft_vector_math.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/SRC/ft_vector_math.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/m0le/akrotov/backup_RTV/C/RTv1/SRC/ft_vector_math.c -o CMakeFiles/RTv1.dir/SRC/ft_vector_math.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/akrotov/work_repository/RTv1/SRC/ft_vector_math.c -o CMakeFiles/RTv1.dir/SRC/ft_vector_math.c.s
 
 CMakeFiles/RTv1.dir/SRC/ft_vector_math.c.o.requires:
 
@@ -227,16 +227,16 @@ CMakeFiles/RTv1.dir/SRC/ft_vector_math.c.o.provides.build: CMakeFiles/RTv1.dir/S
 
 CMakeFiles/RTv1.dir/SRC/ft_create_scene_map.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/SRC/ft_create_scene_map.c.o: ../SRC/ft_create_scene_map.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/m0le/akrotov/backup_RTV/C/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/RTv1.dir/SRC/ft_create_scene_map.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/SRC/ft_create_scene_map.c.o   -c /home/m0le/akrotov/backup_RTV/C/RTv1/SRC/ft_create_scene_map.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/akrotov/work_repository/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/RTv1.dir/SRC/ft_create_scene_map.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/SRC/ft_create_scene_map.c.o   -c /nfs/2016/a/akrotov/work_repository/RTv1/SRC/ft_create_scene_map.c
 
 CMakeFiles/RTv1.dir/SRC/ft_create_scene_map.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/SRC/ft_create_scene_map.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/m0le/akrotov/backup_RTV/C/RTv1/SRC/ft_create_scene_map.c > CMakeFiles/RTv1.dir/SRC/ft_create_scene_map.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/akrotov/work_repository/RTv1/SRC/ft_create_scene_map.c > CMakeFiles/RTv1.dir/SRC/ft_create_scene_map.c.i
 
 CMakeFiles/RTv1.dir/SRC/ft_create_scene_map.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/SRC/ft_create_scene_map.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/m0le/akrotov/backup_RTV/C/RTv1/SRC/ft_create_scene_map.c -o CMakeFiles/RTv1.dir/SRC/ft_create_scene_map.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/akrotov/work_repository/RTv1/SRC/ft_create_scene_map.c -o CMakeFiles/RTv1.dir/SRC/ft_create_scene_map.c.s
 
 CMakeFiles/RTv1.dir/SRC/ft_create_scene_map.c.o.requires:
 
@@ -251,16 +251,16 @@ CMakeFiles/RTv1.dir/SRC/ft_create_scene_map.c.o.provides.build: CMakeFiles/RTv1.
 
 CMakeFiles/RTv1.dir/SRC/ft_sphere.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/SRC/ft_sphere.c.o: ../SRC/ft_sphere.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/m0le/akrotov/backup_RTV/C/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/RTv1.dir/SRC/ft_sphere.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/SRC/ft_sphere.c.o   -c /home/m0le/akrotov/backup_RTV/C/RTv1/SRC/ft_sphere.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/akrotov/work_repository/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/RTv1.dir/SRC/ft_sphere.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/SRC/ft_sphere.c.o   -c /nfs/2016/a/akrotov/work_repository/RTv1/SRC/ft_sphere.c
 
 CMakeFiles/RTv1.dir/SRC/ft_sphere.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/SRC/ft_sphere.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/m0le/akrotov/backup_RTV/C/RTv1/SRC/ft_sphere.c > CMakeFiles/RTv1.dir/SRC/ft_sphere.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/akrotov/work_repository/RTv1/SRC/ft_sphere.c > CMakeFiles/RTv1.dir/SRC/ft_sphere.c.i
 
 CMakeFiles/RTv1.dir/SRC/ft_sphere.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/SRC/ft_sphere.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/m0le/akrotov/backup_RTV/C/RTv1/SRC/ft_sphere.c -o CMakeFiles/RTv1.dir/SRC/ft_sphere.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/akrotov/work_repository/RTv1/SRC/ft_sphere.c -o CMakeFiles/RTv1.dir/SRC/ft_sphere.c.s
 
 CMakeFiles/RTv1.dir/SRC/ft_sphere.c.o.requires:
 
@@ -275,16 +275,16 @@ CMakeFiles/RTv1.dir/SRC/ft_sphere.c.o.provides.build: CMakeFiles/RTv1.dir/SRC/ft
 
 CMakeFiles/RTv1.dir/SRC/ft_plane.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/SRC/ft_plane.c.o: ../SRC/ft_plane.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/m0le/akrotov/backup_RTV/C/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/RTv1.dir/SRC/ft_plane.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/SRC/ft_plane.c.o   -c /home/m0le/akrotov/backup_RTV/C/RTv1/SRC/ft_plane.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/akrotov/work_repository/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/RTv1.dir/SRC/ft_plane.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/SRC/ft_plane.c.o   -c /nfs/2016/a/akrotov/work_repository/RTv1/SRC/ft_plane.c
 
 CMakeFiles/RTv1.dir/SRC/ft_plane.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/SRC/ft_plane.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/m0le/akrotov/backup_RTV/C/RTv1/SRC/ft_plane.c > CMakeFiles/RTv1.dir/SRC/ft_plane.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/akrotov/work_repository/RTv1/SRC/ft_plane.c > CMakeFiles/RTv1.dir/SRC/ft_plane.c.i
 
 CMakeFiles/RTv1.dir/SRC/ft_plane.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/SRC/ft_plane.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/m0le/akrotov/backup_RTV/C/RTv1/SRC/ft_plane.c -o CMakeFiles/RTv1.dir/SRC/ft_plane.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/akrotov/work_repository/RTv1/SRC/ft_plane.c -o CMakeFiles/RTv1.dir/SRC/ft_plane.c.s
 
 CMakeFiles/RTv1.dir/SRC/ft_plane.c.o.requires:
 
@@ -299,16 +299,16 @@ CMakeFiles/RTv1.dir/SRC/ft_plane.c.o.provides.build: CMakeFiles/RTv1.dir/SRC/ft_
 
 CMakeFiles/RTv1.dir/SRC/ft_cylinder.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/SRC/ft_cylinder.c.o: ../SRC/ft_cylinder.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/m0le/akrotov/backup_RTV/C/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/RTv1.dir/SRC/ft_cylinder.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/SRC/ft_cylinder.c.o   -c /home/m0le/akrotov/backup_RTV/C/RTv1/SRC/ft_cylinder.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/akrotov/work_repository/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/RTv1.dir/SRC/ft_cylinder.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/SRC/ft_cylinder.c.o   -c /nfs/2016/a/akrotov/work_repository/RTv1/SRC/ft_cylinder.c
 
 CMakeFiles/RTv1.dir/SRC/ft_cylinder.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/SRC/ft_cylinder.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/m0le/akrotov/backup_RTV/C/RTv1/SRC/ft_cylinder.c > CMakeFiles/RTv1.dir/SRC/ft_cylinder.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/akrotov/work_repository/RTv1/SRC/ft_cylinder.c > CMakeFiles/RTv1.dir/SRC/ft_cylinder.c.i
 
 CMakeFiles/RTv1.dir/SRC/ft_cylinder.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/SRC/ft_cylinder.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/m0le/akrotov/backup_RTV/C/RTv1/SRC/ft_cylinder.c -o CMakeFiles/RTv1.dir/SRC/ft_cylinder.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/akrotov/work_repository/RTv1/SRC/ft_cylinder.c -o CMakeFiles/RTv1.dir/SRC/ft_cylinder.c.s
 
 CMakeFiles/RTv1.dir/SRC/ft_cylinder.c.o.requires:
 
@@ -323,16 +323,16 @@ CMakeFiles/RTv1.dir/SRC/ft_cylinder.c.o.provides.build: CMakeFiles/RTv1.dir/SRC/
 
 CMakeFiles/RTv1.dir/SRC/ft_cone.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/SRC/ft_cone.c.o: ../SRC/ft_cone.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/m0le/akrotov/backup_RTV/C/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/RTv1.dir/SRC/ft_cone.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/SRC/ft_cone.c.o   -c /home/m0le/akrotov/backup_RTV/C/RTv1/SRC/ft_cone.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/akrotov/work_repository/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/RTv1.dir/SRC/ft_cone.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/SRC/ft_cone.c.o   -c /nfs/2016/a/akrotov/work_repository/RTv1/SRC/ft_cone.c
 
 CMakeFiles/RTv1.dir/SRC/ft_cone.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/SRC/ft_cone.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/m0le/akrotov/backup_RTV/C/RTv1/SRC/ft_cone.c > CMakeFiles/RTv1.dir/SRC/ft_cone.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/akrotov/work_repository/RTv1/SRC/ft_cone.c > CMakeFiles/RTv1.dir/SRC/ft_cone.c.i
 
 CMakeFiles/RTv1.dir/SRC/ft_cone.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/SRC/ft_cone.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/m0le/akrotov/backup_RTV/C/RTv1/SRC/ft_cone.c -o CMakeFiles/RTv1.dir/SRC/ft_cone.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/akrotov/work_repository/RTv1/SRC/ft_cone.c -o CMakeFiles/RTv1.dir/SRC/ft_cone.c.s
 
 CMakeFiles/RTv1.dir/SRC/ft_cone.c.o.requires:
 
@@ -347,16 +347,16 @@ CMakeFiles/RTv1.dir/SRC/ft_cone.c.o.provides.build: CMakeFiles/RTv1.dir/SRC/ft_c
 
 CMakeFiles/RTv1.dir/SRC/ft_light.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/SRC/ft_light.c.o: ../SRC/ft_light.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/m0le/akrotov/backup_RTV/C/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/RTv1.dir/SRC/ft_light.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/SRC/ft_light.c.o   -c /home/m0le/akrotov/backup_RTV/C/RTv1/SRC/ft_light.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/akrotov/work_repository/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/RTv1.dir/SRC/ft_light.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/SRC/ft_light.c.o   -c /nfs/2016/a/akrotov/work_repository/RTv1/SRC/ft_light.c
 
 CMakeFiles/RTv1.dir/SRC/ft_light.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/SRC/ft_light.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/m0le/akrotov/backup_RTV/C/RTv1/SRC/ft_light.c > CMakeFiles/RTv1.dir/SRC/ft_light.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/akrotov/work_repository/RTv1/SRC/ft_light.c > CMakeFiles/RTv1.dir/SRC/ft_light.c.i
 
 CMakeFiles/RTv1.dir/SRC/ft_light.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/SRC/ft_light.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/m0le/akrotov/backup_RTV/C/RTv1/SRC/ft_light.c -o CMakeFiles/RTv1.dir/SRC/ft_light.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/akrotov/work_repository/RTv1/SRC/ft_light.c -o CMakeFiles/RTv1.dir/SRC/ft_light.c.s
 
 CMakeFiles/RTv1.dir/SRC/ft_light.c.o.requires:
 
@@ -371,16 +371,16 @@ CMakeFiles/RTv1.dir/SRC/ft_light.c.o.provides.build: CMakeFiles/RTv1.dir/SRC/ft_
 
 CMakeFiles/RTv1.dir/SRC/ft_phong.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/SRC/ft_phong.c.o: ../SRC/ft_phong.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/m0le/akrotov/backup_RTV/C/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/RTv1.dir/SRC/ft_phong.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/SRC/ft_phong.c.o   -c /home/m0le/akrotov/backup_RTV/C/RTv1/SRC/ft_phong.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/akrotov/work_repository/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/RTv1.dir/SRC/ft_phong.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/SRC/ft_phong.c.o   -c /nfs/2016/a/akrotov/work_repository/RTv1/SRC/ft_phong.c
 
 CMakeFiles/RTv1.dir/SRC/ft_phong.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/SRC/ft_phong.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/m0le/akrotov/backup_RTV/C/RTv1/SRC/ft_phong.c > CMakeFiles/RTv1.dir/SRC/ft_phong.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/akrotov/work_repository/RTv1/SRC/ft_phong.c > CMakeFiles/RTv1.dir/SRC/ft_phong.c.i
 
 CMakeFiles/RTv1.dir/SRC/ft_phong.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/SRC/ft_phong.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/m0le/akrotov/backup_RTV/C/RTv1/SRC/ft_phong.c -o CMakeFiles/RTv1.dir/SRC/ft_phong.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/akrotov/work_repository/RTv1/SRC/ft_phong.c -o CMakeFiles/RTv1.dir/SRC/ft_phong.c.s
 
 CMakeFiles/RTv1.dir/SRC/ft_phong.c.o.requires:
 
@@ -395,16 +395,16 @@ CMakeFiles/RTv1.dir/SRC/ft_phong.c.o.provides.build: CMakeFiles/RTv1.dir/SRC/ft_
 
 CMakeFiles/RTv1.dir/SRC/ft_rotate_axis.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/SRC/ft_rotate_axis.c.o: ../SRC/ft_rotate_axis.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/m0le/akrotov/backup_RTV/C/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/RTv1.dir/SRC/ft_rotate_axis.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/SRC/ft_rotate_axis.c.o   -c /home/m0le/akrotov/backup_RTV/C/RTv1/SRC/ft_rotate_axis.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/akrotov/work_repository/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/RTv1.dir/SRC/ft_rotate_axis.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/SRC/ft_rotate_axis.c.o   -c /nfs/2016/a/akrotov/work_repository/RTv1/SRC/ft_rotate_axis.c
 
 CMakeFiles/RTv1.dir/SRC/ft_rotate_axis.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/SRC/ft_rotate_axis.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/m0le/akrotov/backup_RTV/C/RTv1/SRC/ft_rotate_axis.c > CMakeFiles/RTv1.dir/SRC/ft_rotate_axis.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/akrotov/work_repository/RTv1/SRC/ft_rotate_axis.c > CMakeFiles/RTv1.dir/SRC/ft_rotate_axis.c.i
 
 CMakeFiles/RTv1.dir/SRC/ft_rotate_axis.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/SRC/ft_rotate_axis.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/m0le/akrotov/backup_RTV/C/RTv1/SRC/ft_rotate_axis.c -o CMakeFiles/RTv1.dir/SRC/ft_rotate_axis.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/akrotov/work_repository/RTv1/SRC/ft_rotate_axis.c -o CMakeFiles/RTv1.dir/SRC/ft_rotate_axis.c.s
 
 CMakeFiles/RTv1.dir/SRC/ft_rotate_axis.c.o.requires:
 
@@ -419,16 +419,16 @@ CMakeFiles/RTv1.dir/SRC/ft_rotate_axis.c.o.provides.build: CMakeFiles/RTv1.dir/S
 
 CMakeFiles/RTv1.dir/SRC/ft_antialiasing.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/SRC/ft_antialiasing.c.o: ../SRC/ft_antialiasing.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/m0le/akrotov/backup_RTV/C/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/RTv1.dir/SRC/ft_antialiasing.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/SRC/ft_antialiasing.c.o   -c /home/m0le/akrotov/backup_RTV/C/RTv1/SRC/ft_antialiasing.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/akrotov/work_repository/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/RTv1.dir/SRC/ft_antialiasing.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/SRC/ft_antialiasing.c.o   -c /nfs/2016/a/akrotov/work_repository/RTv1/SRC/ft_antialiasing.c
 
 CMakeFiles/RTv1.dir/SRC/ft_antialiasing.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/SRC/ft_antialiasing.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/m0le/akrotov/backup_RTV/C/RTv1/SRC/ft_antialiasing.c > CMakeFiles/RTv1.dir/SRC/ft_antialiasing.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/akrotov/work_repository/RTv1/SRC/ft_antialiasing.c > CMakeFiles/RTv1.dir/SRC/ft_antialiasing.c.i
 
 CMakeFiles/RTv1.dir/SRC/ft_antialiasing.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/SRC/ft_antialiasing.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/m0le/akrotov/backup_RTV/C/RTv1/SRC/ft_antialiasing.c -o CMakeFiles/RTv1.dir/SRC/ft_antialiasing.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/akrotov/work_repository/RTv1/SRC/ft_antialiasing.c -o CMakeFiles/RTv1.dir/SRC/ft_antialiasing.c.s
 
 CMakeFiles/RTv1.dir/SRC/ft_antialiasing.c.o.requires:
 
@@ -443,16 +443,16 @@ CMakeFiles/RTv1.dir/SRC/ft_antialiasing.c.o.provides.build: CMakeFiles/RTv1.dir/
 
 CMakeFiles/RTv1.dir/SRC/ft_error.c.o: CMakeFiles/RTv1.dir/flags.make
 CMakeFiles/RTv1.dir/SRC/ft_error.c.o: ../SRC/ft_error.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/m0le/akrotov/backup_RTV/C/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/RTv1.dir/SRC/ft_error.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/SRC/ft_error.c.o   -c /home/m0le/akrotov/backup_RTV/C/RTv1/SRC/ft_error.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/akrotov/work_repository/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/RTv1.dir/SRC/ft_error.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RTv1.dir/SRC/ft_error.c.o   -c /nfs/2016/a/akrotov/work_repository/RTv1/SRC/ft_error.c
 
 CMakeFiles/RTv1.dir/SRC/ft_error.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RTv1.dir/SRC/ft_error.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/m0le/akrotov/backup_RTV/C/RTv1/SRC/ft_error.c > CMakeFiles/RTv1.dir/SRC/ft_error.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/akrotov/work_repository/RTv1/SRC/ft_error.c > CMakeFiles/RTv1.dir/SRC/ft_error.c.i
 
 CMakeFiles/RTv1.dir/SRC/ft_error.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RTv1.dir/SRC/ft_error.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/m0le/akrotov/backup_RTV/C/RTv1/SRC/ft_error.c -o CMakeFiles/RTv1.dir/SRC/ft_error.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/akrotov/work_repository/RTv1/SRC/ft_error.c -o CMakeFiles/RTv1.dir/SRC/ft_error.c.s
 
 CMakeFiles/RTv1.dir/SRC/ft_error.c.o.requires:
 
@@ -507,9 +507,8 @@ RTv1: CMakeFiles/RTv1.dir/SRC/ft_antialiasing.c.o
 RTv1: CMakeFiles/RTv1.dir/SRC/ft_error.c.o
 RTv1: CMakeFiles/RTv1.dir/build.make
 RTv1: ../libft/libft.a
-RTv1: ../minilibx/libmlx.a
 RTv1: CMakeFiles/RTv1.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/m0le/akrotov/backup_RTV/C/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking C executable RTv1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/nfs/2016/a/akrotov/work_repository/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking C executable RTv1"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/RTv1.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -542,6 +541,6 @@ CMakeFiles/RTv1.dir/clean:
 .PHONY : CMakeFiles/RTv1.dir/clean
 
 CMakeFiles/RTv1.dir/depend:
-	cd /home/m0le/akrotov/backup_RTV/C/RTv1/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/m0le/akrotov/backup_RTV/C/RTv1 /home/m0le/akrotov/backup_RTV/C/RTv1 /home/m0le/akrotov/backup_RTV/C/RTv1/cmake-build-debug /home/m0le/akrotov/backup_RTV/C/RTv1/cmake-build-debug /home/m0le/akrotov/backup_RTV/C/RTv1/cmake-build-debug/CMakeFiles/RTv1.dir/DependInfo.cmake --color=$(COLOR)
+	cd /nfs/2016/a/akrotov/work_repository/RTv1/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /nfs/2016/a/akrotov/work_repository/RTv1 /nfs/2016/a/akrotov/work_repository/RTv1 /nfs/2016/a/akrotov/work_repository/RTv1/cmake-build-debug /nfs/2016/a/akrotov/work_repository/RTv1/cmake-build-debug /nfs/2016/a/akrotov/work_repository/RTv1/cmake-build-debug/CMakeFiles/RTv1.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/RTv1.dir/depend
 

@@ -46,7 +46,7 @@
 # define K_LEFT 65361
 # define K_RIGHT 65363
 
-#else __APPLE__
+#elif __APPLE__
 
 # define ESC 53
 # define W 13
@@ -55,8 +55,13 @@
 # define D 2
 # define Z 6
 # define X 7
-# define UP 126
-# define DOWN 125
+# define K_UP 65362
+# define K_DOWN 65364
+# define K_LEFT 123
+# define K_RIGHT 124
+
+#else
+#error  "Unknown platform"
 
 #endif
 
