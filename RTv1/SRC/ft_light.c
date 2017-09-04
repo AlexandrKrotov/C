@@ -50,7 +50,7 @@ t_rgb		ft_light_calc(t_all *all, t_rgb *color)
 	{
 		size++;
 		all->phong = ft_phong(&all->rt, color, ptr, all->cam);
-		all->flags.shadow = ft_shadow_ray(all, ptr);
+//		all->flags.shadow = ft_shadow_ray(all, ptr);
 		if (!all->flags.shadow)
 		{
 			color->r = (UC)fmin((all->phong.amb.r + all->phong.dif.r + all->phong.spc.r * all->rt.spc_int), 255);
