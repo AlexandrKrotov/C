@@ -5,7 +5,7 @@ t_light		*ft_crete_light_node(t_vertex pos)
 	t_light *ptr;
 
 	ptr = malloc(sizeof(t_light));
-	ptr->o = (t_vertex)pos;
+	ptr->o = pos;
 	ptr->next = NULL;
 
 	return (ptr);
