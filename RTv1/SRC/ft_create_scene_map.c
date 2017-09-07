@@ -21,7 +21,7 @@ void 	ft_create_obj_lst(t_all *all)
 /// TODO "BREAK ON CREATE PLANE"
 	ft_add_plane(all->scene,(t_vertex){0, 0, 2000},
 				 (t_vertex){0, 0, -1},
-				 (t_rgb){255, 0, 0, 0});
+				 (t_rgb){255, 255, 255, 0});
 	ft_add_plane(all->scene,
 				 (t_vertex){0, 300, 0},
 				 (t_vertex){0, -1, 0},

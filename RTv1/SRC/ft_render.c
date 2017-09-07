@@ -98,7 +98,6 @@ void		ft_draw(t_all *all)
 	}
 }
 
-
 int		ft_render(t_all *all)
 {
 	if (all->flags.redraw == TRUE)
