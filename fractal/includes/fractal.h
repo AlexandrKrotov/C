@@ -24,10 +24,11 @@
 /*
 ** openCL
 */
-
-# include <stdio.h>
-# include <stdlib.h>
+#if __APLE__
 # include <OpenCL/opencl.h>
+#endif
+
+# include <stdlib.h>
 # include <assert.h>
 # include <sys/stat.h>
 # include <string.h>
@@ -37,8 +38,8 @@
 */
 
 # define D_NAME		"Fractal"
-# define D_WIDTH	1200
-# define D_HEIGHT	900
+# define D_WIDTH	800
+# define D_HEIGHT	600
 # define ITER       155
 # define LEFT		1
 # define RIGHT		0
@@ -56,14 +57,14 @@ typedef struct			s_mlx {
 	int					endian;
 }						t_mlx;
 
-typedef struct			s_cl{
-	cl_uint				num_devices;
-	cl_device_id		*devices;
-	cl_kernel			kernel;
-	cl_command_queue	cmd_queue[16];
-	cl_context			context;
-	cl_int				err;
-}						t_cl;
+//typedef struct			s_cl{
+//	cl_uint				num_devices;
+//	cl_device_id		*devices;
+//	cl_kernel			kernel;
+//	cl_command_queue	cmd_queue[16];
+//	cl_context			context;
+//	cl_int				err;
+//}						t_cl;
 
 typedef struct			s_rgb{
 	int					red;
@@ -131,7 +132,7 @@ typedef struct			s_anim{
 
 typedef struct			s_all{
 	t_mlx				*mlx;
-	t_cl				cl;
+//	t_cl				cl;
 	t_disp				disp;
 	t_mandl				m;
 	t_fract				jul;
@@ -192,23 +193,23 @@ int						ft_exit(void);
 */
 
 void					ft_error(int error);
-void					check_succeeded(char *message, cl_int err);
+//void					check_succeeded(char *message, cl_int err);
 void					ft_opencl(t_all *all);
 
 /*
 **OPENC
 */
 
-void					ftcl_get_device(t_all *all);
-cl_kernel				load_kernel_from_file(cl_context context,
-						const char *filename);
-char					*load_program_source(const char *filename);
-void					ftcl_put_argv(t_all *all,
-						cl_context context, cl_mem *image);
-void					ftcl_thread(t_all *all, cl_command_queue
-						*cmd_queue, cl_mem *image);
-void					ftcl_release(t_all *all, cl_context context,
-						cl_command_queue *cmd_queue, cl_mem *image);
+//void					ftcl_get_device(t_all *all);
+//cl_kernel				load_kernel_from_file(cl_context context,
+//						const char *filename);
+//char					*load_program_source(const char *filename);
+//void					ftcl_put_argv(t_all *all,
+//						cl_context context, cl_mem *image);
+//void					ftcl_thread(t_all *all, cl_command_queue
+//						*cmd_queue, cl_mem *image);
+//void					ftcl_release(t_all *all, cl_context context,
+//						cl_command_queue *cmd_queue, cl_mem *image);
 
 /*
 **BONUS
@@ -217,5 +218,7 @@ void					ftcl_release(t_all *all, cl_context context,
 void					the_game(t_all *all);
 void					init_game(t_all *all);
 void					ft_key_game(int keycode, t_all *all);
+
+void					julia_new(t_all *all, double step_x, double step_y, double re_min, double im_min, double shift_x, double shift_y, int m_iter);
 
 #endif

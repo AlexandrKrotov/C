@@ -1,3 +1,3 @@
-/nfs/2016/a/akrotov/work_repository/RTv1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/nfs/2016/a/akrotov/work_repository/RTv1/cmake-build-debug/CMakeFiles/edit_cache.dir
-/nfs/2016/a/akrotov/work_repository/RTv1/cmake-build-debug/CMakeFiles/RTv1.dir
+/home/m0le/akrotov/backup_RTV/C/RTv1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/m0le/akrotov/backup_RTV/C/RTv1/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/m0le/akrotov/backup_RTV/C/RTv1/cmake-build-debug/CMakeFiles/RTv1.dir

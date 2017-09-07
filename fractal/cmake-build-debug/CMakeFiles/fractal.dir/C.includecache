@@ -21,11 +21,9 @@ mlx.h
 -
 pthread.h
 -
-stdio.h
+OpenCL/opencl.h
 -
 stdlib.h
--
-OpenCL/opencl.h
 -
 assert.h
 -
@@ -42,87 +40,77 @@ stdlib.h
 unistd.h
 -
 
-/nfs/2016/a/akrotov/akrotov/fractal/SRC/cl.c
-fractal.h
-/nfs/2016/a/akrotov/akrotov/fractal/SRC/fractal.h
+/home/m0le/akrotov/backup_RTV/C/fractal/SRC/cl.c
 
-/nfs/2016/a/akrotov/akrotov/fractal/SRC/cl_check_succes.c
-fractal.h
-/nfs/2016/a/akrotov/akrotov/fractal/SRC/fractal.h
+/home/m0le/akrotov/backup_RTV/C/fractal/SRC/cl_check_succes.c
 
-/nfs/2016/a/akrotov/akrotov/fractal/SRC/fern.c
+/home/m0le/akrotov/backup_RTV/C/fractal/SRC/fern.c
 fractal.h
-/nfs/2016/a/akrotov/akrotov/fractal/SRC/fractal.h
+/home/m0le/akrotov/backup_RTV/C/fractal/SRC/fractal.h
 
-/nfs/2016/a/akrotov/akrotov/fractal/SRC/ft_create_img.c
+/home/m0le/akrotov/backup_RTV/C/fractal/SRC/ft_create_img.c
 fractal.h
-/nfs/2016/a/akrotov/akrotov/fractal/SRC/fractal.h
+/home/m0le/akrotov/backup_RTV/C/fractal/SRC/fractal.h
 
-/nfs/2016/a/akrotov/akrotov/fractal/SRC/ft_error.c
+/home/m0le/akrotov/backup_RTV/C/fractal/SRC/ft_error.c
 fractal.h
-/nfs/2016/a/akrotov/akrotov/fractal/SRC/fractal.h
+/home/m0le/akrotov/backup_RTV/C/fractal/SRC/fractal.h
 
-/nfs/2016/a/akrotov/akrotov/fractal/SRC/ft_init.c
+/home/m0le/akrotov/backup_RTV/C/fractal/SRC/ft_init.c
 fractal.h
-/nfs/2016/a/akrotov/akrotov/fractal/SRC/fractal.h
+/home/m0le/akrotov/backup_RTV/C/fractal/SRC/fractal.h
 
-/nfs/2016/a/akrotov/akrotov/fractal/SRC/ftcl_create_kernel.c
-fractal.h
-/nfs/2016/a/akrotov/akrotov/fractal/SRC/fractal.h
+/home/m0le/akrotov/backup_RTV/C/fractal/SRC/ftcl_create_kernel.c
 
-/nfs/2016/a/akrotov/akrotov/fractal/SRC/ftcl_get_device.c
-fractal.h
-/nfs/2016/a/akrotov/akrotov/fractal/SRC/fractal.h
+/home/m0le/akrotov/backup_RTV/C/fractal/SRC/ftcl_get_device.c
 
-/nfs/2016/a/akrotov/akrotov/fractal/SRC/ftcl_load_program.c
-fractal.h
-/nfs/2016/a/akrotov/akrotov/fractal/SRC/fractal.h
+/home/m0le/akrotov/backup_RTV/C/fractal/SRC/ftcl_load_program.c
 
-/nfs/2016/a/akrotov/akrotov/fractal/SRC/ftcl_release.c
-fractal.h
-/nfs/2016/a/akrotov/akrotov/fractal/SRC/fractal.h
+/home/m0le/akrotov/backup_RTV/C/fractal/SRC/ftcl_release.c
 
-/nfs/2016/a/akrotov/akrotov/fractal/SRC/ftcl_thread.c
-fractal.h
-/nfs/2016/a/akrotov/akrotov/fractal/SRC/fractal.h
+/home/m0le/akrotov/backup_RTV/C/fractal/SRC/ftcl_thread.c
 
-/nfs/2016/a/akrotov/akrotov/fractal/SRC/init_bonus.c
+/home/m0le/akrotov/backup_RTV/C/fractal/SRC/init_bonus.c
 fractal.h
-/nfs/2016/a/akrotov/akrotov/fractal/SRC/fractal.h
+/home/m0le/akrotov/backup_RTV/C/fractal/SRC/fractal.h
 
-/nfs/2016/a/akrotov/akrotov/fractal/SRC/init_game.c
+/home/m0le/akrotov/backup_RTV/C/fractal/SRC/init_game.c
 fractal.h
-/nfs/2016/a/akrotov/akrotov/fractal/SRC/fractal.h
+/home/m0le/akrotov/backup_RTV/C/fractal/SRC/fractal.h
 
-/nfs/2016/a/akrotov/akrotov/fractal/SRC/init_mandatory.c
+/home/m0le/akrotov/backup_RTV/C/fractal/SRC/init_mandatory.c
 fractal.h
-/nfs/2016/a/akrotov/akrotov/fractal/SRC/fractal.h
+/home/m0le/akrotov/backup_RTV/C/fractal/SRC/fractal.h
 
-/nfs/2016/a/akrotov/akrotov/fractal/SRC/key_hook.c
+/home/m0le/akrotov/backup_RTV/C/fractal/SRC/julia_new.c
 fractal.h
-/nfs/2016/a/akrotov/akrotov/fractal/SRC/fractal.h
+/home/m0le/akrotov/backup_RTV/C/fractal/SRC/fractal.h
 
-/nfs/2016/a/akrotov/akrotov/fractal/SRC/key_swap.c
+/home/m0le/akrotov/backup_RTV/C/fractal/SRC/key_hook.c
 fractal.h
-/nfs/2016/a/akrotov/akrotov/fractal/SRC/fractal.h
+/home/m0le/akrotov/backup_RTV/C/fractal/SRC/fractal.h
 
-/nfs/2016/a/akrotov/akrotov/fractal/SRC/main.c
+/home/m0le/akrotov/backup_RTV/C/fractal/SRC/key_swap.c
 fractal.h
-/nfs/2016/a/akrotov/akrotov/fractal/SRC/fractal.h
+/home/m0le/akrotov/backup_RTV/C/fractal/SRC/fractal.h
 
-/nfs/2016/a/akrotov/akrotov/fractal/SRC/mouse_hook.c
+/home/m0le/akrotov/backup_RTV/C/fractal/SRC/main.c
 fractal.h
-/nfs/2016/a/akrotov/akrotov/fractal/SRC/fractal.h
+/home/m0le/akrotov/backup_RTV/C/fractal/SRC/fractal.h
 
-/nfs/2016/a/akrotov/akrotov/fractal/SRC/sierpinski.c
+/home/m0le/akrotov/backup_RTV/C/fractal/SRC/mouse_hook.c
 fractal.h
-/nfs/2016/a/akrotov/akrotov/fractal/SRC/fractal.h
+/home/m0le/akrotov/backup_RTV/C/fractal/SRC/fractal.h
 
-/nfs/2016/a/akrotov/akrotov/fractal/SRC/space.c
+/home/m0le/akrotov/backup_RTV/C/fractal/SRC/sierpinski.c
 fractal.h
-/nfs/2016/a/akrotov/akrotov/fractal/SRC/fractal.h
+/home/m0le/akrotov/backup_RTV/C/fractal/SRC/fractal.h
 
-/nfs/2016/a/akrotov/akrotov/fractal/SRC/the_game.c
+/home/m0le/akrotov/backup_RTV/C/fractal/SRC/space.c
 fractal.h
-/nfs/2016/a/akrotov/akrotov/fractal/SRC/fractal.h
+/home/m0le/akrotov/backup_RTV/C/fractal/SRC/fractal.h
+
+/home/m0le/akrotov/backup_RTV/C/fractal/SRC/the_game.c
+fractal.h
+/home/m0le/akrotov/backup_RTV/C/fractal/SRC/fractal.h
 

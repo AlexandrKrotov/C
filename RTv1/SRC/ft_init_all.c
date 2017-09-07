@@ -1,5 +1,21 @@
 #include "rtv1.h"
 
+void	ft_init_scene(t_all *all)
+{
+	all->scene = malloc(sizeof(t_objs));
+	all->scene->obj = NULL;
+	all->scene->ft_inter = NULL;
+	all->scene->ft_info = NULL;
+	all->scene->next = NULL;
+}
+
+void	ft_init_light(t_all *all)
+{
+	all->light = malloc(sizeof(t_vertex));
+	all->light->o = NULL;
+	all->light->next = NULL;
+}
+
 void	init_all(t_all *all)
 {
 	all->mlx = malloc(sizeof(t_mlx));
@@ -22,4 +38,6 @@ void	init_all(t_all *all)
 	all->rt.norm = (t_vertex){0, 0, 0};
 	all->flags.redraw = TRUE;
 	all->flags.aliasing = FALSE;
+	ft_init_scene(all);
+	ft_init_light(all);
 }

@@ -46,7 +46,7 @@
 # define K_LEFT 65361
 # define K_RIGHT 65363
 
-#elif __APPLE__
+#else __APPLE__
 
 # define ESC 53
 # define W 13
@@ -55,13 +55,8 @@
 # define D 2
 # define Z 6
 # define X 7
-# define K_UP 65362
-# define K_DOWN 65364
-# define K_LEFT 123
-# define K_RIGHT 124
-
-#else
-#error  "Unknown platform"
+# define UP 126
+# define DOWN 125
 
 #endif
 
@@ -202,7 +197,7 @@ typedef	struct		s_phong
 }					t_phong;
 
 typedef	struct 		s_light{
-	t_vertex		o;
+	t_vertex		*o;
 //	double 			angle;
 //	double 			power;
 	struct s_light	*next;
@@ -270,6 +265,10 @@ double				ft_cos_vector(t_vertex u, t_vertex v);
 t_vertex			ft_reverse_vector(t_vertex a);
 t_vertex			ft_reflect_vector(t_vertex a, t_vertex b);
 
+void				ft_add_plane(t_objs *scene, t_vertex ray_o, t_vertex ray_d, t_rgb color);
+void				ft_add_sphere(t_objs *scene, t_vertex ray_o, t_rgb color, double radius);
+void				ft_add_cylinder(t_objs *scene, t_vertex ray_o, t_vertex ray_d, t_rgb color, double radius);
+void				ft_add_cone(t_objs *scene, t_vertex ray_o, t_vertex ray_d, t_rgb color, double angle);
 
 int					ft_sphere_intersect(t_all *all, t_ray *ray, t_objs *ptr);
 int					ft_plane_intersect(t_all *all, t_ray *ray, t_objs *ptr);
@@ -285,6 +284,8 @@ void				ft_get_norm_sphere(t_all *all, t_objs *ptr);
 
 int					ft_shadow_ray(t_all *all, t_light *light);
 void				ft_antialiasing(char *data_in, int n);
+
+t_objs				*ft_find_empty(t_objs *scene, t_objs *ptr);
 
 void				ft_error(int error);
 int					ft_exit(void);

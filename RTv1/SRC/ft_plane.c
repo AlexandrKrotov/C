@@ -1,5 +1,31 @@
 #include "rtv1.h"
 
+t_plane	*ft_init_plane(t_vertex ray_o, t_vertex ray_d, t_rgb color)
+{
+	t_plane		*plane;
+
+	plane = malloc(sizeof(t_plane));
+	plane->ray.d = ray_d;
+	plane->ray.o = ray_o;
+	plane->color = color;
+	plane->n = 20;
+	plane->amb_int = 0.1;
+	plane->dif_int = 0.6;
+	plane->spc_int = 1;
+
+	return (plane);
+}
+
+void ft_add_plane(t_objs *scene, t_vertex ray_o, t_vertex ray_d, t_rgb color)
+{
+	t_objs		*ptr;
+
+	ptr = ft_find_empty(scene, ptr);
+	ptr->obj = ft_init_plane(ray_o, ray_d, color);
+	ptr->ft_inter = ft_plane_intersect;
+	ptr->ft_info = ft_get_info_plane;
+}
+
 void	ft_get_info_plane(t_all *all, t_ray *ray, t_objs *ptr)
 {
 	t_plane		*p;

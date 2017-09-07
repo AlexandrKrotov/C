@@ -1,5 +1,33 @@
 #include "rtv1.h"
 
+t_cylinder		*ft_init_cylinder(t_vertex ray_o, t_vertex ray_d, t_rgb color, double radius)
+{
+	t_cylinder *cylinder;
+
+	cylinder = malloc(sizeof(t_cylinder));
+	cylinder->ray.o = ray_o;
+	cylinder->ray.d = ray_d;
+	cylinder->r = radius;
+	cylinder->r2 = cylinder->r * cylinder->r;
+	cylinder->color = color;
+	cylinder->n = 30;
+	cylinder->amb_int = 0.1;
+	cylinder->dif_int = 1;
+	cylinder->spc_int = 1;
+
+	return (cylinder);
+}
+
+void	ft_add_cylinder(t_objs *scene, t_vertex ray_o, t_vertex ray_d, t_rgb color, double radius)
+{
+	t_objs *ptr;
+
+	ptr = ft_find_empty(scene, ptr);
+	ptr->obj = ft_init_cylinder(ray_o, ray_d, color, radius);
+	ptr->ft_inter = ft_cylinder_intersect;
+	ptr->ft_info = ft_get_info_cylinder;
+}
+
 void	ft_get_info_cylinder(t_all *all, t_ray *ray, t_objs *ptr)
 {
 	t_cylinder	*cyl;

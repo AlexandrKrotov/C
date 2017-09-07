@@ -29,7 +29,7 @@ int		ft_primary_ray(t_all *all, int x, int y)
 	ray.d = ft_sub_vector(ray.o, cam);
 	ray.d =ft_normalized_vector(ray.d);
 	ray = (t_ray){cam, ray.d};
-	all->rt.t = 20000;
+	all->rt.t = 200000;
 	inter = FALSE;
 	while (ptr != NULL)
 	{
@@ -54,7 +54,7 @@ int			ft_shadow_ray(t_all *all, t_light *light)
 	shadow = FALSE;
 	ptr = all->scene;
 	orig = all->rt.inter;
-	dir = ft_sub_vector(light->o, orig);
+	dir = ft_sub_vector(*light->o, orig);
 	all->rt.t = ft_get_magnitude(dir);
 	dir = ft_normalized_vector(dir);
 	ray = (t_ray){orig, dir};

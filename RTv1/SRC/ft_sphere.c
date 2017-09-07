@@ -1,5 +1,32 @@
 #include "rtv1.h"
 
+t_sphere	*ft_init_sphere(t_vertex ray_o, t_rgb color, double radius)
+{
+	t_sphere *sphere;
+
+	sphere = malloc(sizeof(t_sphere));
+	sphere->center = ray_o;
+	sphere->color = color;
+	sphere->radius = radius;
+	sphere->r2 = sphere->radius * sphere->radius;
+	sphere->n = 10;
+	sphere->amb_int = 0.1;
+	sphere->dif_int = 1;
+	sphere->spc_int = .5;
+
+	return (sphere);
+}
+
+void	ft_add_sphere(t_objs *scene, t_vertex ray_o, t_rgb color, double radius)
+{
+	t_objs		*ptr;
+
+	ptr = ft_find_empty(scene, ptr);
+	ptr->obj = ft_init_sphere(ray_o,color, radius);
+	ptr->ft_inter = ft_sphere_intersect;
+	ptr->ft_info = ft_get_info_sphere;
+}
+
 void	ft_get_norm_sphere(t_all *all, t_objs *ptr)
 {
 	t_sphere	*s;

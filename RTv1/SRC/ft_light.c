@@ -1,12 +1,11 @@
 #include "rtv1.h"
 
-t_light		*ft_crete_light_node(t_vertex pos)
+t_vertex	*ft_crete_light_node(t_vertex pos)
 {
-	t_light *ptr;
+	t_vertex *ptr;
 
-	ptr = malloc(sizeof(t_light));
-	ptr->o = (t_vertex)pos;
-	ptr->next = NULL;
+	ptr = malloc(sizeof(t_vertex));
+	*ptr = (t_vertex)pos;
 
 	return (ptr);
 }
@@ -15,24 +14,30 @@ t_light		*ft_add_light_lst(t_light *light, t_vertex pos)
 {
 	t_light *ptr;
 
-	if (light == NULL)
-		light = ft_crete_light_node(pos);
+	if (light->o == NULL)
+	{
+		light->o = ft_crete_light_node(pos);
+		light->next = NULL;
+	}
+
 	else
 	{
 		ptr = light;
 		while (ptr->next != NULL)
 			ptr = ptr->next;
-		ptr->next = ft_crete_light_node(pos);
+		ptr->next = malloc(sizeof(t_light));
+		ptr = ptr->next;
+		ptr->o = ft_crete_light_node(pos);
+		ptr->next = NULL;
 	}
-	return (light);
 }
 
 void	ft_create_light_lst(t_all *all)
 {
 	//TODO "ЗАЙМИСЬ! 1 ИСТОЧНИК ЯРЧЕ ЧЕМ НЕСКОЛЬКО!"
-	all->light = ft_add_light_lst(all->light, (t_vertex){-500, 0, -1000});
-	all->light = ft_add_light_lst(all->light, (t_vertex){500, 0, -1000});
-	all->light = ft_add_light_lst(all->light, (t_vertex){0, 0, -1000});
+	ft_add_light_lst(all->light, (t_vertex){-500, 0, -1000});
+	ft_add_light_lst(all->light, (t_vertex){500, 0, -1000});
+	ft_add_light_lst(all->light, (t_vertex){0, 0, -1000});
 }
 
 t_rgb		ft_light_calc(t_all *all, t_rgb *color)
@@ -50,7 +55,7 @@ t_rgb		ft_light_calc(t_all *all, t_rgb *color)
 	{
 		size++;
 		all->phong = ft_phong(&all->rt, color, ptr, all->cam);
-//		all->flags.shadow = ft_shadow_ray(all, ptr);
+		all->flags.shadow = ft_shadow_ray(all, ptr);
 		if (!all->flags.shadow)
 		{
 			color->r = (UC)fmin((all->phong.amb.r + all->phong.dif.r + all->phong.spc.r * all->rt.spc_int), 255);
