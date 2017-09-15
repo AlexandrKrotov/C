@@ -19,4 +19,5 @@ set(SOURCE_FILES SRC/main.c includes/rtv1.h SRC/ft_key_hook.c SRC/ft_exit.c SRC/
 add_executable(RTv1 ${SOURCE_FILES} includes/rtv1.h)
 set(HEADER_FILES includes/rtv1.h includes/libft.h)
 
+
 target_link_libraries(RTv1 ${CMAKE_SOURCE_DIR}/libft/libft.a)

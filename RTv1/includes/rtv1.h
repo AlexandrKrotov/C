@@ -46,7 +46,11 @@
 # define K_LEFT 65361
 # define K_RIGHT 65363
 
+<<<<<<< HEAD
 #elif __APPLE__
+=======
+#else
+>>>>>>> e55e066584d0e89bac39f94cb3803859ba6c9889
 
 # define ESC 53
 # define W 13
@@ -57,8 +61,13 @@
 # define X 7
 # define K_UP 126
 # define K_DOWN 125
+<<<<<<< HEAD
 # define K_LEFT 123
 # define K_RIGHT 124
+=======
+# define K_LEFT 125
+# define K_RIGHT 125
+>>>>>>> e55e066584d0e89bac39f94cb3803859ba6c9889
 
 #endif
 
