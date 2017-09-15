@@ -507,7 +507,6 @@ RTv1: CMakeFiles/RTv1.dir/SRC/ft_antialiasing.c.o
 RTv1: CMakeFiles/RTv1.dir/SRC/ft_error.c.o
 RTv1: CMakeFiles/RTv1.dir/build.make
 RTv1: ../libft/libft.a
-RTv1: ../minilibx/libmlx.a
 RTv1: CMakeFiles/RTv1.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/nfs/2016/a/akrotov/work_repository/RTv1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking C executable RTv1"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/RTv1.dir/link.txt --verbose=$(VERBOSE)
