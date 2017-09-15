@@ -1,5 +1,7 @@
 #DIRECTIONS
 cmake-build-debug/
 .idea/
+# Compiled source
+*.o
 # OS generated files
 .DS_Store
