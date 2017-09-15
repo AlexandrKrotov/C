@@ -46,7 +46,7 @@
 # define K_LEFT 65361
 # define K_RIGHT 65363
 
-#else __APPLE__
+#else
 
 # define ESC 53
 # define W 13
@@ -55,19 +55,37 @@
 # define D 2
 # define Z 6
 # define X 7
-# define UP 126
-# define DOWN 125
+# define K_UP 126
+# define K_DOWN 125
+# define K_LEFT 125
+# define K_RIGHT 125
 
 #endif
 
-typedef	struct s_vertex t_vertex;
-typedef struct s_cord   t_cord;
-typedef struct s_rgb	t_rgb;
-typedef struct s_irgb	t_irgb;
-typedef struct s_all	t_all;
-typedef struct s_objs	t_objs;
+typedef	struct s_vertex		t_vertex;
+typedef struct s_cord		t_cord;
+typedef struct s_rgb		t_rgb;
+typedef struct s_irgb		t_irgb;
+typedef struct s_ray		t_ray;
+typedef struct s_all		t_all;
+typedef struct s_objs		t_objs;
+typedef	struct s_rt			t_rt;
+typedef struct s_sphere		t_sphere;
+typedef struct s_plane		t_plane;
+typedef struct s_cylinder	t_cylinder;
+typedef struct s_cone		t_cone;
+typedef struct s_dsp		t_dsp;
+typedef struct s_flags		t_flags;
+typedef struct s_trans		t_trans;
+typedef struct s_calc		t_calc;
+typedef	struct s_phong		t_phong;
+typedef	struct s_light		t_light;
+typedef struct s_img		t_img;
+typedef struct s_mlx		t_mlx;
+typedef struct s_objs		t_objs;
+typedef struct s_all		t_all;
 
-struct	s_vertex
+struct		s_vertex
 {
 	double	x;
 	double	y;
@@ -76,162 +94,159 @@ struct	s_vertex
 
 struct	s_cord
 {
-	int		x;
-	int 	y;
+	int	x;
+	int y;
 };
 
-typedef struct		s_rgb
+struct				s_rgb
 {
 	unsigned char	r;
 	unsigned char	g;
 	unsigned char	b;
 	unsigned char	opacity;
-}					t_rgb;
+};
 
-typedef struct		s_irgb
+struct	s_irgb
 {
-	int				r;
-	int				g;
-	int				b;
-}					t_irgb;
+	int	r;
+	int	g;
+	int	b;
+};
 
-typedef struct		s_ray{
-	t_vertex		o;
-	t_vertex		d;
-	//double	 	magnitude;
-}					t_ray;
+struct			s_ray{
+	t_vertex	o;
+	t_vertex	d;
+};
 
-typedef	struct		s_rt{
-	double			t;
-	double			brightness;
-	t_vertex		norm;
-	t_vertex		inter;
-	t_rgb			rgb;
-	int 			n;
-	double			amb_int;
-	double			dif_int;
-	double			spc_int;
-}					t_rt;
+struct			s_rt{
+	double		t;
+	double		brightness;
+	t_vertex	norm;
+	t_vertex	inter;
+	t_rgb		rgb;
+	int			n;
+	double		amb_int;
+	double		dif_int;
+	double		spc_int;
+};
 
-typedef struct		s_sphere{
-	double			radius;
-	double			r2;
-	int 			n;
-	t_vertex		center;
-	t_rgb			color;
-	double			amb_int;
-	double			dif_int;
-	double			spc_int;
-}					t_sphere;
+struct			s_sphere{
+	double		radius;
+	double		r2;
+	int			n;
+	t_vertex	center;
+	t_rgb		color;
+	double		amb_int;
+	double		dif_int;
+	double		spc_int;
+};
 
-typedef struct		s_plane{
+struct		s_plane{
+	t_ray	ray;
+	t_rgb	color;
+	int		n;
+	double	amb_int;
+	double	dif_int;
+	double	spc_int;
+};
+
+struct		s_cylinder{
+	t_ray	ray;
+	double	r;
+	double	r2;
+	t_rgb	color;
+	int		n;
+	double	amb_int;
+	double	dif_int;
+	double	spc_int;
+};
+
+struct				s_cone{
 	t_ray			ray;
 	t_rgb			color;
-	int 			n;
-	double			amb_int;
-	double			dif_int;
-	double			spc_int;
-}					t_plane;
-
-typedef struct		s_cylinder{
-	t_ray			ray;
-	double 			r;
-	double 			r2;
-	t_rgb 			color;
-	int 			n;
-	double			amb_int;
-	double			dif_int;
-	double			spc_int;
-}					t_cylinder;
-
-
-typedef struct		s_cone{
-	t_ray			ray;
-	t_rgb 			color;
-	double 			alpha;
-	double 			rad;
+	double			alpha;
+	double			rad;
 	double			cos2;
 	double			sin2;
-	int 			n;
+	int				n;
 	double			amb_int;
 	double			dif_int;
 	double			spc_int;
-}					t_cone;
+};
 
-typedef struct		s_dsp{
-	int				dsp_h;
-	int				half_h;
-	int				dsp_w;
-	int				half_w;
-	int				rend_ws;
-	int				rend_hs;
-	int				rend_we;
-	int				rend_he;
-}					t_dsp;
+struct	s_dsp{
+	int	dsp_h;
+	int	half_h;
+	int	dsp_w;
+	int	half_w;
+	int	rend_ws;
+	int	rend_hs;
+	int	rend_we;
+	int	rend_he;
+};
 
-typedef struct 		s_flags{
-	int 			redraw;
-	int 			shadow;
-	int				aliasing;
-}					t_flags;
+struct 		s_flags{
+	int		redraw;
+	int		shadow;
+	int		aliasing;
+};
 
-typedef struct		s_trans{
-	double 			zoom;
-	double 			shift;
-}					t_trans;
+struct		s_trans{
+	double	zoom;
+	double	shift;
+};
 
-typedef struct			s_calc{
-	double				cos_x;
-	double				sin_x;
-	double				cos_y;
-	double				sin_y;
-	double				cos_z;
-	double				sin_z;
-}						t_calc;
+struct		s_calc{
+	double	cos_x;
+	double	sin_x;
+	double	cos_y;
+	double	sin_y;
+	double	cos_z;
+	double	sin_z;
+};
 
-typedef	struct		s_phong
+struct		s_phong
 {
-	t_rgb			amb;
-	t_rgb			dif;
-	t_rgb			spc;
-}					t_phong;
+	t_rgb	amb;
+	t_rgb	dif;
+	t_rgb	spc;
+};
 
-typedef	struct 		s_light{
-	t_vertex		o;
+struct				s_light{
+	t_vertex		*o;
 //	double 			angle;
 //	double 			power;
 	struct s_light	*next;
-}					t_light;
+};
 
+struct		s_img{
+	void	*img;
+	char	*gda;
+	int		bpp;
+	int		size_line;
+	int		endian;
+};
 
-typedef struct		s_img{
-	void			*img;
-	char			*gda;
-	int				bpp;
-	int				size_line;
-	int				endian;
-}					t_img;
+struct		s_mlx{
+	void	*mlx;
+	void	*wnd;
+	t_img	img;
+	t_img	img_a;
+};
 
-typedef struct		s_mlx{
-	void			*mlx;
-	void			*wnd;
-	t_img			img;
-	t_img			img_a;
-}					t_mlx;
-
-typedef struct		s_objs{
+struct				s_objs{
 	void			*obj;
 	int 			(*ft_inter)(t_all*, t_ray*, t_objs*);
 	void			(*ft_info)(t_all*, t_ray*, t_objs*);
 	struct	s_objs	*next;
-}					t_objs;
+};
 
-typedef struct		s_all{
+struct				s_all{
 	t_mlx			*mlx;
 	t_dsp			dsp;
 	t_objs			*scene;
-	t_calc	 		calc;
-	t_light 		*light;
+	t_calc			calc;
+	t_light			*light;
 	t_phong			phong;
 	t_vertex		cam;
 	t_rt			rt;
@@ -239,7 +254,7 @@ typedef struct		s_all{
 	t_flags			flags;
 	int				x;
 	int				y;
-}					t_all;
+};
 
 void				init_all(t_all *all);
 void				ft_create_obj_lst(t_all *all);
@@ -265,6 +280,10 @@ double				ft_cos_vector(t_vertex u, t_vertex v);
 t_vertex			ft_reverse_vector(t_vertex a);
 t_vertex			ft_reflect_vector(t_vertex a, t_vertex b);
 
+void				ft_add_plane(t_objs *scene, t_vertex ray_o, t_vertex ray_d, t_rgb color);
+void				ft_add_sphere(t_objs *scene, t_vertex ray_o, t_rgb color, double radius);
+void				ft_add_cylinder(t_objs *scene, t_vertex ray_o, t_vertex ray_d, t_rgb color, double radius);
+void				ft_add_cone(t_objs *scene, t_vertex ray_o, t_vertex ray_d, t_rgb color, double angle);
 
 int					ft_sphere_intersect(t_all *all, t_ray *ray, t_objs *ptr);
 int					ft_plane_intersect(t_all *all, t_ray *ray, t_objs *ptr);
@@ -280,6 +299,8 @@ void				ft_get_norm_sphere(t_all *all, t_objs *ptr);
 
 int					ft_shadow_ray(t_all *all, t_light *light);
 void				ft_antialiasing(char *data_in, int n);
+
+t_objs				*ft_find_empty(t_objs *scene, t_objs *ptr);
 
 void				ft_error(int error);
 int					ft_exit(void);

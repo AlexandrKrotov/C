@@ -17,16 +17,19 @@ void	ft_scale(t_all *all, double x, double y, double mult)
 	double	x_mult;
 	double	y_mult;
 
-	x = all->jul.re_min + x *
-	(all->jul.re_max - all->jul.re_min) / (D_WIDTH - 1);
-	y = all->jul.im_min + y *
-	(all->jul.im_max - all->jul.im_min) / (D_HEIGHT - 1);
+	printf("1:x: %fy: %f\n", x, y);
+	x = all->jul.re_min + x * all->jul.step_x;
+	y = all->jul.im_min + y * all->jul.step_y;
+	printf("2:x: %fy: %f\n", x, y);
 	x_mult = x * (1 - mult);
 	y_mult = y * (1 - mult);
+	printf("x_mult: %fy_mult: %fmult: %f\n", x_mult, y_mult, mult);
+	printf("1:re_min: %f re_max: %f im_min: %f im_max: %f\n",all->jul.re_min, all->jul.re_max, all->jul.im_min, all->jul.im_max);
 	all->jul.re_max = all->jul.re_max * mult + x_mult;
 	all->jul.re_min = all->jul.re_min * mult + x_mult;
 	all->jul.im_max = all->jul.im_max * mult + y_mult;
 	all->jul.im_min = all->jul.im_min * mult + y_mult;
+	printf("2:re_min: %f re_max: %f im_min: %f im_max: %f\n",all->jul.re_min, all->jul.re_max, all->jul.im_min, all->jul.im_max);
 }
 
 void	mouse_shift(t_all *all)
@@ -84,6 +87,8 @@ int		ft_mouse_cord(int x, int y, t_all *all)
 
 int		ft_mouse_hook(int keycode, int x, int y, t_all *all)
 {
+	printf("key: %d\n", keycode);
+
 	if (keycode == 4)
 		ft_scale(all, x, y, 1.1);
 	if (keycode == 5)

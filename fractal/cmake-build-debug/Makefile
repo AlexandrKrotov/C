@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/bin/cmake
+CMAKE_COMMAND = /home/m0le/ClionProjects/clion-2017.1.3/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /Applications/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
+RM = /home/m0le/ClionProjects/clion-2017.1.3/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /nfs/2016/a/akrotov/akrotov/fractal
+CMAKE_SOURCE_DIR = /home/m0le/akrotov/backup_RTV/C/fractal
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /nfs/2016/a/akrotov/akrotov/fractal/cmake-build-debug
+CMAKE_BINARY_DIR = /home/m0le/akrotov/backup_RTV/C/fractal/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /nfs/2016/a/akrotov/akrotov/fractal/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/Applications/CLion.app/Contents/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/home/m0le/ClionProjects/clion-2017.1.3/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/Applications/CLion.app/Contents/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/home/m0le/ClionProjects/clion-2017.1.3/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /nfs/2016/a/akrotov/akrotov/fractal/cmake-build-debug/CMakeFiles /nfs/2016/a/akrotov/akrotov/fractal/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/m0le/akrotov/backup_RTV/C/fractal/cmake-build-debug/CMakeFiles /home/m0le/akrotov/backup_RTV/C/fractal/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /nfs/2016/a/akrotov/akrotov/fractal/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/m0le/akrotov/backup_RTV/C/fractal/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -501,6 +501,33 @@ SRC/init_mandatory.c.s:
 	$(MAKE) -f CMakeFiles/fractal.dir/build.make CMakeFiles/fractal.dir/SRC/init_mandatory.c.s
 .PHONY : SRC/init_mandatory.c.s
 
+SRC/julia_new.o: SRC/julia_new.c.o
+
+.PHONY : SRC/julia_new.o
+
+# target to build an object file
+SRC/julia_new.c.o:
+	$(MAKE) -f CMakeFiles/fractal.dir/build.make CMakeFiles/fractal.dir/SRC/julia_new.c.o
+.PHONY : SRC/julia_new.c.o
+
+SRC/julia_new.i: SRC/julia_new.c.i
+
+.PHONY : SRC/julia_new.i
+
+# target to preprocess a source file
+SRC/julia_new.c.i:
+	$(MAKE) -f CMakeFiles/fractal.dir/build.make CMakeFiles/fractal.dir/SRC/julia_new.c.i
+.PHONY : SRC/julia_new.c.i
+
+SRC/julia_new.s: SRC/julia_new.c.s
+
+.PHONY : SRC/julia_new.s
+
+# target to generate assembly for a file
+SRC/julia_new.c.s:
+	$(MAKE) -f CMakeFiles/fractal.dir/build.make CMakeFiles/fractal.dir/SRC/julia_new.c.s
+.PHONY : SRC/julia_new.c.s
+
 SRC/key_hook.o: SRC/key_hook.c.o
 
 .PHONY : SRC/key_hook.o
@@ -741,6 +768,9 @@ help:
 	@echo "... SRC/init_mandatory.o"
 	@echo "... SRC/init_mandatory.i"
 	@echo "... SRC/init_mandatory.s"
+	@echo "... SRC/julia_new.o"
+	@echo "... SRC/julia_new.i"
+	@echo "... SRC/julia_new.s"
 	@echo "... SRC/key_hook.o"
 	@echo "... SRC/key_hook.i"
 	@echo "... SRC/key_hook.s"

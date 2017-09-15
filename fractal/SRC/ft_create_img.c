@@ -42,20 +42,19 @@ void	ft_change_image(t_all *all)
 		fern(all);
 	else if (ft_strcmp(all->filename, "space") == 0)
 		ft_draw_space(all);
-	else
-		ft_opencl(all);
+//	else
+//		ft_opencl(all);
 }
 
 int		create_img(t_all *all)
 {
 	ft_step(all);
 	mouse_shift(all);
-	all->mlx->img = mlx_new_image(all->mlx, D_WIDTH, D_HEIGHT);
+	all->mlx->img = mlx_new_image(all->mlx->mlx, D_WIDTH, D_HEIGHT);
 	all->mlx->gda = mlx_get_data_addr(all->mlx->img, &all->mlx->bpb,
 	&all->mlx->size_line, &all->mlx->endian);
-	all->m.zx = (all->trans.scale * all->disp.half_w);
-	all->m.zy = (all->trans.scale * all->disp.half_h);
-	ft_change_image(all);
+//	ft_change_image(all);
+	julia_new(all, all->jul.step_x, all->jul.step_y, all->jul.re_min, all->jul.im_min, all->trans.shift_x, all->trans.shift_y, all->m_iter);
 	mlx_put_image_to_window(all->mlx->mlx, all->mlx->wnd, all->mlx->img, 0, 0);
 	if (all->anim.sprite == 1)
 		the_game(all);

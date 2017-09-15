@@ -45,16 +45,15 @@ void	ft_step(t_all *all)
 void	init_all(t_all *all, char *str)
 {
 	all->jul.re_max = 2;
-	all->jul.re_min = -1;
-	all->jul.im_max = 1;
-	all->jul.im_min = -2;
+	all->jul.re_min = -2;
+	all->jul.im_max = 1.5;
+	all->jul.im_min = -1.5;
 	all->m_iter = ITER;
-	choice_fractal(all, str);
 	all->mlx = malloc(sizeof(t_mlx));
 	*all->mlx = (t_mlx){NULL, NULL, NULL, NULL, 0, 0, 0};
 	all->mlx->mlx = mlx_init();
 	all->mlx->wnd = mlx_new_window(all->mlx->mlx, D_WIDTH, D_HEIGHT, D_NAME);
-	ftcl_get_device(all);
+//	ftcl_get_device(all);
 	all->anim.all = 1;
 	all->disp.d_width = D_WIDTH;
 	all->disp.d_height = D_HEIGHT;
@@ -63,6 +62,5 @@ void	init_all(t_all *all, char *str)
 	all->disp.half_w = all->disp.d_width / 2.0;
 	all->disp.half_h = all->disp.d_height / 2.0;
 	all->anim.help = 0;
-	ft_step(all);
 	init_game(all);
 }

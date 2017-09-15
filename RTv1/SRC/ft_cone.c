@@ -1,5 +1,36 @@
 #include "rtv1.h"
 
+
+t_cone *ft_init_cone(t_vertex ray_o, t_vertex ray_d, t_rgb color, double angle)
+{
+	t_cone *cone;
+
+	cone = malloc(sizeof(t_cone));
+	cone->ray.o = ray_o;
+	cone->ray.d = ray_d;
+	cone->color = color;
+	cone->alpha = angle;
+	cone->rad = cone->alpha * M_PI / 180;
+	cone->cos2 = cos(cone->rad) * cos(cone->rad);
+	cone->sin2 = sin(cone->rad) * sin(cone->rad);
+	cone->n = 20;
+	cone->amb_int = 0.1;
+	cone->dif_int = 1;
+	cone->spc_int = 1;
+
+	return (cone);
+}
+
+void	ft_add_cone(t_objs *scene, t_vertex ray_o, t_vertex ray_d, t_rgb color, double angle)
+{
+	t_objs *ptr;
+
+	ptr = ft_find_empty(scene, ptr);
+	ptr->obj = ft_init_cone(ray_o, ray_d, color, angle);
+	ptr->ft_inter = ft_cone_intersect;
+	ptr->ft_info = ft_get_info_cone;
+}
+
 void		ft_get_info_cone(t_all *all, t_ray *ray, t_objs *ptr)
 {
 	t_cone		*con;

@@ -41,14 +41,15 @@ void	ft_key_color(int keycode, t_all *all)
 
 void	ft_shift(int keycode, t_all *all)
 {
-	if (keycode == 124)
+	if (keycode == 65361)
 		all->trans.shift_x += all->jul.step_x * 15;
-	if (keycode == 123)
+	if (keycode == 65363)
 		all->trans.shift_x -= all->jul.step_x * 15;
-	if (keycode == 126)
+	if (keycode == 65362)
 		all->trans.shift_y += all->jul.step_y * 15;
-	if (keycode == 125)
+	if (keycode == 65364)
 		all->trans.shift_y -= all->jul.step_y * 15;
+	printf("shift_x: %f\n", all->trans.shift_x);
 }
 
 void	ft_key_help(t_all *all, int keycode)
@@ -81,9 +82,9 @@ int		ft_key_hook(int keycode, t_all *all)
 		if (all->m_iter < 0)
 			all->m_iter = 0;
 	}
-	if (keycode == 27)
+	if (keycode == 45)
 		ft_scale(all, all->disp.half_w, all->disp.half_h, 1.1);
-	if (keycode == 24)
+	if (keycode == 61)
 		ft_scale(all, all->disp.half_w, all->disp.half_h, 0.9);
 	ft_key_game(keycode, all);
 	ft_swap_fractal(keycode, all);

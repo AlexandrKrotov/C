@@ -5,7 +5,7 @@ include_directories(includes)
 
 if(Darwin)
     set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -framework OpenGL -framework AppKit -framework OpenCL -lmlx")
-else(LINUX)
+else()
     set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -lmlx -lXext -lX11 -lm")
 endif()
 

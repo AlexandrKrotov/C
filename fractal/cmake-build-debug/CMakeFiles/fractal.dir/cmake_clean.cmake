@@ -20,6 +20,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/fractal.dir/SRC/space.c.o"
   "CMakeFiles/fractal.dir/SRC/key_swap.c.o"
   "CMakeFiles/fractal.dir/SRC/fern.c.o"
+  "CMakeFiles/fractal.dir/SRC/julia_new.c.o"
   "fractal.pdb"
   "fractal"
 )

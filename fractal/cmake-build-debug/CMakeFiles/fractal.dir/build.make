@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/bin/cmake
+CMAKE_COMMAND = /home/m0le/ClionProjects/clion-2017.1.3/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /Applications/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
+RM = /home/m0le/ClionProjects/clion-2017.1.3/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /nfs/2016/a/akrotov/akrotov/fractal
+CMAKE_SOURCE_DIR = /home/m0le/akrotov/backup_RTV/C/fractal
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /nfs/2016/a/akrotov/akrotov/fractal/cmake-build-debug
+CMAKE_BINARY_DIR = /home/m0le/akrotov/backup_RTV/C/fractal/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/fractal.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/fractal.dir/flags.make
 
 CMakeFiles/fractal.dir/SRC/main.c.o: CMakeFiles/fractal.dir/flags.make
 CMakeFiles/fractal.dir/SRC/main.c.o: ../SRC/main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/akrotov/akrotov/fractal/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/fractal.dir/SRC/main.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fractal.dir/SRC/main.c.o   -c /nfs/2016/a/akrotov/akrotov/fractal/SRC/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/m0le/akrotov/backup_RTV/C/fractal/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/fractal.dir/SRC/main.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fractal.dir/SRC/main.c.o   -c /home/m0le/akrotov/backup_RTV/C/fractal/SRC/main.c
 
 CMakeFiles/fractal.dir/SRC/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fractal.dir/SRC/main.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/akrotov/akrotov/fractal/SRC/main.c > CMakeFiles/fractal.dir/SRC/main.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/m0le/akrotov/backup_RTV/C/fractal/SRC/main.c > CMakeFiles/fractal.dir/SRC/main.c.i
 
 CMakeFiles/fractal.dir/SRC/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fractal.dir/SRC/main.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/akrotov/akrotov/fractal/SRC/main.c -o CMakeFiles/fractal.dir/SRC/main.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/m0le/akrotov/backup_RTV/C/fractal/SRC/main.c -o CMakeFiles/fractal.dir/SRC/main.c.s
 
 CMakeFiles/fractal.dir/SRC/main.c.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/fractal.dir/SRC/main.c.o.provides.build: CMakeFiles/fractal.dir/SRC/m
 
 CMakeFiles/fractal.dir/SRC/ft_error.c.o: CMakeFiles/fractal.dir/flags.make
 CMakeFiles/fractal.dir/SRC/ft_error.c.o: ../SRC/ft_error.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/akrotov/akrotov/fractal/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/fractal.dir/SRC/ft_error.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fractal.dir/SRC/ft_error.c.o   -c /nfs/2016/a/akrotov/akrotov/fractal/SRC/ft_error.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/m0le/akrotov/backup_RTV/C/fractal/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/fractal.dir/SRC/ft_error.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fractal.dir/SRC/ft_error.c.o   -c /home/m0le/akrotov/backup_RTV/C/fractal/SRC/ft_error.c
 
 CMakeFiles/fractal.dir/SRC/ft_error.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fractal.dir/SRC/ft_error.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/akrotov/akrotov/fractal/SRC/ft_error.c > CMakeFiles/fractal.dir/SRC/ft_error.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/m0le/akrotov/backup_RTV/C/fractal/SRC/ft_error.c > CMakeFiles/fractal.dir/SRC/ft_error.c.i
 
 CMakeFiles/fractal.dir/SRC/ft_error.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fractal.dir/SRC/ft_error.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/akrotov/akrotov/fractal/SRC/ft_error.c -o CMakeFiles/fractal.dir/SRC/ft_error.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/m0le/akrotov/backup_RTV/C/fractal/SRC/ft_error.c -o CMakeFiles/fractal.dir/SRC/ft_error.c.s
 
 CMakeFiles/fractal.dir/SRC/ft_error.c.o.requires:
 
@@ -107,16 +107,16 @@ CMakeFiles/fractal.dir/SRC/ft_error.c.o.provides.build: CMakeFiles/fractal.dir/S
 
 CMakeFiles/fractal.dir/SRC/key_hook.c.o: CMakeFiles/fractal.dir/flags.make
 CMakeFiles/fractal.dir/SRC/key_hook.c.o: ../SRC/key_hook.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/akrotov/akrotov/fractal/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/fractal.dir/SRC/key_hook.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fractal.dir/SRC/key_hook.c.o   -c /nfs/2016/a/akrotov/akrotov/fractal/SRC/key_hook.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/m0le/akrotov/backup_RTV/C/fractal/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/fractal.dir/SRC/key_hook.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fractal.dir/SRC/key_hook.c.o   -c /home/m0le/akrotov/backup_RTV/C/fractal/SRC/key_hook.c
 
 CMakeFiles/fractal.dir/SRC/key_hook.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fractal.dir/SRC/key_hook.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/akrotov/akrotov/fractal/SRC/key_hook.c > CMakeFiles/fractal.dir/SRC/key_hook.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/m0le/akrotov/backup_RTV/C/fractal/SRC/key_hook.c > CMakeFiles/fractal.dir/SRC/key_hook.c.i
 
 CMakeFiles/fractal.dir/SRC/key_hook.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fractal.dir/SRC/key_hook.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/akrotov/akrotov/fractal/SRC/key_hook.c -o CMakeFiles/fractal.dir/SRC/key_hook.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/m0le/akrotov/backup_RTV/C/fractal/SRC/key_hook.c -o CMakeFiles/fractal.dir/SRC/key_hook.c.s
 
 CMakeFiles/fractal.dir/SRC/key_hook.c.o.requires:
 
@@ -131,16 +131,16 @@ CMakeFiles/fractal.dir/SRC/key_hook.c.o.provides.build: CMakeFiles/fractal.dir/S
 
 CMakeFiles/fractal.dir/SRC/mouse_hook.c.o: CMakeFiles/fractal.dir/flags.make
 CMakeFiles/fractal.dir/SRC/mouse_hook.c.o: ../SRC/mouse_hook.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/akrotov/akrotov/fractal/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/fractal.dir/SRC/mouse_hook.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fractal.dir/SRC/mouse_hook.c.o   -c /nfs/2016/a/akrotov/akrotov/fractal/SRC/mouse_hook.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/m0le/akrotov/backup_RTV/C/fractal/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/fractal.dir/SRC/mouse_hook.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fractal.dir/SRC/mouse_hook.c.o   -c /home/m0le/akrotov/backup_RTV/C/fractal/SRC/mouse_hook.c
 
 CMakeFiles/fractal.dir/SRC/mouse_hook.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fractal.dir/SRC/mouse_hook.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/akrotov/akrotov/fractal/SRC/mouse_hook.c > CMakeFiles/fractal.dir/SRC/mouse_hook.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/m0le/akrotov/backup_RTV/C/fractal/SRC/mouse_hook.c > CMakeFiles/fractal.dir/SRC/mouse_hook.c.i
 
 CMakeFiles/fractal.dir/SRC/mouse_hook.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fractal.dir/SRC/mouse_hook.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/akrotov/akrotov/fractal/SRC/mouse_hook.c -o CMakeFiles/fractal.dir/SRC/mouse_hook.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/m0le/akrotov/backup_RTV/C/fractal/SRC/mouse_hook.c -o CMakeFiles/fractal.dir/SRC/mouse_hook.c.s
 
 CMakeFiles/fractal.dir/SRC/mouse_hook.c.o.requires:
 
@@ -155,16 +155,16 @@ CMakeFiles/fractal.dir/SRC/mouse_hook.c.o.provides.build: CMakeFiles/fractal.dir
 
 CMakeFiles/fractal.dir/SRC/cl.c.o: CMakeFiles/fractal.dir/flags.make
 CMakeFiles/fractal.dir/SRC/cl.c.o: ../SRC/cl.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/akrotov/akrotov/fractal/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/fractal.dir/SRC/cl.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fractal.dir/SRC/cl.c.o   -c /nfs/2016/a/akrotov/akrotov/fractal/SRC/cl.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/m0le/akrotov/backup_RTV/C/fractal/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/fractal.dir/SRC/cl.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fractal.dir/SRC/cl.c.o   -c /home/m0le/akrotov/backup_RTV/C/fractal/SRC/cl.c
 
 CMakeFiles/fractal.dir/SRC/cl.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fractal.dir/SRC/cl.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/akrotov/akrotov/fractal/SRC/cl.c > CMakeFiles/fractal.dir/SRC/cl.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/m0le/akrotov/backup_RTV/C/fractal/SRC/cl.c > CMakeFiles/fractal.dir/SRC/cl.c.i
 
 CMakeFiles/fractal.dir/SRC/cl.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fractal.dir/SRC/cl.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/akrotov/akrotov/fractal/SRC/cl.c -o CMakeFiles/fractal.dir/SRC/cl.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/m0le/akrotov/backup_RTV/C/fractal/SRC/cl.c -o CMakeFiles/fractal.dir/SRC/cl.c.s
 
 CMakeFiles/fractal.dir/SRC/cl.c.o.requires:
 
@@ -179,16 +179,16 @@ CMakeFiles/fractal.dir/SRC/cl.c.o.provides.build: CMakeFiles/fractal.dir/SRC/cl.
 
 CMakeFiles/fractal.dir/SRC/cl_check_succes.c.o: CMakeFiles/fractal.dir/flags.make
 CMakeFiles/fractal.dir/SRC/cl_check_succes.c.o: ../SRC/cl_check_succes.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/akrotov/akrotov/fractal/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/fractal.dir/SRC/cl_check_succes.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fractal.dir/SRC/cl_check_succes.c.o   -c /nfs/2016/a/akrotov/akrotov/fractal/SRC/cl_check_succes.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/m0le/akrotov/backup_RTV/C/fractal/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/fractal.dir/SRC/cl_check_succes.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fractal.dir/SRC/cl_check_succes.c.o   -c /home/m0le/akrotov/backup_RTV/C/fractal/SRC/cl_check_succes.c
 
 CMakeFiles/fractal.dir/SRC/cl_check_succes.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fractal.dir/SRC/cl_check_succes.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/akrotov/akrotov/fractal/SRC/cl_check_succes.c > CMakeFiles/fractal.dir/SRC/cl_check_succes.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/m0le/akrotov/backup_RTV/C/fractal/SRC/cl_check_succes.c > CMakeFiles/fractal.dir/SRC/cl_check_succes.c.i
 
 CMakeFiles/fractal.dir/SRC/cl_check_succes.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fractal.dir/SRC/cl_check_succes.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/akrotov/akrotov/fractal/SRC/cl_check_succes.c -o CMakeFiles/fractal.dir/SRC/cl_check_succes.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/m0le/akrotov/backup_RTV/C/fractal/SRC/cl_check_succes.c -o CMakeFiles/fractal.dir/SRC/cl_check_succes.c.s
 
 CMakeFiles/fractal.dir/SRC/cl_check_succes.c.o.requires:
 
@@ -203,16 +203,16 @@ CMakeFiles/fractal.dir/SRC/cl_check_succes.c.o.provides.build: CMakeFiles/fracta
 
 CMakeFiles/fractal.dir/SRC/ftcl_get_device.c.o: CMakeFiles/fractal.dir/flags.make
 CMakeFiles/fractal.dir/SRC/ftcl_get_device.c.o: ../SRC/ftcl_get_device.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/akrotov/akrotov/fractal/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/fractal.dir/SRC/ftcl_get_device.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fractal.dir/SRC/ftcl_get_device.c.o   -c /nfs/2016/a/akrotov/akrotov/fractal/SRC/ftcl_get_device.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/m0le/akrotov/backup_RTV/C/fractal/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/fractal.dir/SRC/ftcl_get_device.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fractal.dir/SRC/ftcl_get_device.c.o   -c /home/m0le/akrotov/backup_RTV/C/fractal/SRC/ftcl_get_device.c
 
 CMakeFiles/fractal.dir/SRC/ftcl_get_device.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fractal.dir/SRC/ftcl_get_device.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/akrotov/akrotov/fractal/SRC/ftcl_get_device.c > CMakeFiles/fractal.dir/SRC/ftcl_get_device.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/m0le/akrotov/backup_RTV/C/fractal/SRC/ftcl_get_device.c > CMakeFiles/fractal.dir/SRC/ftcl_get_device.c.i
 
 CMakeFiles/fractal.dir/SRC/ftcl_get_device.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fractal.dir/SRC/ftcl_get_device.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/akrotov/akrotov/fractal/SRC/ftcl_get_device.c -o CMakeFiles/fractal.dir/SRC/ftcl_get_device.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/m0le/akrotov/backup_RTV/C/fractal/SRC/ftcl_get_device.c -o CMakeFiles/fractal.dir/SRC/ftcl_get_device.c.s
 
 CMakeFiles/fractal.dir/SRC/ftcl_get_device.c.o.requires:
 
@@ -227,16 +227,16 @@ CMakeFiles/fractal.dir/SRC/ftcl_get_device.c.o.provides.build: CMakeFiles/fracta
 
 CMakeFiles/fractal.dir/SRC/ftcl_load_program.c.o: CMakeFiles/fractal.dir/flags.make
 CMakeFiles/fractal.dir/SRC/ftcl_load_program.c.o: ../SRC/ftcl_load_program.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/akrotov/akrotov/fractal/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/fractal.dir/SRC/ftcl_load_program.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fractal.dir/SRC/ftcl_load_program.c.o   -c /nfs/2016/a/akrotov/akrotov/fractal/SRC/ftcl_load_program.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/m0le/akrotov/backup_RTV/C/fractal/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/fractal.dir/SRC/ftcl_load_program.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fractal.dir/SRC/ftcl_load_program.c.o   -c /home/m0le/akrotov/backup_RTV/C/fractal/SRC/ftcl_load_program.c
 
 CMakeFiles/fractal.dir/SRC/ftcl_load_program.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fractal.dir/SRC/ftcl_load_program.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/akrotov/akrotov/fractal/SRC/ftcl_load_program.c > CMakeFiles/fractal.dir/SRC/ftcl_load_program.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/m0le/akrotov/backup_RTV/C/fractal/SRC/ftcl_load_program.c > CMakeFiles/fractal.dir/SRC/ftcl_load_program.c.i
 
 CMakeFiles/fractal.dir/SRC/ftcl_load_program.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fractal.dir/SRC/ftcl_load_program.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/akrotov/akrotov/fractal/SRC/ftcl_load_program.c -o CMakeFiles/fractal.dir/SRC/ftcl_load_program.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/m0le/akrotov/backup_RTV/C/fractal/SRC/ftcl_load_program.c -o CMakeFiles/fractal.dir/SRC/ftcl_load_program.c.s
 
 CMakeFiles/fractal.dir/SRC/ftcl_load_program.c.o.requires:
 
@@ -251,16 +251,16 @@ CMakeFiles/fractal.dir/SRC/ftcl_load_program.c.o.provides.build: CMakeFiles/frac
 
 CMakeFiles/fractal.dir/SRC/ft_init.c.o: CMakeFiles/fractal.dir/flags.make
 CMakeFiles/fractal.dir/SRC/ft_init.c.o: ../SRC/ft_init.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/akrotov/akrotov/fractal/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/fractal.dir/SRC/ft_init.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fractal.dir/SRC/ft_init.c.o   -c /nfs/2016/a/akrotov/akrotov/fractal/SRC/ft_init.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/m0le/akrotov/backup_RTV/C/fractal/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/fractal.dir/SRC/ft_init.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fractal.dir/SRC/ft_init.c.o   -c /home/m0le/akrotov/backup_RTV/C/fractal/SRC/ft_init.c
 
 CMakeFiles/fractal.dir/SRC/ft_init.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fractal.dir/SRC/ft_init.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/akrotov/akrotov/fractal/SRC/ft_init.c > CMakeFiles/fractal.dir/SRC/ft_init.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/m0le/akrotov/backup_RTV/C/fractal/SRC/ft_init.c > CMakeFiles/fractal.dir/SRC/ft_init.c.i
 
 CMakeFiles/fractal.dir/SRC/ft_init.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fractal.dir/SRC/ft_init.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/akrotov/akrotov/fractal/SRC/ft_init.c -o CMakeFiles/fractal.dir/SRC/ft_init.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/m0le/akrotov/backup_RTV/C/fractal/SRC/ft_init.c -o CMakeFiles/fractal.dir/SRC/ft_init.c.s
 
 CMakeFiles/fractal.dir/SRC/ft_init.c.o.requires:
 
@@ -275,16 +275,16 @@ CMakeFiles/fractal.dir/SRC/ft_init.c.o.provides.build: CMakeFiles/fractal.dir/SR
 
 CMakeFiles/fractal.dir/SRC/ft_create_img.c.o: CMakeFiles/fractal.dir/flags.make
 CMakeFiles/fractal.dir/SRC/ft_create_img.c.o: ../SRC/ft_create_img.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/akrotov/akrotov/fractal/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/fractal.dir/SRC/ft_create_img.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fractal.dir/SRC/ft_create_img.c.o   -c /nfs/2016/a/akrotov/akrotov/fractal/SRC/ft_create_img.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/m0le/akrotov/backup_RTV/C/fractal/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/fractal.dir/SRC/ft_create_img.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fractal.dir/SRC/ft_create_img.c.o   -c /home/m0le/akrotov/backup_RTV/C/fractal/SRC/ft_create_img.c
 
 CMakeFiles/fractal.dir/SRC/ft_create_img.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fractal.dir/SRC/ft_create_img.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/akrotov/akrotov/fractal/SRC/ft_create_img.c > CMakeFiles/fractal.dir/SRC/ft_create_img.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/m0le/akrotov/backup_RTV/C/fractal/SRC/ft_create_img.c > CMakeFiles/fractal.dir/SRC/ft_create_img.c.i
 
 CMakeFiles/fractal.dir/SRC/ft_create_img.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fractal.dir/SRC/ft_create_img.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/akrotov/akrotov/fractal/SRC/ft_create_img.c -o CMakeFiles/fractal.dir/SRC/ft_create_img.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/m0le/akrotov/backup_RTV/C/fractal/SRC/ft_create_img.c -o CMakeFiles/fractal.dir/SRC/ft_create_img.c.s
 
 CMakeFiles/fractal.dir/SRC/ft_create_img.c.o.requires:
 
@@ -299,16 +299,16 @@ CMakeFiles/fractal.dir/SRC/ft_create_img.c.o.provides.build: CMakeFiles/fractal.
 
 CMakeFiles/fractal.dir/SRC/ftcl_create_kernel.c.o: CMakeFiles/fractal.dir/flags.make
 CMakeFiles/fractal.dir/SRC/ftcl_create_kernel.c.o: ../SRC/ftcl_create_kernel.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/akrotov/akrotov/fractal/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/fractal.dir/SRC/ftcl_create_kernel.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fractal.dir/SRC/ftcl_create_kernel.c.o   -c /nfs/2016/a/akrotov/akrotov/fractal/SRC/ftcl_create_kernel.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/m0le/akrotov/backup_RTV/C/fractal/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/fractal.dir/SRC/ftcl_create_kernel.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fractal.dir/SRC/ftcl_create_kernel.c.o   -c /home/m0le/akrotov/backup_RTV/C/fractal/SRC/ftcl_create_kernel.c
 
 CMakeFiles/fractal.dir/SRC/ftcl_create_kernel.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fractal.dir/SRC/ftcl_create_kernel.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/akrotov/akrotov/fractal/SRC/ftcl_create_kernel.c > CMakeFiles/fractal.dir/SRC/ftcl_create_kernel.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/m0le/akrotov/backup_RTV/C/fractal/SRC/ftcl_create_kernel.c > CMakeFiles/fractal.dir/SRC/ftcl_create_kernel.c.i
 
 CMakeFiles/fractal.dir/SRC/ftcl_create_kernel.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fractal.dir/SRC/ftcl_create_kernel.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/akrotov/akrotov/fractal/SRC/ftcl_create_kernel.c -o CMakeFiles/fractal.dir/SRC/ftcl_create_kernel.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/m0le/akrotov/backup_RTV/C/fractal/SRC/ftcl_create_kernel.c -o CMakeFiles/fractal.dir/SRC/ftcl_create_kernel.c.s
 
 CMakeFiles/fractal.dir/SRC/ftcl_create_kernel.c.o.requires:
 
@@ -323,16 +323,16 @@ CMakeFiles/fractal.dir/SRC/ftcl_create_kernel.c.o.provides.build: CMakeFiles/fra
 
 CMakeFiles/fractal.dir/SRC/ftcl_thread.c.o: CMakeFiles/fractal.dir/flags.make
 CMakeFiles/fractal.dir/SRC/ftcl_thread.c.o: ../SRC/ftcl_thread.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/akrotov/akrotov/fractal/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/fractal.dir/SRC/ftcl_thread.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fractal.dir/SRC/ftcl_thread.c.o   -c /nfs/2016/a/akrotov/akrotov/fractal/SRC/ftcl_thread.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/m0le/akrotov/backup_RTV/C/fractal/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/fractal.dir/SRC/ftcl_thread.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fractal.dir/SRC/ftcl_thread.c.o   -c /home/m0le/akrotov/backup_RTV/C/fractal/SRC/ftcl_thread.c
 
 CMakeFiles/fractal.dir/SRC/ftcl_thread.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fractal.dir/SRC/ftcl_thread.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/akrotov/akrotov/fractal/SRC/ftcl_thread.c > CMakeFiles/fractal.dir/SRC/ftcl_thread.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/m0le/akrotov/backup_RTV/C/fractal/SRC/ftcl_thread.c > CMakeFiles/fractal.dir/SRC/ftcl_thread.c.i
 
 CMakeFiles/fractal.dir/SRC/ftcl_thread.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fractal.dir/SRC/ftcl_thread.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/akrotov/akrotov/fractal/SRC/ftcl_thread.c -o CMakeFiles/fractal.dir/SRC/ftcl_thread.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/m0le/akrotov/backup_RTV/C/fractal/SRC/ftcl_thread.c -o CMakeFiles/fractal.dir/SRC/ftcl_thread.c.s
 
 CMakeFiles/fractal.dir/SRC/ftcl_thread.c.o.requires:
 
@@ -347,16 +347,16 @@ CMakeFiles/fractal.dir/SRC/ftcl_thread.c.o.provides.build: CMakeFiles/fractal.di
 
 CMakeFiles/fractal.dir/SRC/ftcl_release.c.o: CMakeFiles/fractal.dir/flags.make
 CMakeFiles/fractal.dir/SRC/ftcl_release.c.o: ../SRC/ftcl_release.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/akrotov/akrotov/fractal/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/fractal.dir/SRC/ftcl_release.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fractal.dir/SRC/ftcl_release.c.o   -c /nfs/2016/a/akrotov/akrotov/fractal/SRC/ftcl_release.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/m0le/akrotov/backup_RTV/C/fractal/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/fractal.dir/SRC/ftcl_release.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fractal.dir/SRC/ftcl_release.c.o   -c /home/m0le/akrotov/backup_RTV/C/fractal/SRC/ftcl_release.c
 
 CMakeFiles/fractal.dir/SRC/ftcl_release.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fractal.dir/SRC/ftcl_release.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/akrotov/akrotov/fractal/SRC/ftcl_release.c > CMakeFiles/fractal.dir/SRC/ftcl_release.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/m0le/akrotov/backup_RTV/C/fractal/SRC/ftcl_release.c > CMakeFiles/fractal.dir/SRC/ftcl_release.c.i
 
 CMakeFiles/fractal.dir/SRC/ftcl_release.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fractal.dir/SRC/ftcl_release.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/akrotov/akrotov/fractal/SRC/ftcl_release.c -o CMakeFiles/fractal.dir/SRC/ftcl_release.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/m0le/akrotov/backup_RTV/C/fractal/SRC/ftcl_release.c -o CMakeFiles/fractal.dir/SRC/ftcl_release.c.s
 
 CMakeFiles/fractal.dir/SRC/ftcl_release.c.o.requires:
 
@@ -371,16 +371,16 @@ CMakeFiles/fractal.dir/SRC/ftcl_release.c.o.provides.build: CMakeFiles/fractal.d
 
 CMakeFiles/fractal.dir/SRC/sierpinski.c.o: CMakeFiles/fractal.dir/flags.make
 CMakeFiles/fractal.dir/SRC/sierpinski.c.o: ../SRC/sierpinski.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/akrotov/akrotov/fractal/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/fractal.dir/SRC/sierpinski.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fractal.dir/SRC/sierpinski.c.o   -c /nfs/2016/a/akrotov/akrotov/fractal/SRC/sierpinski.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/m0le/akrotov/backup_RTV/C/fractal/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/fractal.dir/SRC/sierpinski.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fractal.dir/SRC/sierpinski.c.o   -c /home/m0le/akrotov/backup_RTV/C/fractal/SRC/sierpinski.c
 
 CMakeFiles/fractal.dir/SRC/sierpinski.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fractal.dir/SRC/sierpinski.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/akrotov/akrotov/fractal/SRC/sierpinski.c > CMakeFiles/fractal.dir/SRC/sierpinski.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/m0le/akrotov/backup_RTV/C/fractal/SRC/sierpinski.c > CMakeFiles/fractal.dir/SRC/sierpinski.c.i
 
 CMakeFiles/fractal.dir/SRC/sierpinski.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fractal.dir/SRC/sierpinski.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/akrotov/akrotov/fractal/SRC/sierpinski.c -o CMakeFiles/fractal.dir/SRC/sierpinski.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/m0le/akrotov/backup_RTV/C/fractal/SRC/sierpinski.c -o CMakeFiles/fractal.dir/SRC/sierpinski.c.s
 
 CMakeFiles/fractal.dir/SRC/sierpinski.c.o.requires:
 
@@ -395,16 +395,16 @@ CMakeFiles/fractal.dir/SRC/sierpinski.c.o.provides.build: CMakeFiles/fractal.dir
 
 CMakeFiles/fractal.dir/SRC/the_game.c.o: CMakeFiles/fractal.dir/flags.make
 CMakeFiles/fractal.dir/SRC/the_game.c.o: ../SRC/the_game.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/akrotov/akrotov/fractal/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/fractal.dir/SRC/the_game.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fractal.dir/SRC/the_game.c.o   -c /nfs/2016/a/akrotov/akrotov/fractal/SRC/the_game.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/m0le/akrotov/backup_RTV/C/fractal/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/fractal.dir/SRC/the_game.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fractal.dir/SRC/the_game.c.o   -c /home/m0le/akrotov/backup_RTV/C/fractal/SRC/the_game.c
 
 CMakeFiles/fractal.dir/SRC/the_game.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fractal.dir/SRC/the_game.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/akrotov/akrotov/fractal/SRC/the_game.c > CMakeFiles/fractal.dir/SRC/the_game.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/m0le/akrotov/backup_RTV/C/fractal/SRC/the_game.c > CMakeFiles/fractal.dir/SRC/the_game.c.i
 
 CMakeFiles/fractal.dir/SRC/the_game.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fractal.dir/SRC/the_game.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/akrotov/akrotov/fractal/SRC/the_game.c -o CMakeFiles/fractal.dir/SRC/the_game.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/m0le/akrotov/backup_RTV/C/fractal/SRC/the_game.c -o CMakeFiles/fractal.dir/SRC/the_game.c.s
 
 CMakeFiles/fractal.dir/SRC/the_game.c.o.requires:
 
@@ -419,16 +419,16 @@ CMakeFiles/fractal.dir/SRC/the_game.c.o.provides.build: CMakeFiles/fractal.dir/S
 
 CMakeFiles/fractal.dir/SRC/init_mandatory.c.o: CMakeFiles/fractal.dir/flags.make
 CMakeFiles/fractal.dir/SRC/init_mandatory.c.o: ../SRC/init_mandatory.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/akrotov/akrotov/fractal/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/fractal.dir/SRC/init_mandatory.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fractal.dir/SRC/init_mandatory.c.o   -c /nfs/2016/a/akrotov/akrotov/fractal/SRC/init_mandatory.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/m0le/akrotov/backup_RTV/C/fractal/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/fractal.dir/SRC/init_mandatory.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fractal.dir/SRC/init_mandatory.c.o   -c /home/m0le/akrotov/backup_RTV/C/fractal/SRC/init_mandatory.c
 
 CMakeFiles/fractal.dir/SRC/init_mandatory.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fractal.dir/SRC/init_mandatory.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/akrotov/akrotov/fractal/SRC/init_mandatory.c > CMakeFiles/fractal.dir/SRC/init_mandatory.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/m0le/akrotov/backup_RTV/C/fractal/SRC/init_mandatory.c > CMakeFiles/fractal.dir/SRC/init_mandatory.c.i
 
 CMakeFiles/fractal.dir/SRC/init_mandatory.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fractal.dir/SRC/init_mandatory.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/akrotov/akrotov/fractal/SRC/init_mandatory.c -o CMakeFiles/fractal.dir/SRC/init_mandatory.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/m0le/akrotov/backup_RTV/C/fractal/SRC/init_mandatory.c -o CMakeFiles/fractal.dir/SRC/init_mandatory.c.s
 
 CMakeFiles/fractal.dir/SRC/init_mandatory.c.o.requires:
 
@@ -443,16 +443,16 @@ CMakeFiles/fractal.dir/SRC/init_mandatory.c.o.provides.build: CMakeFiles/fractal
 
 CMakeFiles/fractal.dir/SRC/init_bonus.c.o: CMakeFiles/fractal.dir/flags.make
 CMakeFiles/fractal.dir/SRC/init_bonus.c.o: ../SRC/init_bonus.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/akrotov/akrotov/fractal/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/fractal.dir/SRC/init_bonus.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fractal.dir/SRC/init_bonus.c.o   -c /nfs/2016/a/akrotov/akrotov/fractal/SRC/init_bonus.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/m0le/akrotov/backup_RTV/C/fractal/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/fractal.dir/SRC/init_bonus.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fractal.dir/SRC/init_bonus.c.o   -c /home/m0le/akrotov/backup_RTV/C/fractal/SRC/init_bonus.c
 
 CMakeFiles/fractal.dir/SRC/init_bonus.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fractal.dir/SRC/init_bonus.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/akrotov/akrotov/fractal/SRC/init_bonus.c > CMakeFiles/fractal.dir/SRC/init_bonus.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/m0le/akrotov/backup_RTV/C/fractal/SRC/init_bonus.c > CMakeFiles/fractal.dir/SRC/init_bonus.c.i
 
 CMakeFiles/fractal.dir/SRC/init_bonus.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fractal.dir/SRC/init_bonus.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/akrotov/akrotov/fractal/SRC/init_bonus.c -o CMakeFiles/fractal.dir/SRC/init_bonus.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/m0le/akrotov/backup_RTV/C/fractal/SRC/init_bonus.c -o CMakeFiles/fractal.dir/SRC/init_bonus.c.s
 
 CMakeFiles/fractal.dir/SRC/init_bonus.c.o.requires:
 
@@ -467,16 +467,16 @@ CMakeFiles/fractal.dir/SRC/init_bonus.c.o.provides.build: CMakeFiles/fractal.dir
 
 CMakeFiles/fractal.dir/SRC/init_game.c.o: CMakeFiles/fractal.dir/flags.make
 CMakeFiles/fractal.dir/SRC/init_game.c.o: ../SRC/init_game.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/akrotov/akrotov/fractal/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/fractal.dir/SRC/init_game.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fractal.dir/SRC/init_game.c.o   -c /nfs/2016/a/akrotov/akrotov/fractal/SRC/init_game.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/m0le/akrotov/backup_RTV/C/fractal/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/fractal.dir/SRC/init_game.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fractal.dir/SRC/init_game.c.o   -c /home/m0le/akrotov/backup_RTV/C/fractal/SRC/init_game.c
 
 CMakeFiles/fractal.dir/SRC/init_game.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fractal.dir/SRC/init_game.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/akrotov/akrotov/fractal/SRC/init_game.c > CMakeFiles/fractal.dir/SRC/init_game.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/m0le/akrotov/backup_RTV/C/fractal/SRC/init_game.c > CMakeFiles/fractal.dir/SRC/init_game.c.i
 
 CMakeFiles/fractal.dir/SRC/init_game.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fractal.dir/SRC/init_game.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/akrotov/akrotov/fractal/SRC/init_game.c -o CMakeFiles/fractal.dir/SRC/init_game.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/m0le/akrotov/backup_RTV/C/fractal/SRC/init_game.c -o CMakeFiles/fractal.dir/SRC/init_game.c.s
 
 CMakeFiles/fractal.dir/SRC/init_game.c.o.requires:
 
@@ -491,16 +491,16 @@ CMakeFiles/fractal.dir/SRC/init_game.c.o.provides.build: CMakeFiles/fractal.dir/
 
 CMakeFiles/fractal.dir/SRC/space.c.o: CMakeFiles/fractal.dir/flags.make
 CMakeFiles/fractal.dir/SRC/space.c.o: ../SRC/space.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/akrotov/akrotov/fractal/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/fractal.dir/SRC/space.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fractal.dir/SRC/space.c.o   -c /nfs/2016/a/akrotov/akrotov/fractal/SRC/space.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/m0le/akrotov/backup_RTV/C/fractal/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/fractal.dir/SRC/space.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fractal.dir/SRC/space.c.o   -c /home/m0le/akrotov/backup_RTV/C/fractal/SRC/space.c
 
 CMakeFiles/fractal.dir/SRC/space.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fractal.dir/SRC/space.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/akrotov/akrotov/fractal/SRC/space.c > CMakeFiles/fractal.dir/SRC/space.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/m0le/akrotov/backup_RTV/C/fractal/SRC/space.c > CMakeFiles/fractal.dir/SRC/space.c.i
 
 CMakeFiles/fractal.dir/SRC/space.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fractal.dir/SRC/space.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/akrotov/akrotov/fractal/SRC/space.c -o CMakeFiles/fractal.dir/SRC/space.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/m0le/akrotov/backup_RTV/C/fractal/SRC/space.c -o CMakeFiles/fractal.dir/SRC/space.c.s
 
 CMakeFiles/fractal.dir/SRC/space.c.o.requires:
 
@@ -515,16 +515,16 @@ CMakeFiles/fractal.dir/SRC/space.c.o.provides.build: CMakeFiles/fractal.dir/SRC/
 
 CMakeFiles/fractal.dir/SRC/key_swap.c.o: CMakeFiles/fractal.dir/flags.make
 CMakeFiles/fractal.dir/SRC/key_swap.c.o: ../SRC/key_swap.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/akrotov/akrotov/fractal/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/fractal.dir/SRC/key_swap.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fractal.dir/SRC/key_swap.c.o   -c /nfs/2016/a/akrotov/akrotov/fractal/SRC/key_swap.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/m0le/akrotov/backup_RTV/C/fractal/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/fractal.dir/SRC/key_swap.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fractal.dir/SRC/key_swap.c.o   -c /home/m0le/akrotov/backup_RTV/C/fractal/SRC/key_swap.c
 
 CMakeFiles/fractal.dir/SRC/key_swap.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fractal.dir/SRC/key_swap.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/akrotov/akrotov/fractal/SRC/key_swap.c > CMakeFiles/fractal.dir/SRC/key_swap.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/m0le/akrotov/backup_RTV/C/fractal/SRC/key_swap.c > CMakeFiles/fractal.dir/SRC/key_swap.c.i
 
 CMakeFiles/fractal.dir/SRC/key_swap.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fractal.dir/SRC/key_swap.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/akrotov/akrotov/fractal/SRC/key_swap.c -o CMakeFiles/fractal.dir/SRC/key_swap.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/m0le/akrotov/backup_RTV/C/fractal/SRC/key_swap.c -o CMakeFiles/fractal.dir/SRC/key_swap.c.s
 
 CMakeFiles/fractal.dir/SRC/key_swap.c.o.requires:
 
@@ -539,16 +539,16 @@ CMakeFiles/fractal.dir/SRC/key_swap.c.o.provides.build: CMakeFiles/fractal.dir/S
 
 CMakeFiles/fractal.dir/SRC/fern.c.o: CMakeFiles/fractal.dir/flags.make
 CMakeFiles/fractal.dir/SRC/fern.c.o: ../SRC/fern.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/akrotov/akrotov/fractal/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/fractal.dir/SRC/fern.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fractal.dir/SRC/fern.c.o   -c /nfs/2016/a/akrotov/akrotov/fractal/SRC/fern.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/m0le/akrotov/backup_RTV/C/fractal/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/fractal.dir/SRC/fern.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fractal.dir/SRC/fern.c.o   -c /home/m0le/akrotov/backup_RTV/C/fractal/SRC/fern.c
 
 CMakeFiles/fractal.dir/SRC/fern.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fractal.dir/SRC/fern.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/akrotov/akrotov/fractal/SRC/fern.c > CMakeFiles/fractal.dir/SRC/fern.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/m0le/akrotov/backup_RTV/C/fractal/SRC/fern.c > CMakeFiles/fractal.dir/SRC/fern.c.i
 
 CMakeFiles/fractal.dir/SRC/fern.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fractal.dir/SRC/fern.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/akrotov/akrotov/fractal/SRC/fern.c -o CMakeFiles/fractal.dir/SRC/fern.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/m0le/akrotov/backup_RTV/C/fractal/SRC/fern.c -o CMakeFiles/fractal.dir/SRC/fern.c.s
 
 CMakeFiles/fractal.dir/SRC/fern.c.o.requires:
 
@@ -559,6 +559,30 @@ CMakeFiles/fractal.dir/SRC/fern.c.o.provides: CMakeFiles/fractal.dir/SRC/fern.c.
 .PHONY : CMakeFiles/fractal.dir/SRC/fern.c.o.provides
 
 CMakeFiles/fractal.dir/SRC/fern.c.o.provides.build: CMakeFiles/fractal.dir/SRC/fern.c.o
+
+
+CMakeFiles/fractal.dir/SRC/julia_new.c.o: CMakeFiles/fractal.dir/flags.make
+CMakeFiles/fractal.dir/SRC/julia_new.c.o: ../SRC/julia_new.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/m0le/akrotov/backup_RTV/C/fractal/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/fractal.dir/SRC/julia_new.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fractal.dir/SRC/julia_new.c.o   -c /home/m0le/akrotov/backup_RTV/C/fractal/SRC/julia_new.c
+
+CMakeFiles/fractal.dir/SRC/julia_new.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fractal.dir/SRC/julia_new.c.i"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/m0le/akrotov/backup_RTV/C/fractal/SRC/julia_new.c > CMakeFiles/fractal.dir/SRC/julia_new.c.i
+
+CMakeFiles/fractal.dir/SRC/julia_new.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fractal.dir/SRC/julia_new.c.s"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/m0le/akrotov/backup_RTV/C/fractal/SRC/julia_new.c -o CMakeFiles/fractal.dir/SRC/julia_new.c.s
+
+CMakeFiles/fractal.dir/SRC/julia_new.c.o.requires:
+
+.PHONY : CMakeFiles/fractal.dir/SRC/julia_new.c.o.requires
+
+CMakeFiles/fractal.dir/SRC/julia_new.c.o.provides: CMakeFiles/fractal.dir/SRC/julia_new.c.o.requires
+	$(MAKE) -f CMakeFiles/fractal.dir/build.make CMakeFiles/fractal.dir/SRC/julia_new.c.o.provides.build
+.PHONY : CMakeFiles/fractal.dir/SRC/julia_new.c.o.provides
+
+CMakeFiles/fractal.dir/SRC/julia_new.c.o.provides.build: CMakeFiles/fractal.dir/SRC/julia_new.c.o
 
 
 # Object files for target fractal
@@ -583,7 +607,8 @@ fractal_OBJECTS = \
 "CMakeFiles/fractal.dir/SRC/init_game.c.o" \
 "CMakeFiles/fractal.dir/SRC/space.c.o" \
 "CMakeFiles/fractal.dir/SRC/key_swap.c.o" \
-"CMakeFiles/fractal.dir/SRC/fern.c.o"
+"CMakeFiles/fractal.dir/SRC/fern.c.o" \
+"CMakeFiles/fractal.dir/SRC/julia_new.c.o"
 
 # External object files for target fractal
 fractal_EXTERNAL_OBJECTS =
@@ -609,10 +634,12 @@ fractal: CMakeFiles/fractal.dir/SRC/init_game.c.o
 fractal: CMakeFiles/fractal.dir/SRC/space.c.o
 fractal: CMakeFiles/fractal.dir/SRC/key_swap.c.o
 fractal: CMakeFiles/fractal.dir/SRC/fern.c.o
+fractal: CMakeFiles/fractal.dir/SRC/julia_new.c.o
 fractal: CMakeFiles/fractal.dir/build.make
 fractal: ../libft/libft.a
+fractal: ../minilibx/libmlx.a
 fractal: CMakeFiles/fractal.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/nfs/2016/a/akrotov/akrotov/fractal/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Linking C executable fractal"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/m0le/akrotov/backup_RTV/C/fractal/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Linking C executable fractal"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/fractal.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -641,6 +668,7 @@ CMakeFiles/fractal.dir/requires: CMakeFiles/fractal.dir/SRC/init_game.c.o.requir
 CMakeFiles/fractal.dir/requires: CMakeFiles/fractal.dir/SRC/space.c.o.requires
 CMakeFiles/fractal.dir/requires: CMakeFiles/fractal.dir/SRC/key_swap.c.o.requires
 CMakeFiles/fractal.dir/requires: CMakeFiles/fractal.dir/SRC/fern.c.o.requires
+CMakeFiles/fractal.dir/requires: CMakeFiles/fractal.dir/SRC/julia_new.c.o.requires
 
 .PHONY : CMakeFiles/fractal.dir/requires
 
@@ -649,6 +677,6 @@ CMakeFiles/fractal.dir/clean:
 .PHONY : CMakeFiles/fractal.dir/clean
 
 CMakeFiles/fractal.dir/depend:
-	cd /nfs/2016/a/akrotov/akrotov/fractal/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /nfs/2016/a/akrotov/akrotov/fractal /nfs/2016/a/akrotov/akrotov/fractal /nfs/2016/a/akrotov/akrotov/fractal/cmake-build-debug /nfs/2016/a/akrotov/akrotov/fractal/cmake-build-debug /nfs/2016/a/akrotov/akrotov/fractal/cmake-build-debug/CMakeFiles/fractal.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/m0le/akrotov/backup_RTV/C/fractal/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/m0le/akrotov/backup_RTV/C/fractal /home/m0le/akrotov/backup_RTV/C/fractal /home/m0le/akrotov/backup_RTV/C/fractal/cmake-build-debug /home/m0le/akrotov/backup_RTV/C/fractal/cmake-build-debug /home/m0le/akrotov/backup_RTV/C/fractal/cmake-build-debug/CMakeFiles/fractal.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/fractal.dir/depend
 
