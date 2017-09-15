@@ -10,7 +10,7 @@ t_sphere	*ft_init_sphere(t_vertex ray_o, t_rgb color, double radius)
 	sphere->radius = radius;
 	sphere->r2 = sphere->radius * sphere->radius;
 	sphere->n = 10;
-	sphere->amb_int = 0.1;
+	sphere->amb_int = 0.05;
 	sphere->dif_int = 1;
 	sphere->spc_int = .5;
 
@@ -50,6 +50,7 @@ void	ft_get_info_sphere(t_all *all, t_ray *ray, t_objs *ptr)
 	all->rt.amb_int = s->amb_int;
 	all->rt.dif_int = s->dif_int;
 	all->rt.spc_int = s->spc_int;
+	all->rt.plane = 0;
 }
 
 int		ft_sphere_intersect(t_all *all, t_ray *ray, t_objs *ptr)
@@ -68,7 +69,7 @@ int		ft_sphere_intersect(t_all *all, t_ray *ray, t_objs *ptr)
 	c = ft_dot_product(oc, oc) - s->r2;
 	disc = b * b - 4 * c;
 	if (disc < 1e-6)
-		return(FALSE);
+		return (FALSE);
 	disc = sqrt(disc);
 	t0 = (-b - disc) / 2;
 	t1 = (-b + disc) / 2;
@@ -76,7 +77,7 @@ int		ft_sphere_intersect(t_all *all, t_ray *ray, t_objs *ptr)
 	if (t0 > 1e-6 && t0 < all->rt.t)
 	{
 		all->rt.t = t0;
-		return(TRUE);
+		return (TRUE);
 	}
-	return(FALSE);
+	return (FALSE);
 }

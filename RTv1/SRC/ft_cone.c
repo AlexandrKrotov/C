@@ -1,9 +1,8 @@
 #include "rtv1.h"
 
-
-t_cone *ft_init_cone(t_vertex ray_o, t_vertex ray_d, t_rgb color, double angle)
+t_cone	*ft_init_cone(t_vertex ray_o, t_vertex ray_d, t_rgb color, double angle)
 {
-	t_cone *cone;
+	t_cone	*cone;
 
 	cone = malloc(sizeof(t_cone));
 	cone->ray.o = ray_o;
@@ -17,7 +16,6 @@ t_cone *ft_init_cone(t_vertex ray_o, t_vertex ray_d, t_rgb color, double angle)
 	cone->amb_int = 0.1;
 	cone->dif_int = 1;
 	cone->spc_int = 1;
-
 	return (cone);
 }
 
@@ -31,7 +29,7 @@ void	ft_add_cone(t_objs *scene, t_vertex ray_o, t_vertex ray_d, t_rgb color, dou
 	ptr->ft_info = ft_get_info_cone;
 }
 
-void		ft_get_info_cone(t_all *all, t_ray *ray, t_objs *ptr)
+void	ft_get_info_cone(t_all *all, t_ray *ray, t_objs *ptr)
 {
 	t_cone		*con;
 	t_vertex	a;
@@ -53,6 +51,7 @@ void		ft_get_info_cone(t_all *all, t_ray *ray, t_objs *ptr)
 	all->rt.amb_int = con->amb_int;
 	all->rt.dif_int = con->dif_int;
 	all->rt.spc_int = con->spc_int;
+	all->rt.plane = 0;
 }
 
 int		ft_cone_intersect(t_all *all, t_ray *ray, t_objs *ptr)
@@ -81,7 +80,7 @@ int		ft_cone_intersect(t_all *all, t_ray *ray, t_objs *ptr)
 	c = con->cos2 * ft_dot_product(cv, cv) - con->sin2 * (dot_p * dot_p);
 	disc = b * b - 4 * a * c;
 	if (disc < 1e-6)
-		return(FALSE);
+		return (FALSE);
 	disc = sqrt(disc);
 	t0 = (-b - disc) / (2 * a);
 	t1 = (-b + disc) / (2 * a);
@@ -89,7 +88,7 @@ int		ft_cone_intersect(t_all *all, t_ray *ray, t_objs *ptr)
 	if (t0 > 1e-6 && t0 < all->rt.t)
 	{
 		all->rt.t = t0;
-		return(TRUE);
+		return (TRUE);
 	}
-	return(FALSE);
+	return (FALSE);
 }

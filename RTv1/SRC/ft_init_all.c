@@ -25,11 +25,12 @@ void	init_all(t_all *all)
 	all->dsp.dsp_h = D_HEIGHT;
 	all->dsp.half_h = all->dsp.dsp_h / 2;
 	all->dsp.half_w = all->dsp.dsp_w / 2;
-	all->dsp.rend_hs =  -all->dsp.half_h;
-	all->dsp.rend_he =  all->dsp.half_h;
-	all->dsp.rend_ws =  -all->dsp.half_w;
-	all->dsp.rend_we =  all->dsp.half_w;
+	all->dsp.rend_hs = -all->dsp.half_h;
+	all->dsp.rend_he = all->dsp.half_h;
+	all->dsp.rend_ws = -all->dsp.half_w;
+	all->dsp.rend_we = all->dsp.half_w;
 	all->cam = (t_vertex){0, 0, -1000};
+	all->light_defoult = all->cam;
 	all->light = NULL;
 	all->trans.zoom = 0;
 	all->trans.shift = 0;

@@ -10,7 +10,7 @@ t_vertex	*ft_crete_light_node(t_vertex pos)
 	return (ptr);
 }
 
-t_light		*ft_add_light_lst(t_light *light, t_vertex pos)
+void	ft_add_light_lst(t_light *light, t_vertex pos)
 {
 	t_light *ptr;
 
@@ -36,16 +36,17 @@ void	ft_create_light_lst(t_all *all)
 {
 	//TODO "ЗАЙМИСЬ! 1 ИСТОЧНИК ЯРЧЕ ЧЕМ НЕСКОЛЬКО!"
 	ft_add_light_lst(all->light, (t_vertex){-500, 0, -1000});
-	ft_add_light_lst(all->light, (t_vertex){500, 0, -1000});
-	ft_add_light_lst(all->light, (t_vertex){0, 0, -1000});
+//	ft_add_light_lst(all->light, (t_vertex){500, 0, -1000});
+//	ft_add_light_lst(all->light, (t_vertex){0, 0, -1000});
 }
 
 t_rgb		ft_light_calc(t_all *all, t_rgb *color)
 {
 	t_light		*ptr;
+	int			size;
 	t_irgb		color_int;
 	t_rgb		max;
-	int			size;
+	t_vertex	l;
 
 	ptr = all->light;
 	size = 0;
@@ -53,8 +54,15 @@ t_rgb		ft_light_calc(t_all *all, t_rgb *color)
 	max = (t_rgb){0, 0, 0, 0};
 	while (ptr != NULL)
 	{
+		////TODO "FRICK CONSTRUCTION"
+		l = ft_sub_vector(all->rt.inter, *ptr->o);
+		if (ft_cos_vector(all->rt.norm, l) > 0)
+		{
+			ptr = ptr->next;
+			continue ;
+		}
 		size++;
-		all->phong = ft_phong(&all->rt, color, ptr, all->cam);
+		all->phong = ft_phong(&all->rt, color, *ptr->o, all->cam);
 		all->flags.shadow = ft_shadow_ray(all, ptr);
 		if (!all->flags.shadow)
 		{
@@ -70,9 +78,6 @@ t_rgb		ft_light_calc(t_all *all, t_rgb *color)
 							  (UC)(color->g * SHADOW),
 							  (UC)(color->b * SHADOW), 0};
 		}
-//		max.r = (max.r > color->r ? max.r : color->r);
-//		max.g = (max.g > color->g ? max.g : color->g);
-//		max.b = (max.b > color->b ? max.b : color->b);
 		color_int.r += color->r;
 		color_int.g += color->g;
 		color_int.b += color->b;
@@ -80,15 +85,12 @@ t_rgb		ft_light_calc(t_all *all, t_rgb *color)
 	}
 	if (size == 0)
 	{
-		all->phong = ft_phong(&all->rt, color, ptr, all->cam);
+		all->phong = ft_phong(&all->rt, color, all->light_defoult, all->cam);
 		return (all->phong.amb);
 	}
 	color_int.r /= size;
 	color_int.g /= size;
 	color_int.b /= size;
-//	max.r = (UC)(max.r > color_int.r ? max.r : color_int.r);
-//	max.g = (UC)(max.g > color_int.g ? max.g : color_int.g);
-//	max.b = (UC)(max.b > color_int.b ? max.b : color_int.b);
 	max.r = (UC)color_int.r;
 	max.g = (UC)color_int.g;
 	max.b = (UC)color_int.b;

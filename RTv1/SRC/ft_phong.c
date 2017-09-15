@@ -39,7 +39,7 @@ t_rgb		ft_phong_specular(const t_rt *rt, t_vertex l, t_vertex v)
 	return (ret);
 }
 
-t_phong		ft_phong(const t_rt *rt, t_rgb *color, t_light *light, t_vertex cam)
+t_phong		ft_phong(const t_rt *rt, t_rgb *color, t_vertex light, t_vertex cam)
 {
 	t_vertex	l;
 	t_vertex	v;
@@ -47,7 +47,7 @@ t_phong		ft_phong(const t_rt *rt, t_rgb *color, t_light *light, t_vertex cam)
 
 	v = ft_sub_vector(rt->inter, cam);
 	v = ft_normalized_vector(v);
-	l = ft_sub_vector(rt->inter, *light->o);
+	l = ft_sub_vector(rt->inter, light);
 	l = ft_normalized_vector(l);
 	phong.amb = ft_phong_ambiand(rt, color);
 	phong.dif = ft_phong_diffuse(rt,l, color);

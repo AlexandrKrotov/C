@@ -40,6 +40,7 @@ void	ft_get_info_plane(t_all *all, t_ray *ray, t_objs *ptr)
 	all->rt.amb_int = p->amb_int;
 	all->rt.dif_int = p->dif_int;
 	all->rt.spc_int = p->spc_int;
+	all->rt.plane = 1;
 }
 
 int		ft_plane_intersect(t_all *all, t_ray *ray, t_objs *ptr)
@@ -51,7 +52,7 @@ int		ft_plane_intersect(t_all *all, t_ray *ray, t_objs *ptr)
 
 	p = ptr->obj;
 	b = (ft_dot_product(ray->d, p->ray.d));
-	if (b < 0)
+	if (b != 0)
 	{
 		oc = ft_sub_vector(p->ray.o, ray->o);
 		t = ft_dot_product(oc, p->ray.d);
@@ -61,7 +62,7 @@ int		ft_plane_intersect(t_all *all, t_ray *ray, t_objs *ptr)
 		return (FALSE);
 	if (t > 1e-6 && t < all->rt.t)
 	{
-		all->rt.t = t;
+		all->rt.t = t - 1e-6;
 		return(TRUE);
 	}
 	return(FALSE);

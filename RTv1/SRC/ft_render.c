@@ -19,7 +19,7 @@ int		ft_primary_ray(t_all *all, int x, int y)
 	t_vertex	cam;
 	t_objs		*ptr;
 	t_ray		ray;
-	int 		inter;
+	int			inter;
 
 	cam = all->cam;
 	cam.z += all->trans.zoom;
@@ -27,20 +27,20 @@ int		ft_primary_ray(t_all *all, int x, int y)
 	ptr = all->scene;
 	ray.o = (t_vertex){x + all->trans.shift, y, 0 + all->trans.zoom};
 	ray.d = ft_sub_vector(ray.o, cam);
-	ray.d =ft_normalized_vector(ray.d);
+	ray.d = ft_normalized_vector(ray.d);
 	ray = (t_ray){cam, ray.d};
 	all->rt.t = 200000;
 	inter = FALSE;
 	while (ptr != NULL)
 	{
-		if(ptr->ft_inter(all, &ray, ptr))
+		if (ptr->ft_inter(all, &ray, ptr))
 		{
 			ptr->ft_info(all, &ray, ptr);
 			inter = TRUE;
 		}
 		ptr = ptr->next;
 	}
-	return(inter);
+	return (inter);
 }
 
 int			ft_shadow_ray(t_all *all, t_light *light)
@@ -48,7 +48,7 @@ int			ft_shadow_ray(t_all *all, t_light *light)
 	t_objs		*ptr;
 	t_ray		ray;
 	t_vertex	dir;
-	t_vertex 	orig;
+	t_vertex	orig;
 	int			shadow;
 
 	shadow = FALSE;
@@ -62,19 +62,19 @@ int			ft_shadow_ray(t_all *all, t_light *light)
 	{
 		if (ptr->ft_inter(all, &ray, ptr))
 		{
-				shadow = TRUE;
-				break;
+			shadow = TRUE;
+			break ;
 		}
 		ptr = ptr->next;
 	}
 	return (shadow);
 }
 
-void		ft_draw(t_all *all)
+void	ft_draw(t_all *all)
 {
 	int			x;
 	int			y;
-	int 		inter;
+	int			inter;
 	t_rgb		color;
 
 	y = all->dsp.rend_hs;
@@ -90,7 +90,7 @@ void		ft_draw(t_all *all)
 			inter = ft_primary_ray(all, x, y);
 			color = all->rt.rgb;
 			if (inter == TRUE)
-					color = ft_light_calc(all, &color);
+				color = ft_light_calc(all, &color);
 			ft_put_color(all, x + all->dsp.half_w, y + all->dsp.half_h, color);
 			x++;
 		}
@@ -103,12 +103,15 @@ int		ft_render(t_all *all)
 	if (all->flags.redraw == TRUE)
 	{
 		all->mlx->img.img = mlx_new_image(all->mlx->mlx, D_WIDTH, D_HEIGHT);
-		all->mlx->img.gda = mlx_get_data_addr(all->mlx->img.img, &all->mlx->img.bpp, &all->mlx->img.size_line, &all->mlx->img.endian);
+		all->mlx->img.gda = mlx_get_data_addr(all->mlx->img.img,
+		&all->mlx->img.bpp, &all->mlx->img.size_line, &all->mlx->img.endian);
 		ft_draw(all);
 		if (all->flags.aliasing == TRUE)
 			ft_antialiasing(all->mlx->img.gda, 2);
-		mlx_put_image_to_window(all->mlx->mlx, all->mlx->wnd, all->mlx->img.img, 0, 0);
+		mlx_put_image_to_window(all->mlx->mlx, all->mlx->wnd,
+								all->mlx->img.img, 0, 0);
 		mlx_destroy_image(all->mlx->mlx, all->mlx->img.img);
 		all->flags.redraw = FALSE;
 	}
+	return (0);
 }

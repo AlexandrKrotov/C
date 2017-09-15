@@ -30,10 +30,10 @@ void	lets_start(void)
 
 int		main(int ac, char **av)
 {
-	char c = 127;
-	unsigned char v;
-	v = (unsigned char)(c + 128);
-	printf("%d", v);
+	////TODO "1)fix bugs with multy light"
+	////TODO "2)fix bugs with light acros scene"
+	////TODO "3)Updade phong"
+	////TODO "4) add camera roatation"
 	lets_start();
 	return (0);
 }

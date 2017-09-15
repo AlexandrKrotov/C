@@ -46,7 +46,7 @@
 # define K_LEFT 65361
 # define K_RIGHT 65363
 
-#else __APPLE__
+#elif __APPLE__
 
 # define ESC 53
 # define W 13
@@ -55,8 +55,10 @@
 # define D 2
 # define Z 6
 # define X 7
-# define UP 126
-# define DOWN 125
+# define K_UP 126
+# define K_DOWN 125
+# define K_LEFT 123
+# define K_RIGHT 124
 
 #endif
 
@@ -126,6 +128,7 @@ struct			s_rt{
 	double		amb_int;
 	double		dif_int;
 	double		spc_int;
+	int			plane;
 };
 
 struct			s_sphere{
@@ -245,6 +248,7 @@ struct				s_all{
 	t_objs			*scene;
 	t_calc			calc;
 	t_light			*light;
+	t_vertex		light_defoult;
 	t_phong			phong;
 	t_vertex		cam;
 	t_rt			rt;
@@ -259,7 +263,7 @@ void				ft_create_obj_lst(t_all *all);
 void				ft_create_light_lst(t_all *all);
 
 int					ft_render(t_all *all);
-t_phong				ft_phong(const t_rt *rt, t_rgb *color, t_light *light, t_vertex cam);t_rgb				ft_light_calc(t_all *all, t_rgb *color);
+t_phong				ft_phong(const t_rt *rt, t_rgb *color, t_vertex light, t_vertex cam);t_rgb				ft_light_calc(t_all *all, t_rgb *color);
 
 int					ft_key_hook(int keycode, t_all *all);
 
