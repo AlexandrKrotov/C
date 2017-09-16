@@ -48,8 +48,17 @@ void	lets_start(char *scene)
 	mlx_loop(all.mlx->mlx);
 }
 
+
+
 int		main(int ac, char **av)
 {
+	int		stime;
+	long	ltime;
+
+	ltime = time (NULL);
+	stime = (unsigned int) ltime/2;
+	srand((UC)stime);
+
 	if (ac != 2)
 		ft_error(1);
 	else

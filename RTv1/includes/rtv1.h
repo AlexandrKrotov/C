@@ -6,6 +6,7 @@
 # include <sys/types.h>
 # include <unistd.h>
 # include <math.h>
+# include <time.h>
 
 /*
 ** GRAPHIC
@@ -23,7 +24,7 @@
 # define SIZE_LINE  D_WIDTH * 4
 # define TRUE		1
 # define FALSE		0
-# define SHADOW		0.20
+# define SHADOW		0.30
 
 
 # define UC			unsigned char
@@ -217,6 +218,7 @@ struct		s_phong
 
 struct				s_light{
 	t_vertex		*o;
+	double			power;
 //	double 			angle;
 //	double 			power;
 	struct s_light	*next;
@@ -307,12 +309,14 @@ void				ft_scene_init_sphere(t_all *all);
 void				ft_scene_init_plane(t_all *all);
 void				ft_scene_init_cone(t_all *all);
 void				ft_scene_init_cylinder(t_all *all);
-void				ft_init_scene_1(t_all * all);
 void				ft_init_scene_2(t_all *all);
+void				ft_init_scene_1(t_all * all);
 void				ft_init_multilight(t_all *all);
 
 int					ft_shadow_ray(t_all *all, t_light *light);
 void				ft_antialiasing(char *data_in, int n);
+void				ft_random_value(t_vertex *v, t_rgb *c, int *s);
+void				ft_add_random_sphere(t_all *all);
 
 t_objs				*ft_find_empty(t_objs *scene, t_objs *ptr);
 

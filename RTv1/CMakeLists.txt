@@ -4,7 +4,7 @@ project(RTv1)
 include_directories(includes)
 
 set(HEADER_FILES includes/rtv1.h includes/libft.h)
-set(SOURCE_FILES SRC/main.c includes/rtv1.h SRC/ft_key_hook.c SRC/ft_exit.c SRC/ft_mous_hook.c SRC/ft_render.c SRC/ft_init_all.c SRC/ft_vector_math.c SRC/ft_create_scene_map.c SRC/ft_sphere.c SRC/ft_plane.c SRC/ft_cylinder.c SRC/ft_cone.c SRC/ft_light.c SRC/ft_phong.c SRC/ft_rotate_axis.c SRC/ft_antialiasing.c SRC/ft_error.c SRC/ft_Init_scene_part1.c SRC/ft_init_scene_part2.c)
+set(SOURCE_FILES SRC/main.c includes/rtv1.h SRC/ft_key_hook.c SRC/ft_exit.c SRC/ft_mous_hook.c SRC/ft_render.c SRC/ft_init_all.c SRC/ft_vector_math.c SRC/ft_create_scene_map.c SRC/ft_sphere.c SRC/ft_plane.c SRC/ft_cylinder.c SRC/ft_cone.c SRC/ft_light.c SRC/ft_phong.c SRC/ft_rotate_axis.c SRC/ft_antialiasing.c SRC/ft_error.c SRC/ft_Init_scene_part1.c SRC/ft_init_scene_part2.c SRC/ft_random.c SRC/ft_add_light_spot.c)
 add_executable(RTv1 ${SOURCE_FILES})
 
 if(${CMAKE_SYSTEM_NAME} MATCHES "Darwin")

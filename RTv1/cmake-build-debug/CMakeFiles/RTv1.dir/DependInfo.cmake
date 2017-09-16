@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
   "/nfs/2016/a/akrotov/work_repository/RTv1/SRC/ft_Init_scene_part1.c" "/nfs/2016/a/akrotov/work_repository/RTv1/cmake-build-debug/CMakeFiles/RTv1.dir/SRC/ft_Init_scene_part1.c.o"
+  "/nfs/2016/a/akrotov/work_repository/RTv1/SRC/ft_add_light_spot.c" "/nfs/2016/a/akrotov/work_repository/RTv1/cmake-build-debug/CMakeFiles/RTv1.dir/SRC/ft_add_light_spot.c.o"
   "/nfs/2016/a/akrotov/work_repository/RTv1/SRC/ft_antialiasing.c" "/nfs/2016/a/akrotov/work_repository/RTv1/cmake-build-debug/CMakeFiles/RTv1.dir/SRC/ft_antialiasing.c.o"
   "/nfs/2016/a/akrotov/work_repository/RTv1/SRC/ft_cone.c" "/nfs/2016/a/akrotov/work_repository/RTv1/cmake-build-debug/CMakeFiles/RTv1.dir/SRC/ft_cone.c.o"
   "/nfs/2016/a/akrotov/work_repository/RTv1/SRC/ft_create_scene_map.c" "/nfs/2016/a/akrotov/work_repository/RTv1/cmake-build-debug/CMakeFiles/RTv1.dir/SRC/ft_create_scene_map.c.o"
@@ -18,6 +19,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/nfs/2016/a/akrotov/work_repository/RTv1/SRC/ft_mous_hook.c" "/nfs/2016/a/akrotov/work_repository/RTv1/cmake-build-debug/CMakeFiles/RTv1.dir/SRC/ft_mous_hook.c.o"
   "/nfs/2016/a/akrotov/work_repository/RTv1/SRC/ft_phong.c" "/nfs/2016/a/akrotov/work_repository/RTv1/cmake-build-debug/CMakeFiles/RTv1.dir/SRC/ft_phong.c.o"
   "/nfs/2016/a/akrotov/work_repository/RTv1/SRC/ft_plane.c" "/nfs/2016/a/akrotov/work_repository/RTv1/cmake-build-debug/CMakeFiles/RTv1.dir/SRC/ft_plane.c.o"
+  "/nfs/2016/a/akrotov/work_repository/RTv1/SRC/ft_random.c" "/nfs/2016/a/akrotov/work_repository/RTv1/cmake-build-debug/CMakeFiles/RTv1.dir/SRC/ft_random.c.o"
   "/nfs/2016/a/akrotov/work_repository/RTv1/SRC/ft_render.c" "/nfs/2016/a/akrotov/work_repository/RTv1/cmake-build-debug/CMakeFiles/RTv1.dir/SRC/ft_render.c.o"
   "/nfs/2016/a/akrotov/work_repository/RTv1/SRC/ft_rotate_axis.c" "/nfs/2016/a/akrotov/work_repository/RTv1/cmake-build-debug/CMakeFiles/RTv1.dir/SRC/ft_rotate_axis.c.o"
   "/nfs/2016/a/akrotov/work_repository/RTv1/SRC/ft_sphere.c" "/nfs/2016/a/akrotov/work_repository/RTv1/cmake-build-debug/CMakeFiles/RTv1.dir/SRC/ft_sphere.c.o"

@@ -10,7 +10,7 @@ t_sphere	*ft_init_sphere(t_vertex ray_o, t_rgb color, double radius)
 	sphere->radius = radius;
 	sphere->r2 = sphere->radius * sphere->radius;
 	sphere->n = 10;
-	sphere->amb_int = 0.05;
+	sphere->amb_int = 0.1;
 	sphere->dif_int = 1;
 	sphere->spc_int = .5;
 

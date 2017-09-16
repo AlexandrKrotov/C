@@ -150,6 +150,33 @@ SRC/ft_Init_scene_part1.c.s:
 	$(MAKE) -f CMakeFiles/RTv1.dir/build.make CMakeFiles/RTv1.dir/SRC/ft_Init_scene_part1.c.s
 .PHONY : SRC/ft_Init_scene_part1.c.s
 
+SRC/ft_add_light_spot.o: SRC/ft_add_light_spot.c.o
+
+.PHONY : SRC/ft_add_light_spot.o
+
+# target to build an object file
+SRC/ft_add_light_spot.c.o:
+	$(MAKE) -f CMakeFiles/RTv1.dir/build.make CMakeFiles/RTv1.dir/SRC/ft_add_light_spot.c.o
+.PHONY : SRC/ft_add_light_spot.c.o
+
+SRC/ft_add_light_spot.i: SRC/ft_add_light_spot.c.i
+
+.PHONY : SRC/ft_add_light_spot.i
+
+# target to preprocess a source file
+SRC/ft_add_light_spot.c.i:
+	$(MAKE) -f CMakeFiles/RTv1.dir/build.make CMakeFiles/RTv1.dir/SRC/ft_add_light_spot.c.i
+.PHONY : SRC/ft_add_light_spot.c.i
+
+SRC/ft_add_light_spot.s: SRC/ft_add_light_spot.c.s
+
+.PHONY : SRC/ft_add_light_spot.s
+
+# target to generate assembly for a file
+SRC/ft_add_light_spot.c.s:
+	$(MAKE) -f CMakeFiles/RTv1.dir/build.make CMakeFiles/RTv1.dir/SRC/ft_add_light_spot.c.s
+.PHONY : SRC/ft_add_light_spot.c.s
+
 SRC/ft_antialiasing.o: SRC/ft_antialiasing.c.o
 
 .PHONY : SRC/ft_antialiasing.o
@@ -501,6 +528,33 @@ SRC/ft_plane.c.s:
 	$(MAKE) -f CMakeFiles/RTv1.dir/build.make CMakeFiles/RTv1.dir/SRC/ft_plane.c.s
 .PHONY : SRC/ft_plane.c.s
 
+SRC/ft_random.o: SRC/ft_random.c.o
+
+.PHONY : SRC/ft_random.o
+
+# target to build an object file
+SRC/ft_random.c.o:
+	$(MAKE) -f CMakeFiles/RTv1.dir/build.make CMakeFiles/RTv1.dir/SRC/ft_random.c.o
+.PHONY : SRC/ft_random.c.o
+
+SRC/ft_random.i: SRC/ft_random.c.i
+
+.PHONY : SRC/ft_random.i
+
+# target to preprocess a source file
+SRC/ft_random.c.i:
+	$(MAKE) -f CMakeFiles/RTv1.dir/build.make CMakeFiles/RTv1.dir/SRC/ft_random.c.i
+.PHONY : SRC/ft_random.c.i
+
+SRC/ft_random.s: SRC/ft_random.c.s
+
+.PHONY : SRC/ft_random.s
+
+# target to generate assembly for a file
+SRC/ft_random.c.s:
+	$(MAKE) -f CMakeFiles/RTv1.dir/build.make CMakeFiles/RTv1.dir/SRC/ft_random.c.s
+.PHONY : SRC/ft_random.c.s
+
 SRC/ft_render.o: SRC/ft_render.c.o
 
 .PHONY : SRC/ft_render.o
@@ -648,6 +702,9 @@ help:
 	@echo "... SRC/ft_Init_scene_part1.o"
 	@echo "... SRC/ft_Init_scene_part1.i"
 	@echo "... SRC/ft_Init_scene_part1.s"
+	@echo "... SRC/ft_add_light_spot.o"
+	@echo "... SRC/ft_add_light_spot.i"
+	@echo "... SRC/ft_add_light_spot.s"
 	@echo "... SRC/ft_antialiasing.o"
 	@echo "... SRC/ft_antialiasing.i"
 	@echo "... SRC/ft_antialiasing.s"
@@ -687,6 +744,9 @@ help:
 	@echo "... SRC/ft_plane.o"
 	@echo "... SRC/ft_plane.i"
 	@echo "... SRC/ft_plane.s"
+	@echo "... SRC/ft_random.o"
+	@echo "... SRC/ft_random.i"
+	@echo "... SRC/ft_random.s"
 	@echo "... SRC/ft_render.o"
 	@echo "... SRC/ft_render.i"
 	@echo "... SRC/ft_render.s"

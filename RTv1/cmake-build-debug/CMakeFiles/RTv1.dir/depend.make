@@ -5,6 +5,10 @@ CMakeFiles/RTv1.dir/SRC/ft_Init_scene_part1.c.o: ../includes/libft.h
 CMakeFiles/RTv1.dir/SRC/ft_Init_scene_part1.c.o: ../includes/rtv1.h
 CMakeFiles/RTv1.dir/SRC/ft_Init_scene_part1.c.o: ../SRC/ft_Init_scene_part1.c
 
+CMakeFiles/RTv1.dir/SRC/ft_add_light_spot.c.o: ../includes/libft.h
+CMakeFiles/RTv1.dir/SRC/ft_add_light_spot.c.o: ../includes/rtv1.h
+CMakeFiles/RTv1.dir/SRC/ft_add_light_spot.c.o: ../SRC/ft_add_light_spot.c
+
 CMakeFiles/RTv1.dir/SRC/ft_antialiasing.c.o: ../includes/libft.h
 CMakeFiles/RTv1.dir/SRC/ft_antialiasing.c.o: ../includes/rtv1.h
 CMakeFiles/RTv1.dir/SRC/ft_antialiasing.c.o: ../SRC/ft_antialiasing.c
@@ -56,6 +60,10 @@ CMakeFiles/RTv1.dir/SRC/ft_phong.c.o: ../SRC/ft_phong.c
 CMakeFiles/RTv1.dir/SRC/ft_plane.c.o: ../includes/libft.h
 CMakeFiles/RTv1.dir/SRC/ft_plane.c.o: ../includes/rtv1.h
 CMakeFiles/RTv1.dir/SRC/ft_plane.c.o: ../SRC/ft_plane.c
+
+CMakeFiles/RTv1.dir/SRC/ft_random.c.o: ../includes/libft.h
+CMakeFiles/RTv1.dir/SRC/ft_random.c.o: ../includes/rtv1.h
+CMakeFiles/RTv1.dir/SRC/ft_random.c.o: ../SRC/ft_random.c
 
 CMakeFiles/RTv1.dir/SRC/ft_render.c.o: ../includes/libft.h
 CMakeFiles/RTv1.dir/SRC/ft_render.c.o: ../includes/rtv1.h

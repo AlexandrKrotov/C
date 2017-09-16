@@ -87,6 +87,9 @@
 		<Unit filename="/nfs/2016/a/akrotov/work_repository/RTv1/SRC/ft_Init_scene_part1.c">
 			<Option target="RTv1"/>
 		</Unit>
+		<Unit filename="/nfs/2016/a/akrotov/work_repository/RTv1/SRC/ft_add_light_spot.c">
+			<Option target="RTv1"/>
+		</Unit>
 		<Unit filename="/nfs/2016/a/akrotov/work_repository/RTv1/SRC/ft_antialiasing.c">
 			<Option target="RTv1"/>
 		</Unit>
@@ -124,6 +127,9 @@
 			<Option target="RTv1"/>
 		</Unit>
 		<Unit filename="/nfs/2016/a/akrotov/work_repository/RTv1/SRC/ft_plane.c">
+			<Option target="RTv1"/>
+		</Unit>
+		<Unit filename="/nfs/2016/a/akrotov/work_repository/RTv1/SRC/ft_random.c">
 			<Option target="RTv1"/>
 		</Unit>
 		<Unit filename="/nfs/2016/a/akrotov/work_repository/RTv1/SRC/ft_render.c">
