@@ -3,5 +3,6 @@ cmake-build-debug/
 .idea/
 # Compiled source
 *.o
+*.a
 # OS generated files
 .DS_Store
