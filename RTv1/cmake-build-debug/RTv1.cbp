@@ -84,6 +84,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/nfs/2016/a/akrotov/work_repository/RTv1/SRC/ft_Init_scene_part1.c">
+			<Option target="RTv1"/>
+		</Unit>
 		<Unit filename="/nfs/2016/a/akrotov/work_repository/RTv1/SRC/ft_antialiasing.c">
 			<Option target="RTv1"/>
 		</Unit>
@@ -103,6 +106,9 @@
 			<Option target="RTv1"/>
 		</Unit>
 		<Unit filename="/nfs/2016/a/akrotov/work_repository/RTv1/SRC/ft_init_all.c">
+			<Option target="RTv1"/>
+		</Unit>
+		<Unit filename="/nfs/2016/a/akrotov/work_repository/RTv1/SRC/ft_init_scene_part2.c">
 			<Option target="RTv1"/>
 		</Unit>
 		<Unit filename="/nfs/2016/a/akrotov/work_repository/RTv1/SRC/ft_key_hook.c">

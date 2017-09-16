@@ -35,6 +35,7 @@
 #ifdef __linux
 
 # define ESC 65307
+# define B 11
 # define W 119
 # define A 97
 # define S 115
@@ -46,13 +47,10 @@
 # define K_LEFT 65361
 # define K_RIGHT 65363
 
-<<<<<<< HEAD
 #elif __APPLE__
-=======
-#else
->>>>>>> e55e066584d0e89bac39f94cb3803859ba6c9889
 
 # define ESC 53
+# define B 11
 # define W 13
 # define A 0
 # define S 1
@@ -61,13 +59,8 @@
 # define X 7
 # define K_UP 126
 # define K_DOWN 125
-<<<<<<< HEAD
 # define K_LEFT 123
 # define K_RIGHT 124
-=======
-# define K_LEFT 125
-# define K_RIGHT 125
->>>>>>> e55e066584d0e89bac39f94cb3803859ba6c9889
 
 #endif
 
@@ -307,6 +300,16 @@ void				ft_get_info_cylinder(t_all *all, t_ray *ray, t_objs *ptr);
 void				ft_get_info_cone(t_all *all, t_ray *ray, t_objs *ptr);
 
 void				ft_get_norm_sphere(t_all *all, t_objs *ptr);
+
+void				ft_add_light_lst(t_light *light, t_vertex pos);
+
+void				ft_scene_init_sphere(t_all *all);
+void				ft_scene_init_plane(t_all *all);
+void				ft_scene_init_cone(t_all *all);
+void				ft_scene_init_cylinder(t_all *all);
+void				ft_init_scene_1(t_all * all);
+void				ft_init_scene_2(t_all *all);
+void				ft_init_multilight(t_all *all);
 
 int					ft_shadow_ray(t_all *all, t_light *light);
 void				ft_antialiasing(char *data_in, int n);

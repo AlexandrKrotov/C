@@ -52,7 +52,7 @@ int		ft_plane_intersect(t_all *all, t_ray *ray, t_objs *ptr)
 
 	p = ptr->obj;
 	b = (ft_dot_product(ray->d, p->ray.d));
-	if (b != 0)
+	if (b  != 0)
 	{
 		oc = ft_sub_vector(p->ray.o, ray->o);
 		t = ft_dot_product(oc, p->ray.d);

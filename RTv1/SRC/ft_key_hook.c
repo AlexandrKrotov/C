@@ -14,7 +14,7 @@ int		ft_key_hook(int key, t_all *all)
 	if (key == K_RIGHT || key == D)
 		all->trans.shift += 50;
 	all->flags.redraw = TRUE;
-	if (key == A)
+	if (key == B)
 		all->flags.aliasing = all->flags.aliasing == FALSE ? TRUE : FALSE;
 	return (1);
 }

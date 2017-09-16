@@ -32,14 +32,6 @@ void	ft_add_light_lst(t_light *light, t_vertex pos)
 	}
 }
 
-void	ft_create_light_lst(t_all *all)
-{
-	//TODO "ЗАЙМИСЬ! 1 ИСТОЧНИК ЯРЧЕ ЧЕМ НЕСКОЛЬКО!"
-	ft_add_light_lst(all->light, (t_vertex){-500, 0, -1000});
-	ft_add_light_lst(all->light, (t_vertex){500, 0, -1000});
-//	ft_add_light_lst(all->light, (t_vertex){0, 0, -1000});
-}
-
 t_rgb		ft_light_calc(t_all *all, t_rgb *color)
 {
 	t_light		*ptr;
@@ -54,13 +46,6 @@ t_rgb		ft_light_calc(t_all *all, t_rgb *color)
 	max = (t_rgb){0, 0, 0, 0};
 	while (ptr != NULL)
 	{
-		////TODO "FRICK CONSTRUCTION"
-//		l = ft_sub_vector(all->rt.inter, *ptr->o);
-//		if (ft_cos_vector(all->rt.norm, l) > 0)
-//		{
-//			ptr = ptr->next;
-//			continue ;
-//		}
 		size++;
 		all->phong = ft_phong(&all->rt, color, *ptr->o, all->cam);
 		all->flags.shadow = ft_shadow_ray(all, ptr);

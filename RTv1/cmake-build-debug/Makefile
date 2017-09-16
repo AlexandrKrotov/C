@@ -123,6 +123,33 @@ RTv1/fast:
 	$(MAKE) -f CMakeFiles/RTv1.dir/build.make CMakeFiles/RTv1.dir/build
 .PHONY : RTv1/fast
 
+SRC/ft_Init_scene_part1.o: SRC/ft_Init_scene_part1.c.o
+
+.PHONY : SRC/ft_Init_scene_part1.o
+
+# target to build an object file
+SRC/ft_Init_scene_part1.c.o:
+	$(MAKE) -f CMakeFiles/RTv1.dir/build.make CMakeFiles/RTv1.dir/SRC/ft_Init_scene_part1.c.o
+.PHONY : SRC/ft_Init_scene_part1.c.o
+
+SRC/ft_Init_scene_part1.i: SRC/ft_Init_scene_part1.c.i
+
+.PHONY : SRC/ft_Init_scene_part1.i
+
+# target to preprocess a source file
+SRC/ft_Init_scene_part1.c.i:
+	$(MAKE) -f CMakeFiles/RTv1.dir/build.make CMakeFiles/RTv1.dir/SRC/ft_Init_scene_part1.c.i
+.PHONY : SRC/ft_Init_scene_part1.c.i
+
+SRC/ft_Init_scene_part1.s: SRC/ft_Init_scene_part1.c.s
+
+.PHONY : SRC/ft_Init_scene_part1.s
+
+# target to generate assembly for a file
+SRC/ft_Init_scene_part1.c.s:
+	$(MAKE) -f CMakeFiles/RTv1.dir/build.make CMakeFiles/RTv1.dir/SRC/ft_Init_scene_part1.c.s
+.PHONY : SRC/ft_Init_scene_part1.c.s
+
 SRC/ft_antialiasing.o: SRC/ft_antialiasing.c.o
 
 .PHONY : SRC/ft_antialiasing.o
@@ -311,6 +338,33 @@ SRC/ft_init_all.s: SRC/ft_init_all.c.s
 SRC/ft_init_all.c.s:
 	$(MAKE) -f CMakeFiles/RTv1.dir/build.make CMakeFiles/RTv1.dir/SRC/ft_init_all.c.s
 .PHONY : SRC/ft_init_all.c.s
+
+SRC/ft_init_scene_part2.o: SRC/ft_init_scene_part2.c.o
+
+.PHONY : SRC/ft_init_scene_part2.o
+
+# target to build an object file
+SRC/ft_init_scene_part2.c.o:
+	$(MAKE) -f CMakeFiles/RTv1.dir/build.make CMakeFiles/RTv1.dir/SRC/ft_init_scene_part2.c.o
+.PHONY : SRC/ft_init_scene_part2.c.o
+
+SRC/ft_init_scene_part2.i: SRC/ft_init_scene_part2.c.i
+
+.PHONY : SRC/ft_init_scene_part2.i
+
+# target to preprocess a source file
+SRC/ft_init_scene_part2.c.i:
+	$(MAKE) -f CMakeFiles/RTv1.dir/build.make CMakeFiles/RTv1.dir/SRC/ft_init_scene_part2.c.i
+.PHONY : SRC/ft_init_scene_part2.c.i
+
+SRC/ft_init_scene_part2.s: SRC/ft_init_scene_part2.c.s
+
+.PHONY : SRC/ft_init_scene_part2.s
+
+# target to generate assembly for a file
+SRC/ft_init_scene_part2.c.s:
+	$(MAKE) -f CMakeFiles/RTv1.dir/build.make CMakeFiles/RTv1.dir/SRC/ft_init_scene_part2.c.s
+.PHONY : SRC/ft_init_scene_part2.c.s
 
 SRC/ft_key_hook.o: SRC/ft_key_hook.c.o
 
@@ -591,6 +645,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... RTv1"
+	@echo "... SRC/ft_Init_scene_part1.o"
+	@echo "... SRC/ft_Init_scene_part1.i"
+	@echo "... SRC/ft_Init_scene_part1.s"
 	@echo "... SRC/ft_antialiasing.o"
 	@echo "... SRC/ft_antialiasing.i"
 	@echo "... SRC/ft_antialiasing.s"
@@ -612,6 +669,9 @@ help:
 	@echo "... SRC/ft_init_all.o"
 	@echo "... SRC/ft_init_all.i"
 	@echo "... SRC/ft_init_all.s"
+	@echo "... SRC/ft_init_scene_part2.o"
+	@echo "... SRC/ft_init_scene_part2.i"
+	@echo "... SRC/ft_init_scene_part2.s"
 	@echo "... SRC/ft_key_hook.o"
 	@echo "... SRC/ft_key_hook.i"
 	@echo "... SRC/ft_key_hook.s"

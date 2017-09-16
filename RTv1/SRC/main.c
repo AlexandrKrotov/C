@@ -12,13 +12,33 @@
 
 #include "rtv1.h"
 
-void	lets_start(void)
+
+void	ft_change_scene(t_all *all, char *scene)
+{
+	if (!ft_strcmp(scene, "sphere"))
+		ft_scene_init_sphere(all);
+	else if (!ft_strcmp(scene, "plane"))
+		ft_scene_init_plane(all);
+	else if (!ft_strcmp(scene, "cone"))
+		ft_scene_init_cone(all);
+	else if (!ft_strcmp(scene, "cylinder"))
+		ft_scene_init_cylinder(all);
+	else if (!ft_strcmp(scene, "scene1"))
+		ft_init_scene_1(all);
+	else if (!ft_strcmp(scene, "scene2"))
+		ft_init_scene_2(all);
+	else if (!ft_strcmp(scene, "multylight"))
+		ft_init_multilight(all);
+	else
+		ft_error(1);
+}
+
+void	lets_start(char *scene)
 {
 	t_all	all;
 
 	init_all(&all);
-	ft_create_obj_lst(&all);
-	ft_create_light_lst(&all);
+	ft_change_scene(&all, scene);
 	ft_render(&all);
 	mlx_mouse_hook(all.mlx->wnd, ft_mouse_hook, &all);
 	mlx_hook(all.mlx->wnd, 2, 3, ft_key_hook, &all);
@@ -30,10 +50,9 @@ void	lets_start(void)
 
 int		main(int ac, char **av)
 {
-	////TODO "1)fix bugs with multy light"
-	////TODO "2)fix bugs with light acros scene"
-	////TODO "3)Updade phong"
-	////TODO "4) add camera roatation"
-	lets_start();
+	if (ac != 2)
+		ft_error(1);
+	else
+		lets_start(av[1]);
 	return (0);
 }
