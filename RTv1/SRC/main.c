@@ -35,11 +35,11 @@ void	ft_change_scene(t_all *all, char *scene)
 
 void	ft_mlx_loops(t_all *all)
 {
-	mlx_mouse_hook(all->mlx->wnd, ft_mouse_hook, &all);
-	mlx_hook(all->mlx->wnd, 2, 3, ft_key_hook, &all);
-	mlx_hook(all->mlx->wnd, 6, 1L << 6, ft_mouse_cord, &all);
+	mlx_mouse_hook(all->mlx->wnd, ft_mouse_hook, all);
+	mlx_hook(all->mlx->wnd, 6, 1L << 6, ft_mouse_cord, all);
+	mlx_hook(all->mlx->wnd, 2, 3, ft_key_hook, all);
 	mlx_hook(all->mlx->wnd, 17, 1L << 17, ft_exit, NULL);
-	mlx_loop_hook(all->mlx->mlx, ft_render, &all);
+	mlx_loop_hook(all->mlx->mlx, ft_render, all);
 	mlx_loop(all->mlx->mlx);
 }
 

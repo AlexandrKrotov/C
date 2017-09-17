@@ -22,21 +22,28 @@ t_rgb		ft_light_calc(t_all *all, t_rgb *color)
 		all->flags.shadow = ft_shadow_ray(all, ptr);
 		if (!all->flags.shadow)
 		{
-			color->r = (UC)fmin(((all->phong.amb.r + all->phong.dif.r + all->phong.spc.r * all->rt.spc_int) * ptr->power), 255);
-			color->g = (UC)fmin(((all->phong.amb.g + all->phong.dif.g + all->phong.spc.g * all->rt.spc_int) * ptr->power), 255);
-			color->b = (UC)fmin(((all->phong.amb.b + all->phong.dif.b + all->phong.spc.b * all->rt.spc_int) * ptr->power), 255);
-			color->opacity = 0;
+			if (all->x == -87 && all->y == 197)
+			{
+				printf("(in)spot: %d --> red: %d green: %d blue: %d\n", size, max.r, max.g, max.b);
+				printf("power : %f\n", ptr->power);
+			}
+			max.r = (UC)fmin(((all->phong.amb.r + all->phong.dif.r + all->phong.spc.r * all->rt.spc_int) * ptr->power), 255);
+			max.g = (UC)fmin(((all->phong.amb.g + all->phong.dif.g + all->phong.spc.g * all->rt.spc_int) * ptr->power), 255);
+			max.b = (UC)fmin(((all->phong.amb.b + all->phong.dif.b + all->phong.spc.b * all->rt.spc_int) * ptr->power), 255);
+			max.opacity = 0;
+			if (all->x == -87 && all->y == 197)
+				printf("(out)spot: %d --> red: %d green: %d blue: %d\n", size, max.r, max.g, max.b);
 		}
 		else
 		{
-			*color = all->phong.dif;
-			*color = (t_rgb) {(UC)(color->r * SHADOW),
-							  (UC)(color->g * SHADOW),
-							  (UC)(color->b * SHADOW), 0};
+			max = all->phong.dif;
+			max = (t_rgb) {(UC)(max.r * SHADOW),
+							  (UC)(max.g * SHADOW) ,
+							  (UC)(max.b * SHADOW), 0};
 		}
-		color_int.r += color->r;
-		color_int.g += color->g;
-		color_int.b += color->b;
+		color_int.r += max.r;
+		color_int.g += max.g;
+		color_int.b += max.b;
 		ptr = ptr->next;
 	}
 	if (size == 0)

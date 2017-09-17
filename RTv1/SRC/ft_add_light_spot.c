@@ -10,14 +10,14 @@ t_vertex	*ft_crete_light_node(t_vertex pos)
 	return (ptr);
 }
 
-void	ft_add_light_lst(t_light *light, t_vertex pos)
+void	ft_add_light_lst(t_light *light, t_vertex pos, double power)
 {
 	t_light *ptr;
 
 	if (light->o == NULL)
 	{
 		light->o = ft_crete_light_node(pos);
-		light->power = 0.5;
+		light->power = power;
 		light->next = NULL;
 	}
 
@@ -29,7 +29,7 @@ void	ft_add_light_lst(t_light *light, t_vertex pos)
 		ptr->next = malloc(sizeof(t_light));
 		ptr = ptr->next;
 		ptr->o = ft_crete_light_node(pos);
-		light->power = 0.5;
+		ptr->power = power;
 		ptr->next = NULL;
 	}
 }

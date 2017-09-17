@@ -236,7 +236,6 @@ struct		s_mlx{
 	void	*mlx;
 	void	*wnd;
 	t_img	img;
-	t_img	img_a;
 };
 
 struct				s_objs{
@@ -303,7 +302,7 @@ void				ft_get_info_cone(t_all *all, t_ray *ray, t_objs *ptr);
 
 void				ft_get_norm_sphere(t_all *all, t_objs *ptr);
 
-void				ft_add_light_lst(t_light *light, t_vertex pos);
+void				ft_add_light_lst(t_light *light, t_vertex pos, double pow);
 
 void				ft_scene_init_sphere(t_all *all);
 void				ft_scene_init_plane(t_all *all);
